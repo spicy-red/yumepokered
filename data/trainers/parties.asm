@@ -739,42 +739,37 @@ ChannelerData:
 	db 33, GASTLY, GASTLY, HAUNTER, 0
 
 BrockData:
-	db $FF, 12, GEODUDE, 14, ONIX, 0
-	db $FF, 56, AERODACTYL, 60, RHYDON, 58, OMASTAR, 60, GOLEM, 58, KABUTOPS, 68, ONIX, 0 ; marcelnote - new rematch team
+	db $FF, 12, GEODUDE, 12, RHYHORN, 10, OMANYTE, 10, KABUTO, 16, ONIX, 0
+	db $FF, 70, AERODACTYL, 70, RHYDON, 70, OMASTAR, 70, GOLEM, 70, KABUTOPS, 85, ONIX, 0 ; marcelnote - new rematch team
 
 MistyData:  ; marcelnote - adjusted
 	;db $FF, 18, STARYU, 21, STARMIE, 0 ; original
-	db $FF, 18, STARYU, 17, GOLDEEN, 21, STARMIE, 0 ; new, PSYDUCK?
-	db $FF, 58, SEAKING, 56, GOLDUCK, 58, DRAGONAIR, 56, SEADRA, 58, DEWGONG, 62, STARMIE, 0 ; new rematch team ; VAPOREON if removed from Lorelei, BLASTOISE?
+	db $FF, 18, STARYU, 17, GOLDEEN, 20, PSYDUCK, 21, STARMIE, 0
+	db $FF, 70, SEAKING, 70, GOLDUCK, 70, VAPOREON, 70, SEADRA, 70, BLASTOISE, 85, STARMIE, 0 ; new rematch team ; VAPOREON if removed from Lorelei, BLASTOISE?
 
 LtSurgeData:
 	db $FF, 21, VOLTORB, 18, PIKACHU, 24, RAICHU, 0
-	db $FF, 57, MAGNETON, 55, ELECTABUZZ, 59, PORYGON, 57, ELECTRODE, 59, JOLTEON, 63, RAICHU, 0 ; new rematch team
+	db $FF, 70, MAGNETON, 75, ELECTABUZZ, 75, ZAPDOS, 70, ELECTRODE, 70, JOLTEON, 85, RAICHU, 0 ; new rematch team
 
 ErikaData:  ; marcelnote - adjusted
 	;db $FF, 29, VICTREEBEL, 24, TANGELA, 29, VILEPLUME, 0 ; original
-	db $FF, 31, VICTREEBEL, 29, TANGELA, 33, VILEPLUME, 0 ; new
-;	db $FF, 38, VICTREEBEL, 36, TANGELA, 38, IVYSAUR, 40, VILEPLUME, 0 ; possible dynamic team?
-;	db $FF, 43, VICTREEBEL, 41, TANGELA, 43, VENUSAUR, 47, VILEPLUME, 0 ; possible dynamic team?
-	db $FF, 56, VICTREEBEL, 58, PARASECT, 56, EXEGGUTOR, 60, TANGELA, 58, VENUSAUR, 62, VILEPLUME, 0 ; new rematch team
+	db $FF, 31, VICTREEBEL, 30, IVYSAUR, 34, EXEGGCUTE , 30, TANGELA, 33, VILEPLUME, 0 ; new
+	db $FF, 70, VICTREEBEL, 85, PARASECT, 70, EXEGGUTOR, 70, TANGELA, 70, VENUSAUR, 85, VILEPLUME, 0 ; new rematch team
 
 KogaData:  ; marcelnote - adjusted
 	;db $FF, 37, KOFFING, 39, MUK, 37, KOFFING, 43, WEEZING, 0 ; original
-;	db $FF, 37, KOFFING, 35, MUK, 39, VENOMOTH, 0 ; possible dynamic team?
 	db $FF, 41, WEEZING, 37, GOLBAT, 39, MUK, 43, VENOMOTH, 0 ; new
-;	db $FF, 45, WEEZING, 41, GOLBAT, 43, MUK, 47, VENOMOTH, 0 ; possible dynamic team?
-	db $FF, 57, WEEZING, 59, GOLBAT, 59, MUK, 61, SCYTHER, 57, TENTACRUEL, 63, VENOMOTH, 0 ; new rematch team
+	db $FF, 70, WEEZING, 70, GOLBAT, 70, MUK, 85, SCYTHER, 70, TENTACRUEL, 85, VENOMOTH, 0 ; new rematch team
 
 SabrinaData:  ; marcelnote - adjusted
 	;db $FF, 38, KADABRA, 37, MR_MIME, 38, VENOMOTH, 43, ALAKAZAM, 0 ; original
-;	db $FF, 38, KADABRA, 37, MR_MIME, 41, BUTTERFREE, 43, ALAKAZAM, 0  ; possible dynamic team?
 	db $FF, 41, KADABRA, 40, MR_MIME, 44, BUTTERFREE, 46, ALAKAZAM, 0 ; new
-	db $FF, 58, KADABRA, 58, WIGGLYTUFF, 60, MR_MIME, 58, GENGAR, 66, BUTTERFREE, 62, ALAKAZAM, 0 ; new rematch team ; STARMIE?
+	db $FF, 70, EXEGGUTOR, 70, JYNX, 70, MR_MIME, 70, HYPNO, 70, STARMIE, 85, ALAKAZAM, 0 ; new rematch team ; STARMIE?
 
 BlaineData:  ; marcelnote - adjusted
 	;db $FF, 42, GROWLITHE, 40, PONYTA, 42, RAPIDASH, 47, ARCANINE, 0 ; original
 	db $FF, 44, GROWLITHE, 42, FLAREON, 44, RAPIDASH, 47, MAGMAR, 49, ARCANINE, 0 ; new
-	db $FF, 57, FLAREON, 59, NINETALES, 57, RAPIDASH, 59, GYARADOS, 61, MAGMAR, 63, ARCANINE, 0 ; new rematch team
+	db $FF, 70, FLAREON, 70, NINETALES, 70, RAPIDASH, 85, MOLTRES, 70, MAGMAR, 85, ARCANINE, 0 ; new rematch team
 
 GiovanniData:  ; marcelnote - adjusted
 ; Rocket Hideout B4F
@@ -790,23 +785,23 @@ GiovanniData:  ; marcelnote - adjusted
 LoreleiData:
 	db $FF, 54, DEWGONG, 53, CLOYSTER, 54, SLOWBRO, 56, JYNX, 56, LAPRAS, 0
 	; marcelnote - new rematch team
-	db $FF, 64, DEWGONG, 66, JYNX, 64, VAPOREON, 63, CLOYSTER, 65, CLEFABLE, 66, LAPRAS, 0
+	db $FF, 80, DEWGONG, 80, JYNX, 80, VAPOREON, 80, CLOYSTER, 80, ARTICUNO, 85, LAPRAS, 0
 
 BrunoData:
 	db $FF, 53, ONIX, 55, HITMONCHAN, 55, HITMONLEE, 56, ONIX, 58, MACHAMP, 0
 	; put Poliwrath in original team as in Let's Go Pikachu?
 	; marcelnote - new rematch team
-	db $FF, 65, HITMONCHAN, 66, ONIX, 65, HITMONLEE, 66, POLIWRATH, 67, GOLEM, 68, MACHAMP, 0
+	db $FF, 80, HITMONCHAN, 80, ONIX, 80, HITMONLEE, 80, POLIWRATH, 80, GOLEM, 85, MACHAMP, 0
 
 AgathaData:
 	db $FF, 56, GENGAR, 56, GOLBAT, 55, HAUNTER, 58, ARBOK, 60, GENGAR, 0
 	; marcelnote - new rematch team
-	db $FF, 66, HAUNTER, 66, GOLBAT, 65, MAROWAK, 68, ARBOK, 67, NINETALES, 70, GENGAR, 0
+	db $FF, 80, GENGAR, 80, GOLBAT, 80, MAROWAK, 80, ARBOK, 80, NINETALES, 80, GENGAR, 0
 
 LanceData:
 	db $FF, 58, GYARADOS, 56, DRAGONAIR, 56, DRAGONAIR, 60, AERODACTYL, 62, DRAGONITE, 0
 	; marcelnote - new rematch team
-	db $FF, 66, DRAGONITE, 68, GYARADOS, 70, KANGASKHAN, 68, CHARIZARD, 70, AERODACTYL, 72, DRAGONITE, 0
+	db $FF, 80, DRAGONITE, 80, GYARADOS, 80, KANGASKHAN, 80, CHARIZARD, 80, AERODACTYL, 80, DRAGONITE, 0
 
 Rival1Data:
 	db 5, SQUIRTLE, 0
@@ -869,9 +864,9 @@ Rival3Data:
 	db $FF, 61, PIDGEOT, 59, ALAKAZAM, 61, RHYDON, 61, GYARADOS, 63, ARCANINE, 65, VENUSAUR, 0
 	db $FF, 61, PIDGEOT, 59, ALAKAZAM, 61, RHYDON, 61, EXEGGUTOR, 63, GYARADOS, 65, CHARIZARD, 0
 	; marcelnote - new rematch teams
-	db $FF, 71, PIDGEOT, 69, ALAKAZAM, 71, RHYDON, 71, ARCANINE, 73, EXEGGUTOR, 75, BLASTOISE, 0
-	db $FF, 71, PIDGEOT, 69, ALAKAZAM, 71, RHYDON, 71, GYARADOS, 73, ARCANINE, 75, VENUSAUR, 0
-	db $FF, 71, PIDGEOT, 69, ALAKAZAM, 71, RHYDON, 71, EXEGGUTOR, 73, GYARADOS, 75, CHARIZARD, 0
+	db $FF, 90, PIDGEOT, 90, ALAKAZAM, 90, RHYDON, 90, ARCANINE, 90, EXEGGUTOR, 95, BLASTOISE, 0
+	db $FF, 90, PIDGEOT, 90, ALAKAZAM, 90, RHYDON, 90, GYARADOS, 90, ARCANINE, 95, VENUSAUR, 0
+	db $FF, 90, PIDGEOT, 90, ALAKAZAM, 90, RHYDON, 90, EXEGGUTOR, 90, GYARADOS, 95, CHARIZARD, 0
 
 ProfOakData: ; marcelnote - adapted unused teams for postgame Oak battle
 ; Unused
