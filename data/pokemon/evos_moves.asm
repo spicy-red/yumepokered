@@ -2185,7 +2185,7 @@ AerodactylEvosMoves:
 	db 20, SUPERSONIC
 	db 27, BITE
 	db 33, ROCK_THROW
-	db 37, TAKE_DOWN
+	db 37, EARTHQUAKE
 	db 42, ROCK_SLIDE
 	db 48, SCREECH
 	db 54, HYPER_BEAM
@@ -2208,10 +2208,10 @@ ArticunoEvosMoves:
 	db 0
 ; Learnset
 	db 25, MIST
-	db 51, BLIZZARD
-	db 55, AGILITY
-	db 60, REFLECT
-	db 65, DOUBLE_TEAM
+	db 21, BLIZZARD
+	db 31, AGILITY
+	db 41, REFLECT
+	db 50, DOUBLE_TEAM
 	; 71, TRI_ATTACK ?
 	db 0
 
@@ -2219,11 +2219,11 @@ ZapdosEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 25, THUNDER_WAVE
-	db 51, THUNDER
-	db 55, AGILITY
-	db 60, LIGHT_SCREEN
-	db 65, DOUBLE_TEAM
+	db 15, THUNDER_WAVE
+	db 21, THUNDER
+	db 31, AGILITY
+	db 41, LIGHT_SCREEN
+	db 50, DOUBLE_TEAM
 	; 71, TRI_ATTACK ?
 	db 0
 
@@ -2231,11 +2231,11 @@ MoltresEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
-	db 25, SCREECH
-	db 51, SKY_ATTACK
-	db 55, AGILITY
-	db 60, FLAMETHROWER ; BARRIER?
-	db 65, DOUBLE_TEAM
+	db 15, SCREECH
+	db 21, SKY_ATTACK
+	db 31, AGILITY
+	db 41, FLAMETHROWER ; BARRIER?
+	db 50, DOUBLE_TEAM
 	; 71, TRI_ATTACK ?
 	db 0
 

@@ -239,20 +239,20 @@ yumepokeazul.gb:        RGBLINKFLAGS += -p 0x00
 yumepokeazul_debug.gb:  RGBLINKFLAGS += -p 0xff
 
 RGBFIXFLAGS += -jsv -n 0 -k 01 -l 0x33 -m MBC3+RAM+BATTERY -r 03
-yumepokered.gb:         RGBFIXFLAGS += -p 0x00 -t "POKEMON RED"
-yumepokegreen.gb:       RGBFIXFLAGS += -p 0x00 -t "POKEMON GREEN"
-yumepokeblue.gb:        RGBFIXFLAGS += -p 0x00 -t "POKEMON BLUE"
-yumepokeblue_debug.gb:  RGBFIXFLAGS += -p 0xff -t "POKEMON BLUE"
-yumepokered_vc.gb:      RGBFIXFLAGS += -p 0x00 -t "POKEMON RED"
-yumepokeblue_vc.gb:     RGBFIXFLAGS += -p 0x00 -t "POKEMON BLUE"
-yumepokerouge.gb:       RGBFIXFLAGS += -p 0x00 -t "POKEMON RED"
-yumepokeverte.gb:       RGBFIXFLAGS += -p 0x00 -t "POKEMON GREEN"
-yumepokebleue.gb:       RGBFIXFLAGS += -p 0x00 -t "POKEMON BLUE"
-yumepokebleue_debug.gb: RGBFIXFLAGS += -p 0xff -t "POKEMON BLUE"
-yumepokerojo.gb:        RGBFIXFLAGS += -p 0x00 -t "POKEMON RED"
-yumepokeverde.gb:       RGBFIXFLAGS += -p 0x00 -t "POKEMON GREEN"
-yumepokeazul.gb:        RGBFIXFLAGS += -p 0x00 -t "POKEMON BLUE"
-yumepokeazul_debug.gb:  RGBFIXFLAGS += -p 0xff -t "POKEMON BLUE"
+yumepokered.gb:         RGBFIXFLAGS += -p 0x00 -t "DansingQween"
+yumepokegreen.gb:       RGBFIXFLAGS += -p 0x00 -t "DansingQween"
+yumepokeblue.gb:        RGBFIXFLAGS += -p 0x00 -t "DansingQween"
+yumepokeblue_debug.gb:  RGBFIXFLAGS += -p 0xff -t "DansingQween"
+yumepokered_vc.gb:      RGBFIXFLAGS += -p 0x00 -t "DansingQween"
+yumepokeblue_vc.gb:     RGBFIXFLAGS += -p 0x00 -t "DansingQween"
+yumepokerouge.gb:       RGBFIXFLAGS += -p 0x00 -t "DansingQween"
+yumepokeverte.gb:       RGBFIXFLAGS += -p 0x00 -t "DansingQween"
+yumepokebleue.gb:       RGBFIXFLAGS += -p 0x00 -t "DansingQween"
+yumepokebleue_debug.gb: RGBFIXFLAGS += -p 0xff -t "DansingQween"
+yumepokerojo.gb:        RGBFIXFLAGS += -p 0x00 -t "DansingQween"
+yumepokeverde.gb:       RGBFIXFLAGS += -p 0x00 -t "DansingQween"
+yumepokeazul.gb:        RGBFIXFLAGS += -p 0x00 -t "DansingQween"
+yumepokeazul_debug.gb:  RGBFIXFLAGS += -p 0xff -t "DansingQween"
 
 %.gb: $$(%_obj) layout.link
 	$(RGBLINK) $(RGBLINKFLAGS) -l layout.link -m $*.map -n $*.sym -o $@ $(filter %.o,$^)

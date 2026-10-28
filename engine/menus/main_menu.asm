@@ -128,8 +128,7 @@ MainMenu:
 	jp SpecialEnterMap
 
 VersionText:
-	db "<PKMN>Yume "
-	db "v1.4@"
+	db "DansingQween@"
 
 InitOptions:
 	ld a, 1 << BIT_FAST_TEXT_DELAY

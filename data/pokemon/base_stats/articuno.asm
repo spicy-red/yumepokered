@@ -1,6 +1,6 @@
 	db DEX_ARTICUNO ; pokedex id
 
-	db  90,  85, 100,  85, 125
+	db  110,  85, 125,  85, 125
 	;   hp  atk  def  spd  spc
 
 	db ICE, FLYING ; type

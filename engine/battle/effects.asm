@@ -238,6 +238,28 @@ ChargeEffect: ; marcelnote - optimized and adjusted for removing FLY_EFFECT
 .gotPointers
 	ld [wChargeMoveNum], a ; for ChargeMoveEffectText
 	set CHARGING_UP, [hl]
+	ldh a, [hWhoseTurn]
+	and a
+	jr nz, .enemyTurn
+	ld a, DEFENSE_UP1_EFFECT
+	ld [wPlayerMoveEffect], a
+	jr .raiseDefense
+.enemyTurn
+	ld a, DEFENSE_UP1_EFFECT
+	ld [wEnemyMoveEffect], a
+.raiseDefense
+	call StatModifierUpEffect
+	ldh a, [hWhoseTurn]
+	and a
+	jr nz, .restoreEnemyEffect
+	ld a, CHARGE_EFFECT
+	ld [wPlayerMoveEffect], a
+	jr .gotMoveEffect
+.restoreEnemyEffect
+	ld a, CHARGE_EFFECT
+	ld [wEnemyMoveEffect], a
+.gotMoveEffect
+	ld a, [wChargeMoveNum]
 	ld b, TELEPORT         ; Fly animation
 	cp FLY
 	jr z, .invulnerable

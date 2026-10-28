@@ -677,62 +677,23 @@ PrintBaseStats: ; marcelnote - new
 	pop af
 	ldh [hUILayoutFlags], a
 
-	ld c, 5                 ; number of stats
-	hlcoord 10, 11          ; hl = coord of first stat bar
+	ld c, NUM_STATS
+	hlcoord 10, 11
+	ld de, wMonHBaseStats
 
 .loopStats
-	push bc ; save c = stat counter
-	push hl ; save hl = screen coord
-
-	ld a, 5
-	sub c
-	ld c, a
-	ld b, 0
-	ld hl, wMonHBaseStats
+	push bc
+	push hl
+	push de
+	ld b, 1 ; one-byte stat value
+	ld c, 3 ; print up to three digits
+	call PrintNumber
+	pop de
+	pop hl
+	ld bc, SCREEN_WIDTH
 	add hl, bc
-	ld a, [hl] ; a = [wMonHBaseStats + (5 - c)], current stat 0-255
-	srl a
-	cp $3f ; is stat >= 128?
-	ld e, 0
-	jr c, .lessThan128
-	sub $3f
-	ld e, 8
-.lessThan128
-	ld c, a    ; c = pixels to fill
-
-	pop hl     ; restore hl = screen coord
-	ld b, 8    ; 8 tiles per bar
-
-.loopFullTile
-	ld a, c
-	sub 8
-	jr c, .partialTile
-	ld c, a
-	ld a, $48  ; full tile
-	add e
-	ld [hli], a
-	dec b
-	jr nz, .loopFullTile
-	jr .done
-
-.partialTile
-	add 8 + $40 ; $40 = empty, $41 = 1px, etc
-	add e
-	ld [hli], a
-	dec b
-	jr z, .done
-
-	ld a, $40
-	add e
-.loopEmptyTile
-	ld [hli], a
-	dec b
-	jr nz, .loopEmptyTile
-
-.done
-	ld de, SCREEN_WIDTH - 8 ; line offset between bars
-	add hl, de ; move hl to next bar start
-	pop bc ; restore c = stat counter
+	inc de
+	pop bc
 	dec c
 	jr nz, .loopStats
 
