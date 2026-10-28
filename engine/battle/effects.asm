@@ -238,6 +238,10 @@ ChargeEffect: ; marcelnote - optimized and adjusted for removing FLY_EFFECT
 .gotPointers
 	ld [wChargeMoveNum], a ; for ChargeMoveEffectText
 	set CHARGING_UP, [hl]
+	cp FLY
+	jr z, .gotMoveEffect ; preserve hl for setting INVULNERABLE
+	cp DIG
+	jr z, .gotMoveEffect
 	ldh a, [hWhoseTurn]
 	and a
 	jr nz, .enemyTurn

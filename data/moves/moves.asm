@@ -42,7 +42,7 @@ Moves:
 	move HEADBUTT,     FLINCH_SIDE_EFFECT2,         70, NORMAL,       100, 25
 	move HORN_ATTACK,  NO_ADDITIONAL_EFFECT,        65, NORMAL,       100, 25
 	move FURY_ATTACK,  TWO_TO_FIVE_ATTACKS_EFFECT,  15, NORMAL,        95, 20 ; marcelnote - changed from acc 85
-	move HORN_DRILL,   NO_ADDITIONAL_EFFECT,       180, NORMAL,        65, 15
+	move HORN_DRILL,   NO_ADDITIONAL_EFFECT,       170, NORMAL,        65, 15
 	move TACKLE,       NO_ADDITIONAL_EFFECT,        35, NORMAL,        95, 35
 	move BODY_SLAM,    PARALYZE_SIDE_EFFECT2,       85, NORMAL,       100, 25
 	move WRAP,         TRAPPING_EFFECT,             15, NORMAL,        85, 20
