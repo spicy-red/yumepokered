@@ -44,4 +44,4 @@ VermilionMartCooltrainerFText:
 	text_end
 
 VermilionMartClerkText: ; marcelnote - moved Mart inventories
-	script_mart POKE_BALL, SUPER_POTION, ICE_HEAL, AWAKENING, PARLYZ_HEAL, REPEL
+	script_mart POKE_BALL, ICE_HEAL, AWAKENING, PARLYZ_HEAL, REPEL, RARE_CANDY

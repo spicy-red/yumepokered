@@ -44,4 +44,4 @@ CeruleanMartCooltrainerFText:
 	text_end
 
 CeruleanMartClerkText: ; marcelnote - moved Mart inventories
-	script_mart POKE_BALL, POTION, REPEL, ANTIDOTE, BURN_HEAL, AWAKENING, PARLYZ_HEAL
+	script_mart POKE_BALL, REPEL, ANTIDOTE, BURN_HEAL, AWAKENING, PARLYZ_HEAL, RARE_CANDY

@@ -44,4 +44,4 @@ FuchsiaMartCooltrainerFText:
 	text_end
 
 FuchsiaMartClerkText: ; marcelnote - moved Mart inventories
-	script_mart ULTRA_BALL, GREAT_BALL, SUPER_POTION, REVIVE, FULL_HEAL, SUPER_REPEL
+	script_mart ULTRA_BALL, GREAT_BALL, FULL_HEAL, SUPER_REPEL, RARE_CANDY

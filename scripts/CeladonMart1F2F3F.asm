@@ -131,7 +131,7 @@ CeladonMart3FPokemonPosterText:
 
 
 CeladonMart2FClerk1Text: ; marcelnote - moved Mart inventories
-	script_mart GREAT_BALL, SUPER_POTION, REVIVE, SUPER_REPEL, ANTIDOTE, BURN_HEAL, ICE_HEAL, AWAKENING, PARLYZ_HEAL
+	script_mart GREAT_BALL, SUPER_REPEL, ANTIDOTE, BURN_HEAL, ICE_HEAL, AWAKENING, PARLYZ_HEAL, RARE_CANDY
 
 ; marcelnote - original TM seller list
 ;CeladonMart2FClerk2Text::
@@ -148,9 +148,8 @@ MartTMClerkDialogue: ; marcelnote - this fills the TM seller list dynamically
 	ld c, TM_MEGA_PUNCH ; c will contain the current TM id
 .loop
 	ld a, [de] ; condition for current TM
-	cp -2
-	jr z, .checkIfChampion ; if a = -2
-	jr nc, .finish         ; if a = -1
+	cp -1
+	jr z, .finish
 	and b ; has required badge?
 	jr z, .skipTM
 .addTM
@@ -160,11 +159,6 @@ MartTMClerkDialogue: ; marcelnote - this fills the TM seller list dynamically
 	inc c  ; next TM
 	inc de ; next condition
 	jr .loop
-
-.checkIfChampion
-	CheckEvent EVENT_BECAME_CHAMPION
-	jr z, .skipTM
-	jr .addTM
 
 .finish
 	ld [hl], -1 ; add list terminator
@@ -181,60 +175,59 @@ MartTMClerkDialogue: ; marcelnote - this fills the TM seller list dynamically
 	ld [wListMenuID], a
 	jpfar DisplayPokemartDialogue_
 
-; marcelnote - this list indicates which badge is needed to buy each TM
-;              -2 means you need to have become champion
+; marcelnote - all TMs are unlocked after earning the sixth badge
 DynamicTMSellerConditions:
-	db 1 << BIT_CASCADEBADGE ; TM01 MEGA_PUNCH (default list)
-	db 1 << BIT_SOULBADGE    ; TM02 RAZOR_WIND (was on default list but not anymore)
-	db -2                    ; TM03 SWORDS_DANCE ; elite 4
-	db 1 << BIT_CASCADEBADGE ; TM04 WHIRLWIND
-	db 1 << BIT_CASCADEBADGE ; TM05 MEGA_KICK (default list)
-	db 1 << BIT_VOLCANOBADGE ; TM06 TOXIC
-	db 1 << BIT_CASCADEBADGE ; TM07 HORN_DRILL (default list)
-	db 1 << BIT_RAINBOWBADGE ; TM08 BODY_SLAM
-	db 1 << BIT_CASCADEBADGE ; TM09 TAKE_DOWN (default list)
-	db 1 << BIT_MARSHBADGE   ; TM10 DOUBLE_EDGE
-	db 1 << BIT_RAINBOWBADGE ; TM11 BUBBLEBEAM
-	db 1 << BIT_CASCADEBADGE ; TM12 WATER_GUN
-	db 1 << BIT_EARTHBADGE   ; TM13 ICE_BEAM
-	db -2                    ; TM14 BLIZZARD ; elite 4
-	db -2                    ; TM15 HYPER_BEAM ; elite 4
-	db 1 << BIT_MARSHBADGE   ; TM16 PAY_DAY
-	db 1 << BIT_CASCADEBADGE ; TM17 SUBMISSION (default list)
-	db 1 << BIT_MARSHBADGE   ; TM18 COUNTER
-	db 1 << BIT_RAINBOWBADGE ; TM19 SEISMIC_TOSS
-	db 1 << BIT_SOULBADGE    ; TM20 RAGE
-	db 1 << BIT_EARTHBADGE   ; TM21 MEGA_DRAIN
-	db -2                    ; TM22 SOLARBEAM ; elite 4
-	db 1 << BIT_RAINBOWBADGE ; TM23 DRAGON_RAGE
-	db 1 << BIT_VOLCANOBADGE ; TM24 THUNDERBOLT
-	db -2                    ; TM25 THUNDER ; elite 4
-	db -2                    ; TM26 EARTHQUAKE ; elite 4
-	db -2                    ; TM27 FISSURE ; elite 4
-	db 1 << BIT_RAINBOWBADGE ; TM28 DIG
-	db 1 << BIT_EARTHBADGE   ; TM29 PSYCHIC_M
-	db 1 << BIT_THUNDERBADGE ; TM30 TELEPORT
-	db 1 << BIT_VOLCANOBADGE ; TM31 MIMIC
-	db 1 << BIT_CASCADEBADGE ; TM32 DOUBLE_TEAM (default list)
-	db 1 << BIT_CASCADEBADGE ; TM33 REFLECT (default list)
-	db 1 << BIT_RAINBOWBADGE ; TM34 BIDE
-	db 1 << BIT_VOLCANOBADGE ; TM35 METRONOME
-	db 1 << BIT_VOLCANOBADGE ; TM36 SELFDESTRUCT
-	db 1 << BIT_CASCADEBADGE ; TM37 EGG_BOMB (default list)
-	db -2                    ; TM38 FIRE_BLAST ; elite 4
-	db 1 << BIT_SOULBADGE    ; TM39 SWIFT
-	db 1 << BIT_MARSHBADGE   ; TM40 SKULL_BASH
-	db 1 << BIT_VOLCANOBADGE ; TM41 SOFTBOILED
-	db 1 << BIT_RAINBOWBADGE ; TM42 DREAM_EATER
-	db -2                    ; TM43 SKY_ATTACK ; elite 4
-	db 1 << BIT_EARTHBADGE   ; TM44 REST
-	db 1 << BIT_THUNDERBADGE ; TM45 THUNDER_WAVE
-	db 1 << BIT_EARTHBADGE   ; TM46 PSYWAVE
-	db -2                    ; TM47 EXPLOSION ; elite 4
-	db 1 << BIT_MARSHBADGE   ; TM48 ROCK_SLIDE
-	db 1 << BIT_VOLCANOBADGE ; TM49 TRI_ATTACK
-	db -2                    ; TM50 SUBSTITUTE ; elite 4
-	db 1 << BIT_VOLCANOBADGE ; TM51 HEX
+	db 1 << BIT_MARSHBADGE ; TM01 MEGA_PUNCH
+	db 1 << BIT_MARSHBADGE ; TM02 RAZOR_WIND
+	db 1 << BIT_MARSHBADGE ; TM03 SWORDS_DANCE
+	db 1 << BIT_MARSHBADGE ; TM04 WHIRLWIND
+	db 1 << BIT_MARSHBADGE ; TM05 MEGA_KICK
+	db 1 << BIT_MARSHBADGE ; TM06 TOXIC
+	db 1 << BIT_MARSHBADGE ; TM07 HORN_DRILL
+	db 1 << BIT_MARSHBADGE ; TM08 BODY_SLAM
+	db 1 << BIT_MARSHBADGE ; TM09 TAKE_DOWN
+	db 1 << BIT_MARSHBADGE ; TM10 DOUBLE_EDGE
+	db 1 << BIT_MARSHBADGE ; TM11 BUBBLEBEAM
+	db 1 << BIT_MARSHBADGE ; TM12 WATER_GUN
+	db 1 << BIT_MARSHBADGE ; TM13 ICE_BEAM
+	db 1 << BIT_MARSHBADGE ; TM14 BLIZZARD
+	db 1 << BIT_MARSHBADGE ; TM15 HYPER_BEAM
+	db 1 << BIT_MARSHBADGE ; TM16 PAY_DAY
+	db 1 << BIT_MARSHBADGE ; TM17 SUBMISSION
+	db 1 << BIT_MARSHBADGE ; TM18 COUNTER
+	db 1 << BIT_MARSHBADGE ; TM19 SEISMIC_TOSS
+	db 1 << BIT_MARSHBADGE ; TM20 RAGE
+	db 1 << BIT_MARSHBADGE ; TM21 MEGA_DRAIN
+	db 1 << BIT_MARSHBADGE ; TM22 SOLARBEAM
+	db 1 << BIT_MARSHBADGE ; TM23 DRAGON_RAGE
+	db 1 << BIT_MARSHBADGE ; TM24 THUNDERBOLT
+	db 1 << BIT_MARSHBADGE ; TM25 THUNDER
+	db 1 << BIT_MARSHBADGE ; TM26 EARTHQUAKE
+	db 1 << BIT_MARSHBADGE ; TM27 FISSURE
+	db 1 << BIT_MARSHBADGE ; TM28 DIG
+	db 1 << BIT_MARSHBADGE ; TM29 PSYCHIC_M
+	db 1 << BIT_MARSHBADGE ; TM30 TELEPORT
+	db 1 << BIT_MARSHBADGE ; TM31 MIMIC
+	db 1 << BIT_MARSHBADGE ; TM32 DOUBLE_TEAM
+	db 1 << BIT_MARSHBADGE ; TM33 REFLECT
+	db 1 << BIT_MARSHBADGE ; TM34 BIDE
+	db 1 << BIT_MARSHBADGE ; TM35 METRONOME
+	db 1 << BIT_MARSHBADGE ; TM36 SELFDESTRUCT
+	db 1 << BIT_MARSHBADGE ; TM37 EGG_BOMB
+	db 1 << BIT_MARSHBADGE ; TM38 FIRE_BLAST
+	db 1 << BIT_MARSHBADGE ; TM39 SWIFT
+	db 1 << BIT_MARSHBADGE ; TM40 SKULL_BASH
+	db 1 << BIT_MARSHBADGE ; TM41 SOFTBOILED
+	db 1 << BIT_MARSHBADGE ; TM42 DREAM_EATER
+	db 1 << BIT_MARSHBADGE ; TM43 SKY_ATTACK
+	db 1 << BIT_MARSHBADGE ; TM44 REST
+	db 1 << BIT_MARSHBADGE ; TM45 THUNDER_WAVE
+	db 1 << BIT_MARSHBADGE ; TM46 PSYWAVE
+	db 1 << BIT_MARSHBADGE ; TM47 EXPLOSION
+	db 1 << BIT_MARSHBADGE ; TM48 ROCK_SLIDE
+	db 1 << BIT_MARSHBADGE ; TM49 TRI_ATTACK
+	db 1 << BIT_MARSHBADGE ; TM50 SUBSTITUTE
+	db 1 << BIT_MARSHBADGE ; TM51 HEX
 	db -1 ; end
 
 ; marcelnote - old function with custom check for each TM

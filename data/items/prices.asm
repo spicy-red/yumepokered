@@ -64,10 +64,10 @@ ItemPrices::
 	bcd3 350   ; LEMONADE
 	bcd3 0     ; S_S_TICKET
 	bcd3 0     ; GOLD_TEETH
-	bcd3 500   ; X_ATTACK
-	bcd3 550   ; X_DEFEND
-	bcd3 350   ; X_SPEED
-	bcd3 750   ; X_SPECIAL     ; marcelnote - changed from 350
+	bcd3 9500   ; X_ATTACK
+	bcd3 9500   ; X_DEFEND
+	bcd3 9500   ; X_SPEED
+	bcd3 9500   ; X_SPECIAL     ; marcelnote - changed from 350
 	bcd3 0     ; COIN_CASE
 	bcd3 0     ; OAKS_PARCEL
 	bcd3 0     ; ITEMFINDER

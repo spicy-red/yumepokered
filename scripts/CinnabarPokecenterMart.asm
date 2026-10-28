@@ -44,4 +44,4 @@ CinnabarMartScientistText:
 	text_end
 
 CinnabarMartClerkText: ; marcelnote - moved Mart inventories
-	script_mart ULTRA_BALL, GREAT_BALL, HYPER_POTION, MAX_REPEL, ESCAPE_ROPE, FULL_HEAL, REVIVE
+	script_mart ULTRA_BALL, GREAT_BALL, MAX_REPEL, ESCAPE_ROPE, FULL_HEAL, RARE_CANDY

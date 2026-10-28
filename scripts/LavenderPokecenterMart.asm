@@ -56,4 +56,4 @@ LavenderMartCooltrainerMText: ; marcelnote - optimized
 	text_end
 
 LavenderMartClerkText: ; marcelnote - moved Mart inventories
-	script_mart GREAT_BALL, SUPER_POTION, REVIVE, ESCAPE_ROPE, SUPER_REPEL, ANTIDOTE, BURN_HEAL, ICE_HEAL, PARLYZ_HEAL
+	script_mart GREAT_BALL, ESCAPE_ROPE, SUPER_REPEL, ANTIDOTE, BURN_HEAL, ICE_HEAL, PARLYZ_HEAL, RARE_CANDY
