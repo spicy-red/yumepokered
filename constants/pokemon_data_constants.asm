@@ -16,7 +16,7 @@ DEF BASE_CATCH_RATE  rb
 DEF BASE_EXP         rb
 DEF BASE_PIC_SIZE    rb
 DEF BASE_FRONTPIC    rw
-DEF BASE_BACKPIC     rw
+DEF BASE_BACKPIC     rw ; optional native 48x48 back sprite; zero uses legacy offsets
 DEF BASE_MOVES       rb NUM_MOVES
 DEF BASE_GROWTH_RATE rb
 DEF BASE_TMHM        rb (NUM_TM_HM + 7) / 8

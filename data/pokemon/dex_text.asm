@@ -1507,3 +1507,365 @@ _VictreebelDexEntry::
 	next "has ever returned"
 	next "from there"
 	dex
+
+SECTION "Gen II Pokédex Text", ROMX
+
+_CyndaquilDexEntry::
+	text "It has a timid"
+	next "nature. If it"
+	next "is startled,"
+
+	page "the flames on"
+	next "its back burn"
+	next "more vigorously."
+	dex
+
+_QuilavaDexEntry::
+	text "Before it battles,"
+	next "it turns its back"
+	next "on its opponent"
+
+	page "to demonstrate"
+	next "the intensity"
+	next "of its fire."
+	dex
+
+_TyphlosionDexEntry::
+	text "It attacks"
+	next "using blasts of"
+	next "fire. It creates"
+
+	page "blazing explosive"
+	next "blasts that"
+	next "burn everything."
+	dex
+
+_ChikoritaDexEntry::
+	text "A sweet aroma"
+	next "gently wafts from"
+	next "the leaf on its"
+
+	page "head. It is docile"
+	next "and loves basking"
+	next "in the sun."
+	dex
+
+_BayleefDexEntry::
+	text "A spicy aroma"
+	next "emanates from"
+	next "around its neck."
+
+	page "The breath from"
+	next "its-scented body"
+	next "invigorates."
+	dex
+
+_MeganiumDexEntry::
+	text "The aroma of"
+	next "its breath"
+	next "contains"
+
+	page "substances that"
+	next "calm anyone who"
+	next "smells it down."
+	dex
+
+_TotodileDexEntry::
+	text "Its well-developed"
+	next "jaws are"
+	next "powerful"
+
+	page "and capable"
+	next "of crushing"
+	next "anything."
+	dex
+
+_CroconawDexEntry::
+	text "It opens its"
+	next "huge jaws wide"
+	next "when attacking."
+
+	page "Once it bites"
+	next "down, it will"
+	next "never let go."
+	dex
+
+_FeraligatrDexEntry::
+	text "It usually moves"
+	next "slowly, but it"
+	next "is capable of"
+
+	page "bursting into"
+	next "high speed when"
+	next "charging its prey."
+	dex
+
+_CrobatDexEntry::
+	text "Over-grafting"
+	next "wings on its hind"
+	next "legs caused it"
+
+	page "to become able"
+	next "to fly quietly"
+	next "and swiftly."
+	dex
+
+_KingdraDexEntry::
+	text "It stores power by"
+	next "sleeping deep on"
+	next "the ocean floor."
+
+	page "It is said to"
+	next "cause tornadoes"
+	next "when waking."
+	dex
+
+_MarillDexEntry::
+	text "The tip of its"
+	next "tail is filled"
+	next "with an oil that"
+
+	page "is lighter than"
+	next "water, allowing"
+	next "it to stay afloat."
+	dex
+
+_AzumarillDexEntry::
+	text "By keeping still"
+	next "and listening"
+	next "intently, it"
+
+	page "can identify"
+	next "what is in even"
+	next "rushing rivers."
+	dex
+
+_MisdreavusDexEntry::
+	text "It startles"
+	next "people by"
+	next "wailing loudly."
+
+	page "It gathers fear"
+	next "as its source"
+	next "of energy."
+	dex
+
+_SwinubDexEntry::
+	text "It rubs its"
+	next "snout against"
+	next "the ground to"
+
+	page "find food. It"
+	next "sometimes unearths"
+	next "hot springs."
+	dex
+
+_PiloswineDexEntry::
+	text "Although covered"
+	next "in stiff hair,"
+	next "its hide is"
+
+	page "thick and tough"
+	next "enough to"
+	next "withstand attacks."
+	dex
+
+_HeracrossDexEntry::
+	text "With its Herculean"
+	next "strength,"
+	next "it can hurl"
+
+	page "objects that"
+	next "are 100 times"
+	next "its own weight."
+	dex
+
+_MareepDexEntry::
+	text "Its fleece grows"
+	next "continually. In"
+	next "the summer, the"
+
+	page "fleece is shed,"
+	next "but it grows"
+	next "back quickly."
+	dex
+
+_FlaaffyDexEntry::
+	text "Its skin is"
+	next "rubbery, so"
+	next "it can store"
+
+	page "electricity"
+	next "without being"
+	next "shocked itself."
+	dex
+
+_AmpharosDexEntry::
+	text "The beacon on"
+	next "its tail can"
+	next "be seen from"
+
+	page "space. People"
+	next "use it as a"
+	next "lighthouse signal."
+	dex
+
+_SlugmaDexEntry::
+	text "It common in"
+	next "volcanic areas."
+	next "If its body"
+
+	page "cools, its skin"
+	next "hardens and"
+	next "immobilizes it."
+	dex
+
+_MagcargoDexEntry::
+	text "Its body is as"
+	next "hot as magma,"
+	next "reaching up"
+
+	page "to 18,000"
+	next "degrees"
+	next "Fahrenheit."
+	dex
+
+_PhanpyDexEntry::
+	text "It swings its"
+	next "long nose around"
+	next "playfully, but"
+
+	page "because it is so"
+	next "strong, it can"
+	next "be dangerous."
+	dex
+
+_DonphanDexEntry::
+	text "It has sharp,"
+	next "sturdy tusks"
+	next "and a tough"
+
+	page "hide. Its body"
+	next "can withstand"
+	next "a tank shell."
+	dex
+
+_GligarDexEntry::
+	text "It glides silently"
+	next "through the"
+	next "air. It strikes"
+
+	page "targets from"
+	next "behind with its"
+	next "barbed tail."
+	dex
+
+_HoppipDexEntry::
+	text "It drifts on"
+	next "the wind. Even"
+	next "though it is"
+
+	page "light, it can"
+	next "anchor itself"
+	next "using roots."
+	dex
+
+_SkiploomDexEntry::
+	text "It blooms when"
+	next "the temperature"
+	next "rises. It"
+
+	page "floats in the"
+	next "air to absorb"
+	next "sunlight."
+	dex
+
+_JumpluffDexEntry::
+	text "It drifts on"
+	next "seasonal winds"
+	next "around the"
+
+	page "globe, dropping"
+	next "spores wherever"
+	next "it goes."
+	dex
+
+_TeddiursaDexEntry::
+	text "It licks honey"
+	next "flavored with"
+	next "fruit juices"
+
+	page "all day long"
+	next "to make its"
+	next "own sweet paws."
+	dex
+
+_UrsaringDexEntry::
+	text "Although it has"
+	next "a large body,"
+	next "it is skilled at"
+
+	page "climbing trees"
+	next "to harvest honey"
+	next "and berries."
+	dex
+
+_GirafarigDexEntry::
+	text "Its tail has"
+	next "a small brain"
+	next "of its own. It"
+
+	page "can bite even"
+	next "when the main"
+	next "body is asleep."
+	dex
+
+_LarvitarDexEntry::
+	text "It is born deep"
+	next "underground. It"
+	next "must eat an entire"
+
+	page "mountain of dirt"
+	next "before seeing"
+	next "the surface."
+	dex
+
+_PupitarDexEntry::
+	text "It is impervious"
+	next "to any kind of"
+	next "attack. It makes"
+
+	page "itself strong"
+	next "and tough inside"
+	next "its shell."
+	dex
+
+_TyranitarDexEntry::
+	text "An armored #MON."
+	next "It is so strong"
+	next "that it can"
+
+	page "easily topple"
+	next "mountains and"
+	next "bury rivers."
+	dex
+
+_HoundourDexEntry::
+	text "It communicates"
+	next "with others"
+	next "using a variety"
+
+	page "of cries to"
+	next "coordinate"
+	next "hunts in packs."
+	dex
+
+_HoundoomDexEntry::
+	text "It emits a fire"
+	next "that contains"
+	next "toxic gases."
+
+	page "Those burned by"
+	next "it will suffer"
+	next "pain forever."
+	dex

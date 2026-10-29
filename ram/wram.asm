@@ -1693,8 +1693,8 @@ wMonHBaseEXP:: db
 ;wMonHFrontSprite:: dw
 ;wMonHBackSprite:: dw
 wMonHFrontPicDim:: db ; marcelnote - modified
-wMonHPics:: dw
-	dw ; now unused
+wMonHPics:: dw ; front sprite pointer (or legacy sprite table pointer)
+wMonHBackPic:: dw ; nonzero for native 48x48 back sprites
 wMonHMoves:: ds NUM_MOVES
 wMonHGrowthRate:: db
 wMonHLearnset:: flag_array NUM_TMS + NUM_HMS
@@ -2447,7 +2447,7 @@ wBoxMon{d:n}Nick:: ds NAME_LENGTH
 ENDR
 wBoxMonNicksEnd::
 
-wBoxDataEnd:: ; $deff
+wBoxDataEnd:: ; $df09
 
 ; marcelnote - Stack section was changed to detect stack overflow
 SECTION "Stack", WRAM0
@@ -2456,7 +2456,7 @@ wStackOverflowCheck:: dw ; 2 bytes
 
 ; the stack grows downward
     ;ds $100 - 1
-    ds $100 - 3 ; reserve two bytes to detect stack overflow
+    ds $100 - 13 ; the stack is 10 bytes smaller for expanded Pokédex flags
 wStack:: db ; $dfff
 
 ENDSECTION

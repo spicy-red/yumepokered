@@ -20,7 +20,6 @@
 ;	EXPORT \1PicFrontDim
 ;ENDM
 
-
 SECTION "Bulbasaur Sprites", ROMX
 BulbasaurPics::
 BulbasaurPicBack::           INCBIN "gfx/pokemon/back/bulbasaurb.2bpp"
@@ -1392,6 +1391,257 @@ GhostPic::                   INCBIN "gfx/pokemon/front/ghost.2bpp"
 GhostPicYellow::             INCBIN "gfx/pokemon/front_gsc/ghost.2bpp"
 GhostPicGreen::              INCBIN "gfx/pokemon/front_rg/ghost.2bpp"
 
+SECTION "Ampharos Sprites", ROMX
+AmpharosPics::
+AmpharosPicFront::          INCBIN "gfx/pokemon/gen2/front/ampharos.2bpp"
+AmpharosPicFrontCrystal::   INCBIN "gfx/pokemon/gen2/front/ampharos.2bpp"
+AmpharosPicFrontGreen::     INCBIN "gfx/pokemon/gen2/front/ampharos.2bpp"
+AmpharosPicBack::           INCBIN "gfx/pokemon/gen2/back/ampharos.2bpp"
+
+SECTION "Azumarill Sprites", ROMX
+AzumarillPics::
+AzumarillPicFront::          INCBIN "gfx/pokemon/gen2/front/azumarill.2bpp"
+AzumarillPicFrontCrystal::   INCBIN "gfx/pokemon/gen2/front/azumarill.2bpp"
+AzumarillPicFrontGreen::     INCBIN "gfx/pokemon/gen2/front/azumarill.2bpp"
+AzumarillPicBack::           INCBIN "gfx/pokemon/gen2/back/azumarill.2bpp"
+
+SECTION "Bayleef Sprites", ROMX
+BayleefPics::
+BayleefPicFront::          INCBIN "gfx/pokemon/gen2/front/bayleef.2bpp"
+BayleefPicFrontCrystal::   INCBIN "gfx/pokemon/gen2/front/bayleef.2bpp"
+BayleefPicFrontGreen::     INCBIN "gfx/pokemon/gen2/front/bayleef.2bpp"
+BayleefPicBack::           INCBIN "gfx/pokemon/gen2/back/bayleef.2bpp"
+
+SECTION "Chikorita Sprites", ROMX
+ChikoritaPics::
+ChikoritaPicFront::          INCBIN "gfx/pokemon/gen2/front/chikorita.2bpp"
+ChikoritaPicFrontCrystal::   INCBIN "gfx/pokemon/gen2/front/chikorita.2bpp"
+ChikoritaPicFrontGreen::     INCBIN "gfx/pokemon/gen2/front/chikorita.2bpp"
+ChikoritaPicBack::           INCBIN "gfx/pokemon/gen2/back/chikorita.2bpp"
+
+SECTION "Crobat Sprites", ROMX
+CrobatPics::
+CrobatPicFront::          INCBIN "gfx/pokemon/gen2/front/crobat.2bpp"
+CrobatPicFrontCrystal::   INCBIN "gfx/pokemon/gen2/front/crobat.2bpp"
+CrobatPicFrontGreen::     INCBIN "gfx/pokemon/gen2/front/crobat.2bpp"
+CrobatPicBack::           INCBIN "gfx/pokemon/gen2/back/crobat.2bpp"
+
+SECTION "Croconaw Sprites", ROMX
+CroconawPics::
+CroconawPicFront::          INCBIN "gfx/pokemon/gen2/front/croconaw.2bpp"
+CroconawPicFrontCrystal::   INCBIN "gfx/pokemon/gen2/front/croconaw.2bpp"
+CroconawPicFrontGreen::     INCBIN "gfx/pokemon/gen2/front/croconaw.2bpp"
+CroconawPicBack::           INCBIN "gfx/pokemon/gen2/back/croconaw.2bpp"
+
+SECTION "Cyndaquil Sprites", ROMX
+CyndaquilPics::
+CyndaquilPicFront::          INCBIN "gfx/pokemon/gen2/front/cyndaquil.2bpp"
+CyndaquilPicFrontCrystal::   INCBIN "gfx/pokemon/gen2/front/cyndaquil.2bpp"
+CyndaquilPicFrontGreen::     INCBIN "gfx/pokemon/gen2/front/cyndaquil.2bpp"
+CyndaquilPicBack::           INCBIN "gfx/pokemon/gen2/back/cyndaquil.2bpp"
+
+SECTION "Donphan Sprites", ROMX
+DonphanPics::
+DonphanPicFront::          INCBIN "gfx/pokemon/gen2/front/donphan.2bpp"
+DonphanPicFrontCrystal::   INCBIN "gfx/pokemon/gen2/front/donphan.2bpp"
+DonphanPicFrontGreen::     INCBIN "gfx/pokemon/gen2/front/donphan.2bpp"
+DonphanPicBack::           INCBIN "gfx/pokemon/gen2/back/donphan.2bpp"
+
+SECTION "Feraligatr Sprites", ROMX
+FeraligatrPics::
+FeraligatrPicFront::          INCBIN "gfx/pokemon/gen2/front/feraligatr.2bpp"
+FeraligatrPicFrontCrystal::   INCBIN "gfx/pokemon/gen2/front/feraligatr.2bpp"
+FeraligatrPicFrontGreen::     INCBIN "gfx/pokemon/gen2/front/feraligatr.2bpp"
+FeraligatrPicBack::           INCBIN "gfx/pokemon/gen2/back/feraligatr.2bpp"
+
+SECTION "Flaaffy Sprites", ROMX
+FlaaffyPics::
+FlaaffyPicFront::          INCBIN "gfx/pokemon/gen2/front/flaaffy.2bpp"
+FlaaffyPicFrontCrystal::   INCBIN "gfx/pokemon/gen2/front/flaaffy.2bpp"
+FlaaffyPicFrontGreen::     INCBIN "gfx/pokemon/gen2/front/flaaffy.2bpp"
+FlaaffyPicBack::           INCBIN "gfx/pokemon/gen2/back/flaaffy.2bpp"
+
+SECTION "Girafarig Sprites", ROMX
+GirafarigPics::
+GirafarigPicFront::          INCBIN "gfx/pokemon/gen2/front/girafarig.2bpp"
+GirafarigPicFrontCrystal::   INCBIN "gfx/pokemon/gen2/front/girafarig.2bpp"
+GirafarigPicFrontGreen::     INCBIN "gfx/pokemon/gen2/front/girafarig.2bpp"
+GirafarigPicBack::           INCBIN "gfx/pokemon/gen2/back/girafarig.2bpp"
+
+SECTION "Gligar Sprites", ROMX
+GligarPics::
+GligarPicFront::          INCBIN "gfx/pokemon/gen2/front/gligar.2bpp"
+GligarPicFrontCrystal::   INCBIN "gfx/pokemon/gen2/front/gligar.2bpp"
+GligarPicFrontGreen::     INCBIN "gfx/pokemon/gen2/front/gligar.2bpp"
+GligarPicBack::           INCBIN "gfx/pokemon/gen2/back/gligar.2bpp"
+
+SECTION "Heracross Sprites", ROMX
+HeracrossPics::
+HeracrossPicFront::          INCBIN "gfx/pokemon/gen2/front/heracross.2bpp"
+HeracrossPicFrontCrystal::   INCBIN "gfx/pokemon/gen2/front/heracross.2bpp"
+HeracrossPicFrontGreen::     INCBIN "gfx/pokemon/gen2/front/heracross.2bpp"
+HeracrossPicBack::           INCBIN "gfx/pokemon/gen2/back/heracross.2bpp"
+
+SECTION "Hoppip Sprites", ROMX
+HoppipPics::
+HoppipPicFront::          INCBIN "gfx/pokemon/gen2/front/hoppip.2bpp"
+HoppipPicFrontCrystal::   INCBIN "gfx/pokemon/gen2/front/hoppip.2bpp"
+HoppipPicFrontGreen::     INCBIN "gfx/pokemon/gen2/front/hoppip.2bpp"
+HoppipPicBack::           INCBIN "gfx/pokemon/gen2/back/hoppip.2bpp"
+
+SECTION "Houndoom Sprites", ROMX
+HoundoomPics::
+HoundoomPicFront::          INCBIN "gfx/pokemon/gen2/front/houndoom.2bpp"
+HoundoomPicFrontCrystal::   INCBIN "gfx/pokemon/gen2/front/houndoom.2bpp"
+HoundoomPicFrontGreen::     INCBIN "gfx/pokemon/gen2/front/houndoom.2bpp"
+HoundoomPicBack::           INCBIN "gfx/pokemon/gen2/back/houndoom.2bpp"
+
+SECTION "Houndour Sprites", ROMX
+HoundourPics::
+HoundourPicFront::          INCBIN "gfx/pokemon/gen2/front/houndour.2bpp"
+HoundourPicFrontCrystal::   INCBIN "gfx/pokemon/gen2/front/houndour.2bpp"
+HoundourPicFrontGreen::     INCBIN "gfx/pokemon/gen2/front/houndour.2bpp"
+HoundourPicBack::           INCBIN "gfx/pokemon/gen2/back/houndour.2bpp"
+
+SECTION "Jumpluff Sprites", ROMX
+JumpluffPics::
+JumpluffPicFront::          INCBIN "gfx/pokemon/gen2/front/jumpluff.2bpp"
+JumpluffPicFrontCrystal::   INCBIN "gfx/pokemon/gen2/front/jumpluff.2bpp"
+JumpluffPicFrontGreen::     INCBIN "gfx/pokemon/gen2/front/jumpluff.2bpp"
+JumpluffPicBack::           INCBIN "gfx/pokemon/gen2/back/jumpluff.2bpp"
+
+SECTION "Kingdra Sprites", ROMX
+KingdraPics::
+KingdraPicFront::          INCBIN "gfx/pokemon/gen2/front/kingdra.2bpp"
+KingdraPicFrontCrystal::   INCBIN "gfx/pokemon/gen2/front/kingdra.2bpp"
+KingdraPicFrontGreen::     INCBIN "gfx/pokemon/gen2/front/kingdra.2bpp"
+KingdraPicBack::           INCBIN "gfx/pokemon/gen2/back/kingdra.2bpp"
+
+SECTION "Larvitar Sprites", ROMX
+LarvitarPics::
+LarvitarPicFront::          INCBIN "gfx/pokemon/gen2/front/larvitar.2bpp"
+LarvitarPicFrontCrystal::   INCBIN "gfx/pokemon/gen2/front/larvitar.2bpp"
+LarvitarPicFrontGreen::     INCBIN "gfx/pokemon/gen2/front/larvitar.2bpp"
+LarvitarPicBack::           INCBIN "gfx/pokemon/gen2/back/larvitar.2bpp"
+
+SECTION "Magcargo Sprites", ROMX
+MagcargoPics::
+MagcargoPicFront::          INCBIN "gfx/pokemon/gen2/front/magcargo.2bpp"
+MagcargoPicFrontCrystal::   INCBIN "gfx/pokemon/gen2/front/magcargo.2bpp"
+MagcargoPicFrontGreen::     INCBIN "gfx/pokemon/gen2/front/magcargo.2bpp"
+MagcargoPicBack::           INCBIN "gfx/pokemon/gen2/back/magcargo.2bpp"
+
+SECTION "Mareep Sprites", ROMX
+MareepPics::
+MareepPicFront::          INCBIN "gfx/pokemon/gen2/front/mareep.2bpp"
+MareepPicFrontCrystal::   INCBIN "gfx/pokemon/gen2/front/mareep.2bpp"
+MareepPicFrontGreen::     INCBIN "gfx/pokemon/gen2/front/mareep.2bpp"
+MareepPicBack::           INCBIN "gfx/pokemon/gen2/back/mareep.2bpp"
+
+SECTION "Marill Sprites", ROMX
+MarillPics::
+MarillPicFront::          INCBIN "gfx/pokemon/gen2/front/marill.2bpp"
+MarillPicFrontCrystal::   INCBIN "gfx/pokemon/gen2/front/marill.2bpp"
+MarillPicFrontGreen::     INCBIN "gfx/pokemon/gen2/front/marill.2bpp"
+MarillPicBack::           INCBIN "gfx/pokemon/gen2/back/marill.2bpp"
+
+SECTION "Meganium Sprites", ROMX
+MeganiumPics::
+MeganiumPicFront::          INCBIN "gfx/pokemon/gen2/front/meganium.2bpp"
+MeganiumPicFrontCrystal::   INCBIN "gfx/pokemon/gen2/front/meganium.2bpp"
+MeganiumPicFrontGreen::     INCBIN "gfx/pokemon/gen2/front/meganium.2bpp"
+MeganiumPicBack::           INCBIN "gfx/pokemon/gen2/back/meganium.2bpp"
+
+SECTION "Misdreavus Sprites", ROMX
+MisdreavusPics::
+MisdreavusPicFront::          INCBIN "gfx/pokemon/gen2/front/misdreavus.2bpp"
+MisdreavusPicFrontCrystal::   INCBIN "gfx/pokemon/gen2/front/misdreavus.2bpp"
+MisdreavusPicFrontGreen::     INCBIN "gfx/pokemon/gen2/front/misdreavus.2bpp"
+MisdreavusPicBack::           INCBIN "gfx/pokemon/gen2/back/misdreavus.2bpp"
+
+SECTION "Phanpy Sprites", ROMX
+PhanpyPics::
+PhanpyPicFront::          INCBIN "gfx/pokemon/gen2/front/phanpy.2bpp"
+PhanpyPicFrontCrystal::   INCBIN "gfx/pokemon/gen2/front/phanpy.2bpp"
+PhanpyPicFrontGreen::     INCBIN "gfx/pokemon/gen2/front/phanpy.2bpp"
+PhanpyPicBack::           INCBIN "gfx/pokemon/gen2/back/phanpy.2bpp"
+
+SECTION "Piloswine Sprites", ROMX
+PiloswinePics::
+PiloswinePicFront::          INCBIN "gfx/pokemon/gen2/front/piloswine.2bpp"
+PiloswinePicFrontCrystal::   INCBIN "gfx/pokemon/gen2/front/piloswine.2bpp"
+PiloswinePicFrontGreen::     INCBIN "gfx/pokemon/gen2/front/piloswine.2bpp"
+PiloswinePicBack::           INCBIN "gfx/pokemon/gen2/back/piloswine.2bpp"
+
+SECTION "Pupitar Sprites", ROMX
+PupitarPics::
+PupitarPicFront::          INCBIN "gfx/pokemon/gen2/front/pupitar.2bpp"
+PupitarPicFrontCrystal::   INCBIN "gfx/pokemon/gen2/front/pupitar.2bpp"
+PupitarPicFrontGreen::     INCBIN "gfx/pokemon/gen2/front/pupitar.2bpp"
+PupitarPicBack::           INCBIN "gfx/pokemon/gen2/back/pupitar.2bpp"
+
+SECTION "Quilava Sprites", ROMX
+QuilavaPics::
+QuilavaPicFront::          INCBIN "gfx/pokemon/gen2/front/quilava.2bpp"
+QuilavaPicFrontCrystal::   INCBIN "gfx/pokemon/gen2/front/quilava.2bpp"
+QuilavaPicFrontGreen::     INCBIN "gfx/pokemon/gen2/front/quilava.2bpp"
+QuilavaPicBack::           INCBIN "gfx/pokemon/gen2/back/quilava.2bpp"
+
+SECTION "Skiploom Sprites", ROMX
+SkiploomPics::
+SkiploomPicFront::          INCBIN "gfx/pokemon/gen2/front/skiploom.2bpp"
+SkiploomPicFrontCrystal::   INCBIN "gfx/pokemon/gen2/front/skiploom.2bpp"
+SkiploomPicFrontGreen::     INCBIN "gfx/pokemon/gen2/front/skiploom.2bpp"
+SkiploomPicBack::           INCBIN "gfx/pokemon/gen2/back/skiploom.2bpp"
+
+SECTION "Slugma Sprites", ROMX
+SlugmaPics::
+SlugmaPicFront::          INCBIN "gfx/pokemon/gen2/front/slugma.2bpp"
+SlugmaPicFrontCrystal::   INCBIN "gfx/pokemon/gen2/front/slugma.2bpp"
+SlugmaPicFrontGreen::     INCBIN "gfx/pokemon/gen2/front/slugma.2bpp"
+SlugmaPicBack::           INCBIN "gfx/pokemon/gen2/back/slugma.2bpp"
+
+SECTION "Swinub Sprites", ROMX
+SwinubPics::
+SwinubPicFront::          INCBIN "gfx/pokemon/gen2/front/swinub.2bpp"
+SwinubPicFrontCrystal::   INCBIN "gfx/pokemon/gen2/front/swinub.2bpp"
+SwinubPicFrontGreen::     INCBIN "gfx/pokemon/gen2/front/swinub.2bpp"
+SwinubPicBack::           INCBIN "gfx/pokemon/gen2/back/swinub.2bpp"
+
+SECTION "Teddiursa Sprites", ROMX
+TeddiursaPics::
+TeddiursaPicFront::          INCBIN "gfx/pokemon/gen2/front/teddiursa.2bpp"
+TeddiursaPicFrontCrystal::   INCBIN "gfx/pokemon/gen2/front/teddiursa.2bpp"
+TeddiursaPicFrontGreen::     INCBIN "gfx/pokemon/gen2/front/teddiursa.2bpp"
+TeddiursaPicBack::           INCBIN "gfx/pokemon/gen2/back/teddiursa.2bpp"
+
+SECTION "Totodile Sprites", ROMX
+TotodilePics::
+TotodilePicFront::          INCBIN "gfx/pokemon/gen2/front/totodile.2bpp"
+TotodilePicFrontCrystal::   INCBIN "gfx/pokemon/gen2/front/totodile.2bpp"
+TotodilePicFrontGreen::     INCBIN "gfx/pokemon/gen2/front/totodile.2bpp"
+TotodilePicBack::           INCBIN "gfx/pokemon/gen2/back/totodile.2bpp"
+
+SECTION "Typhlosion Sprites", ROMX
+TyphlosionPics::
+TyphlosionPicFront::          INCBIN "gfx/pokemon/gen2/front/typhlosion.2bpp"
+TyphlosionPicFrontCrystal::   INCBIN "gfx/pokemon/gen2/front/typhlosion.2bpp"
+TyphlosionPicFrontGreen::     INCBIN "gfx/pokemon/gen2/front/typhlosion.2bpp"
+TyphlosionPicBack::           INCBIN "gfx/pokemon/gen2/back/typhlosion.2bpp"
+
+SECTION "Tyranitar Sprites", ROMX
+TyranitarPics::
+TyranitarPicFront::          INCBIN "gfx/pokemon/gen2/front/tyranitar.2bpp"
+TyranitarPicFrontCrystal::   INCBIN "gfx/pokemon/gen2/front/tyranitar.2bpp"
+TyranitarPicFrontGreen::     INCBIN "gfx/pokemon/gen2/front/tyranitar.2bpp"
+TyranitarPicBack::           INCBIN "gfx/pokemon/gen2/back/tyranitar.2bpp"
+
+SECTION "Ursaring Sprites", ROMX
+UrsaringPics::
+UrsaringPicFront::          INCBIN "gfx/pokemon/gen2/front/ursaring.2bpp"
+UrsaringPicFrontCrystal::   INCBIN "gfx/pokemon/gen2/front/ursaring.2bpp"
+UrsaringPicFrontGreen::     INCBIN "gfx/pokemon/gen2/front/ursaring.2bpp"
+UrsaringPicBack::           INCBIN "gfx/pokemon/gen2/back/ursaring.2bpp"
 
 SECTION "Trainer Pics 1", ROMX
 

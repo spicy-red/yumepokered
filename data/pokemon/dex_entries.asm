@@ -30,8 +30,8 @@ PokedexEntryPointers:
 	dw BlastoiseDexEntry
 	dw PinsirDexEntry
 	dw TangelaDexEntry
-	dw MissingNoDexEntry
-	dw MissingNoDexEntry
+	dw CyndaquilDexEntry ; CYNDAQUIL
+	dw QuilavaDexEntry ; QUILAVA
 	dw GrowlitheDexEntry
 	dw OnixDexEntry
 	dw FearowDexEntry
@@ -49,26 +49,26 @@ PokedexEntryPointers:
 	dw PsyduckDexEntry
 	dw DrowzeeDexEntry
 	dw GolemDexEntry
-	dw MissingNoDexEntry
+	dw TyphlosionDexEntry ; TYPHLOSION
 	dw MagmarDexEntry
-	dw MissingNoDexEntry
+	dw ChikoritaDexEntry ; CHIKORITA
 	dw ElectabuzzDexEntry
 	dw MagnetonDexEntry
 	dw KoffingDexEntry
-	dw MissingNoDexEntry
+	dw BayleefDexEntry ; BAYLEEF
 	dw MankeyDexEntry
 	dw SeelDexEntry
 	dw DiglettDexEntry
 	dw TaurosDexEntry
-	dw MissingNoDexEntry
-	dw MissingNoDexEntry
-	dw MissingNoDexEntry
+	dw MeganiumDexEntry ; MEGANIUM
+	dw TotodileDexEntry ; TOTODILE
+	dw CroconawDexEntry ; CROCONAW
 	dw FarfetchdDexEntry
 	dw VenonatDexEntry
 	dw DragoniteDexEntry
-	dw MissingNoDexEntry
-	dw MissingNoDexEntry
-	dw MissingNoDexEntry
+	dw FeraligatrDexEntry ; FERALIGATR
+	dw CrobatDexEntry ; CROBAT
+	dw KingdraDexEntry ; KINGDRA
 	dw DoduoDexEntry
 	dw PoliwagDexEntry
 	dw JynxDexEntry
@@ -78,23 +78,23 @@ PokedexEntryPointers:
 	dw DittoDexEntry
 	dw MeowthDexEntry
 	dw KrabbyDexEntry
-	dw MissingNoDexEntry
-	dw MissingNoDexEntry
-	dw MissingNoDexEntry
+	dw MarillDexEntry ; MARILL
+	dw AzumarillDexEntry ; AZUMARILL
+	dw MisdreavusDexEntry ; MISDREAVUS
 	dw VulpixDexEntry
 	dw NinetalesDexEntry
 	dw PikachuDexEntry
 	dw RaichuDexEntry
-	dw MissingNoDexEntry
-	dw MissingNoDexEntry
+	dw SwinubDexEntry ; SWINUB
+	dw PiloswineDexEntry ; PILOSWINE
 	dw DratiniDexEntry
 	dw DragonairDexEntry
 	dw KabutoDexEntry
 	dw KabutopsDexEntry
 	dw HorseaDexEntry
 	dw SeadraDexEntry
-	dw MissingNoDexEntry
-	dw MissingNoDexEntry
+	dw HeracrossDexEntry ; HERACROSS
+	dw MareepDexEntry ; MAREEP
 	dw SandshrewDexEntry
 	dw SandslashDexEntry
 	dw OmanyteDexEntry
@@ -114,38 +114,38 @@ PokedexEntryPointers:
 	dw WeedleDexEntry
 	dw KakunaDexEntry
 	dw BeedrillDexEntry
-	dw MissingNoDexEntry
+	dw FlaaffyDexEntry ; FLAAFFY
 	dw DodrioDexEntry
 	dw PrimeapeDexEntry
 	dw DugtrioDexEntry
 	dw VenomothDexEntry
 	dw DewgongDexEntry
-	dw MissingNoDexEntry
-	dw MissingNoDexEntry
+	dw AmpharosDexEntry ; AMPHAROS
+	dw SlugmaDexEntry ; SLUGMA
 	dw CaterpieDexEntry
 	dw MetapodDexEntry
 	dw ButterfreeDexEntry
 	dw MachampDexEntry
-	dw MissingNoDexEntry
+	dw MagcargoDexEntry ; MAGCARGO
 	dw GolduckDexEntry
 	dw HypnoDexEntry
 	dw GolbatDexEntry
 	dw MewtwoDexEntry
 	dw SnorlaxDexEntry
 	dw MagikarpDexEntry
-	dw MissingNoDexEntry
-	dw MissingNoDexEntry
+	dw PhanpyDexEntry ; PHANPY
+	dw DonphanDexEntry ; DONPHAN
 	dw MukDexEntry
-	dw MissingNoDexEntry
+	dw GligarDexEntry ; GLIGAR
 	dw KinglerDexEntry
 	dw CloysterDexEntry
-	dw MissingNoDexEntry
+	dw HoppipDexEntry ; HOPPIP
 	dw ElectrodeDexEntry
 	dw ClefableDexEntry
 	dw WeezingDexEntry
 	dw PersianDexEntry
 	dw MarowakDexEntry
-	dw MissingNoDexEntry
+	dw SkiploomDexEntry ; SKIPLOOM
 	dw HaunterDexEntry
 	dw AbraDexEntry
 	dw AlakazamDexEntry
@@ -155,13 +155,13 @@ PokedexEntryPointers:
 	dw BulbasaurDexEntry
 	dw VenusaurDexEntry
 	dw TentacruelDexEntry
-	dw MissingNoDexEntry
+	dw JumpluffDexEntry ; JUMPLUFF
 	dw GoldeenDexEntry
 	dw SeakingDexEntry
-	dw MissingNoDexEntry
-	dw MissingNoDexEntry
-	dw MissingNoDexEntry
-	dw MissingNoDexEntry
+	dw TeddiursaDexEntry ; TEDDIURSA
+	dw UrsaringDexEntry ; URSARING
+	dw GirafarigDexEntry ; GIRAFARIG
+	dw LarvitarDexEntry ; LARVITAR
 	dw PonytaDexEntry
 	dw RapidashDexEntry
 	dw RattataDexEntry
@@ -171,16 +171,16 @@ PokedexEntryPointers:
 	dw GeodudeDexEntry
 	dw PorygonDexEntry
 	dw AerodactylDexEntry
-	dw MissingNoDexEntry
+	dw PupitarDexEntry ; PUPITAR
 	dw MagnemiteDexEntry
-	dw MissingNoDexEntry
-	dw MissingNoDexEntry
+	dw TyranitarDexEntry ; TYRANITAR
+	dw HoundourDexEntry ; HOUNDOUR
 	dw CharmanderDexEntry
 	dw SquirtleDexEntry
 	dw CharmeleonDexEntry
 	dw WartortleDexEntry
 	dw CharizardDexEntry
-	dw MissingNoDexEntry
+	dw HoundoomDexEntry ; HOUNDOOM
 	dw MissingNoDexEntry
 	dw MissingNoDexEntry
 	dw MissingNoDexEntry
@@ -1556,6 +1556,331 @@ VictreebelDexEntry:
 	db 17
 	dw 155
 	text_far _VictreebelDexEntry
+	text_end
+
+; The CSV does not include species categories or size/weight data.
+CyndaquilDexEntry:
+	db "???@"
+	db 0, 0
+	dw 0
+	db 0
+	dw 0
+	text_far _CyndaquilDexEntry
+	text_end
+
+QuilavaDexEntry:
+	db "???@"
+	db 0, 0
+	dw 0
+	db 0
+	dw 0
+	text_far _QuilavaDexEntry
+	text_end
+
+TyphlosionDexEntry:
+	db "???@"
+	db 0, 0
+	dw 0
+	db 0
+	dw 0
+	text_far _TyphlosionDexEntry
+	text_end
+
+ChikoritaDexEntry:
+	db "???@"
+	db 0, 0
+	dw 0
+	db 0
+	dw 0
+	text_far _ChikoritaDexEntry
+	text_end
+
+BayleefDexEntry:
+	db "???@"
+	db 0, 0
+	dw 0
+	db 0
+	dw 0
+	text_far _BayleefDexEntry
+	text_end
+
+MeganiumDexEntry:
+	db "???@"
+	db 0, 0
+	dw 0
+	db 0
+	dw 0
+	text_far _MeganiumDexEntry
+	text_end
+
+TotodileDexEntry:
+	db "???@"
+	db 0, 0
+	dw 0
+	db 0
+	dw 0
+	text_far _TotodileDexEntry
+	text_end
+
+CroconawDexEntry:
+	db "???@"
+	db 0, 0
+	dw 0
+	db 0
+	dw 0
+	text_far _CroconawDexEntry
+	text_end
+
+FeraligatrDexEntry:
+	db "???@"
+	db 0, 0
+	dw 0
+	db 0
+	dw 0
+	text_far _FeraligatrDexEntry
+	text_end
+
+CrobatDexEntry:
+	db "???@"
+	db 0, 0
+	dw 0
+	db 0
+	dw 0
+	text_far _CrobatDexEntry
+	text_end
+
+KingdraDexEntry:
+	db "???@"
+	db 0, 0
+	dw 0
+	db 0
+	dw 0
+	text_far _KingdraDexEntry
+	text_end
+
+MarillDexEntry:
+	db "???@"
+	db 0, 0
+	dw 0
+	db 0
+	dw 0
+	text_far _MarillDexEntry
+	text_end
+
+AzumarillDexEntry:
+	db "???@"
+	db 0, 0
+	dw 0
+	db 0
+	dw 0
+	text_far _AzumarillDexEntry
+	text_end
+
+MisdreavusDexEntry:
+	db "???@"
+	db 0, 0
+	dw 0
+	db 0
+	dw 0
+	text_far _MisdreavusDexEntry
+	text_end
+
+SwinubDexEntry:
+	db "???@"
+	db 0, 0
+	dw 0
+	db 0
+	dw 0
+	text_far _SwinubDexEntry
+	text_end
+
+PiloswineDexEntry:
+	db "???@"
+	db 0, 0
+	dw 0
+	db 0
+	dw 0
+	text_far _PiloswineDexEntry
+	text_end
+
+HeracrossDexEntry:
+	db "???@"
+	db 0, 0
+	dw 0
+	db 0
+	dw 0
+	text_far _HeracrossDexEntry
+	text_end
+
+MareepDexEntry:
+	db "???@"
+	db 0, 0
+	dw 0
+	db 0
+	dw 0
+	text_far _MareepDexEntry
+	text_end
+
+FlaaffyDexEntry:
+	db "???@"
+	db 0, 0
+	dw 0
+	db 0
+	dw 0
+	text_far _FlaaffyDexEntry
+	text_end
+
+AmpharosDexEntry:
+	db "???@"
+	db 0, 0
+	dw 0
+	db 0
+	dw 0
+	text_far _AmpharosDexEntry
+	text_end
+
+SlugmaDexEntry:
+	db "???@"
+	db 0, 0
+	dw 0
+	db 0
+	dw 0
+	text_far _SlugmaDexEntry
+	text_end
+
+MagcargoDexEntry:
+	db "???@"
+	db 0, 0
+	dw 0
+	db 0
+	dw 0
+	text_far _MagcargoDexEntry
+	text_end
+
+PhanpyDexEntry:
+	db "???@"
+	db 0, 0
+	dw 0
+	db 0
+	dw 0
+	text_far _PhanpyDexEntry
+	text_end
+
+DonphanDexEntry:
+	db "???@"
+	db 0, 0
+	dw 0
+	db 0
+	dw 0
+	text_far _DonphanDexEntry
+	text_end
+
+GligarDexEntry:
+	db "???@"
+	db 0, 0
+	dw 0
+	db 0
+	dw 0
+	text_far _GligarDexEntry
+	text_end
+
+HoppipDexEntry:
+	db "???@"
+	db 0, 0
+	dw 0
+	db 0
+	dw 0
+	text_far _HoppipDexEntry
+	text_end
+
+SkiploomDexEntry:
+	db "???@"
+	db 0, 0
+	dw 0
+	db 0
+	dw 0
+	text_far _SkiploomDexEntry
+	text_end
+
+JumpluffDexEntry:
+	db "???@"
+	db 0, 0
+	dw 0
+	db 0
+	dw 0
+	text_far _JumpluffDexEntry
+	text_end
+
+TeddiursaDexEntry:
+	db "???@"
+	db 0, 0
+	dw 0
+	db 0
+	dw 0
+	text_far _TeddiursaDexEntry
+	text_end
+
+UrsaringDexEntry:
+	db "???@"
+	db 0, 0
+	dw 0
+	db 0
+	dw 0
+	text_far _UrsaringDexEntry
+	text_end
+
+GirafarigDexEntry:
+	db "???@"
+	db 0, 0
+	dw 0
+	db 0
+	dw 0
+	text_far _GirafarigDexEntry
+	text_end
+
+LarvitarDexEntry:
+	db "???@"
+	db 0, 0
+	dw 0
+	db 0
+	dw 0
+	text_far _LarvitarDexEntry
+	text_end
+
+PupitarDexEntry:
+	db "???@"
+	db 0, 0
+	dw 0
+	db 0
+	dw 0
+	text_far _PupitarDexEntry
+	text_end
+
+TyranitarDexEntry:
+	db "???@"
+	db 0, 0
+	dw 0
+	db 0
+	dw 0
+	text_far _TyranitarDexEntry
+	text_end
+
+HoundourDexEntry:
+	db "???@"
+	db 0, 0
+	dw 0
+	db 0
+	dw 0
+	text_far _HoundourDexEntry
+	text_end
+
+HoundoomDexEntry:
+	db "???@"
+	db 0, 0
+	dw 0
+	db 0
+	dw 0
+	text_far _HoundoomDexEntry
 	text_end
 
 MissingNoDexEntry:

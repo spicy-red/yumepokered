@@ -151,4 +151,40 @@ MonPartyData:
 	nybble ICON_SNAKE     ; Dragonite
 	nybble ICON_MON       ; Mewtwo
 	nybble ICON_MON       ; Mew
+	nybble ICON_QUADRUPED ; CYNDAQUIL
+	nybble ICON_QUADRUPED ; QUILAVA
+	nybble ICON_QUADRUPED ; TYPHLOSION
+	nybble ICON_GRASS     ; CHIKORITA
+	nybble ICON_GRASS     ; BAYLEEF
+	nybble ICON_GRASS     ; MEGANIUM
+	nybble ICON_MON       ; TOTODILE
+	nybble ICON_MON       ; CROCONAW
+	nybble ICON_MON       ; FERALIGATR
+	nybble ICON_MON       ; CROBAT
+	nybble ICON_WATER     ; KINGDRA
+	nybble ICON_FAIRY     ; MARILL
+	nybble ICON_FAIRY     ; AZUMARILL
+	nybble ICON_MON       ; MISDREAVUS
+	nybble ICON_QUADRUPED ; SWINUB
+	nybble ICON_QUADRUPED ; PILOSWINE
+	nybble ICON_BUG       ; HERACROSS
+	nybble ICON_QUADRUPED ; MAREEP
+	nybble ICON_QUADRUPED ; FLAAFFY
+	nybble ICON_QUADRUPED ; AMPHAROS
+	nybble ICON_MON       ; SLUGMA
+	nybble ICON_HELIX     ; MAGCARGO
+	nybble ICON_QUADRUPED ; PHANPY
+	nybble ICON_QUADRUPED ; DONPHAN
+	nybble ICON_BUG       ; GLIGAR
+	nybble ICON_GRASS     ; HOPPIP
+	nybble ICON_GRASS     ; SKIPLOOM
+	nybble ICON_GRASS     ; JUMPLUFF
+	nybble ICON_QUADRUPED ; TEDDIURSA
+	nybble ICON_QUADRUPED ; URSARING
+	nybble ICON_QUADRUPED ; GIRAFARIG
+	nybble ICON_MON       ; LARVITAR
+	nybble ICON_MON       ; PUPITAR
+	nybble ICON_MON       ; TYRANITAR
+	nybble ICON_QUADRUPED ; HOUNDOUR
+	nybble ICON_QUADRUPED ; HOUNDOOM
 	end_nybble_array NUM_POKEMON

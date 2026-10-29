@@ -6856,18 +6856,13 @@ CopySpriteToHL::
 
 ; marcelnote - refactored to remove sprite compression
 ; Assumes the monster's attributes have been loaded with GetMonHeader.
-; Scales 2x the Mon backsprite into sSpriteBuffer0, then ships it to vBackPic.
+; Loads native 48x48 backs or scales legacy 32x32 backs into sSpriteBuffer0.
 LoadMonBackPic:
 	ld a, [wBattleMonSpecies2]
 	ld [wCurPartySpecies], a
 	hlcoord 1, 5
 	lb bc, 7, 8
 	call ClearScreenArea
-
-	ld hl, wMonHPics
-	ld a, [hli]
-	ld h, [hl]
-	ld l, a
 
 	xor a
 	ld [rRAMB], a
@@ -6877,6 +6872,23 @@ LoadMonBackPic:
 	ld a, [wMonHPicBank]
 	ld b, a
 
+	ld hl, wMonHBackPic
+	ld a, [hli]
+	ld h, [hl]
+	ld l, a
+	ld a, h
+	or l
+	jr z, .legacyBackPic
+	ld d, h
+	ld e, l
+	call CenterHiResSprite ; writes native 48x48 sprite centered in the buffer
+	jr .continue
+
+.legacyBackPic
+	ld hl, wMonHPics
+	ld a, [hli]
+	ld h, [hl]
+	ld l, a
 	ld a, [wOptions]
 	and SPRITE_STYLE_MASK
 	jr z, .defaultPic

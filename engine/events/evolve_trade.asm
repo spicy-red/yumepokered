@@ -32,7 +32,7 @@ EvolveMonInteraction::
 	ld a, LINK_STATE_TRADING
 	ld [wLinkState], a
 	callfar TryEvolvingMon
-	xor a ; LINK_STATE_NONE
+	xor a
 	ld [wLinkState], a
 ; back to world map
 	call PlayDefaultMusic

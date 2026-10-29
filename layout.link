@@ -186,7 +186,7 @@ WRAM0
 	"Party Data"
 	"Main Data"
 	"Current Box Data"
-	org $df00
+	org $df0a ; leave 10 bytes for the expanded Pokédex flags
 	"Stack"
 VRAM
 	"VRAM"

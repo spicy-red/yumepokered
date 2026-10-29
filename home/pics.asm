@@ -9,8 +9,14 @@ LoadMonFrontPic::
 	ld a, [hli]
 	ld h, [hl]
 	ld l, a     ; hl = address of Mon pics, e.g. BulbasaurPics
+	ld a, [wMonHBackPic]
+	ld c, a
+	ld a, [wMonHBackPic + 1]
+	or c
+	jr nz, .gotFrontAddress
 	ld bc, BulbasaurPicFront - BulbasaurPics
-	add hl, bc  ; skip back pics
+	add hl, bc  ; legacy tables begin with back pics
+.gotFrontAddress
 	ld a, [wOptions]
 	and SPRITE_STYLE_MASK
 	jr z, .gotPicAddress

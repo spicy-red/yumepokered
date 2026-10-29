@@ -41,8 +41,8 @@ EvosMovesPointerTable:
 	dw BlastoiseEvosMoves
 	dw PinsirEvosMoves
 	dw TangelaEvosMoves
-	dw MissingNo1FEvosMoves
-	dw MissingNo20EvosMoves
+	dw CyndaquilEvosMoves ; CYNDAQUIL
+	dw QuilavaEvosMoves ; QUILAVA
 	dw GrowlitheEvosMoves
 	dw OnixEvosMoves
 	dw FearowEvosMoves
@@ -60,26 +60,26 @@ EvosMovesPointerTable:
 	dw PsyduckEvosMoves
 	dw DrowzeeEvosMoves
 	dw GolemEvosMoves
-	dw MissingNo32EvosMoves
+	dw TyphlosionEvosMoves ; TYPHLOSION
 	dw MagmarEvosMoves
-	dw MissingNo34EvosMoves
+	dw ChikoritaEvosMoves ; CHIKORITA
 	dw ElectabuzzEvosMoves
 	dw MagnetonEvosMoves
 	dw KoffingEvosMoves
-	dw MissingNo38EvosMoves
+	dw BayleefEvosMoves ; BAYLEEF
 	dw MankeyEvosMoves
 	dw SeelEvosMoves
 	dw DiglettEvosMoves
 	dw TaurosEvosMoves
-	dw MissingNo3DEvosMoves
-	dw MissingNo3EEvosMoves
-	dw MissingNo3FEvosMoves
+	dw MeganiumEvosMoves ; MEGANIUM
+	dw TotodileEvosMoves ; TOTODILE
+	dw CroconawEvosMoves ; CROCONAW
 	dw FarfetchdEvosMoves
 	dw VenonatEvosMoves
 	dw DragoniteEvosMoves
-	dw MissingNo43EvosMoves
-	dw MissingNo44EvosMoves
-	dw MissingNo45EvosMoves
+	dw FeraligatrEvosMoves ; FERALIGATR
+	dw CrobatEvosMoves ; CROBAT
+	dw KingdraEvosMoves ; KINGDRA
 	dw DoduoEvosMoves
 	dw PoliwagEvosMoves
 	dw JynxEvosMoves
@@ -89,23 +89,23 @@ EvosMovesPointerTable:
 	dw DittoEvosMoves
 	dw MeowthEvosMoves
 	dw KrabbyEvosMoves
-	dw MissingNo4FEvosMoves
-	dw MissingNo50EvosMoves
-	dw MissingNo51EvosMoves
+	dw MarillEvosMoves ; MARILL
+	dw AzumarillEvosMoves ; AZUMARILL
+	dw MisdreavusEvosMoves ; MISDREAVUS
 	dw VulpixEvosMoves
 	dw NinetalesEvosMoves
 	dw PikachuEvosMoves
 	dw RaichuEvosMoves
-	dw MissingNo56EvosMoves
-	dw MissingNo57EvosMoves
+	dw SwinubEvosMoves ; SWINUB
+	dw PiloswineEvosMoves ; PILOSWINE
 	dw DratiniEvosMoves
 	dw DragonairEvosMoves
 	dw KabutoEvosMoves
 	dw KabutopsEvosMoves
 	dw HorseaEvosMoves
 	dw SeadraEvosMoves
-	dw MissingNo5EEvosMoves
-	dw MissingNo5FEvosMoves
+	dw HeracrossEvosMoves ; HERACROSS
+	dw MareepEvosMoves ; MAREEP
 	dw SandshrewEvosMoves
 	dw SandslashEvosMoves
 	dw OmanyteEvosMoves
@@ -125,38 +125,38 @@ EvosMovesPointerTable:
 	dw WeedleEvosMoves
 	dw KakunaEvosMoves
 	dw BeedrillEvosMoves
-	dw MissingNo73EvosMoves
+	dw FlaaffyEvosMoves ; FLAAFFY
 	dw DodrioEvosMoves
 	dw PrimeapeEvosMoves
 	dw DugtrioEvosMoves
 	dw VenomothEvosMoves
 	dw DewgongEvosMoves
-	dw MissingNo79EvosMoves
-	dw MissingNo7AEvosMoves
+	dw AmpharosEvosMoves ; AMPHAROS
+	dw SlugmaEvosMoves ; SLUGMA
 	dw CaterpieEvosMoves
 	dw MetapodEvosMoves
 	dw ButterfreeEvosMoves
 	dw MachampEvosMoves
-	dw MissingNo7FEvosMoves
+	dw MagcargoEvosMoves ; MAGCARGO
 	dw GolduckEvosMoves
 	dw HypnoEvosMoves
 	dw GolbatEvosMoves
 	dw MewtwoEvosMoves
 	dw SnorlaxEvosMoves
 	dw MagikarpEvosMoves
-	dw MissingNo86EvosMoves
-	dw MissingNo87EvosMoves
+	dw PhanpyEvosMoves ; PHANPY
+	dw DonphanEvosMoves ; DONPHAN
 	dw MukEvosMoves
-	dw MissingNo8AEvosMoves
+	dw GligarEvosMoves ; GLIGAR
 	dw KinglerEvosMoves
 	dw CloysterEvosMoves
-	dw MissingNo8CEvosMoves
+	dw HoppipEvosMoves ; HOPPIP
 	dw ElectrodeEvosMoves
 	dw ClefableEvosMoves
 	dw WeezingEvosMoves
 	dw PersianEvosMoves
 	dw MarowakEvosMoves
-	dw MissingNo92EvosMoves
+	dw SkiploomEvosMoves ; SKIPLOOM
 	dw HaunterEvosMoves
 	dw AbraEvosMoves
 	dw AlakazamEvosMoves
@@ -166,13 +166,13 @@ EvosMovesPointerTable:
 	dw BulbasaurEvosMoves
 	dw VenusaurEvosMoves
 	dw TentacruelEvosMoves
-	dw MissingNo9CEvosMoves
+	dw JumpluffEvosMoves ; JUMPLUFF
 	dw GoldeenEvosMoves
 	dw SeakingEvosMoves
-	dw MissingNo9FEvosMoves
-	dw MissingNoA0EvosMoves
-	dw MissingNoA1EvosMoves
-	dw MissingNoA2EvosMoves
+	dw TeddiursaEvosMoves ; TEDDIURSA
+	dw UrsaringEvosMoves ; URSARING
+	dw GirafarigEvosMoves ; GIRAFARIG
+	dw LarvitarEvosMoves ; LARVITAR
 	dw PonytaEvosMoves
 	dw RapidashEvosMoves
 	dw RattataEvosMoves
@@ -182,16 +182,16 @@ EvosMovesPointerTable:
 	dw GeodudeEvosMoves
 	dw PorygonEvosMoves
 	dw AerodactylEvosMoves
-	dw MissingNoACEvosMoves
+	dw PupitarEvosMoves ; PUPITAR
 	dw MagnemiteEvosMoves
-	dw MissingNoAEEvosMoves
-	dw MissingNoAFEvosMoves
+	dw TyranitarEvosMoves ; TYRANITAR
+	dw HoundourEvosMoves ; HOUNDOUR
 	dw CharmanderEvosMoves
 	dw SquirtleEvosMoves
 	dw CharmeleonEvosMoves
 	dw WartortleEvosMoves
 	dw CharizardEvosMoves
-	dw MissingNoB5EvosMoves
+	dw HoundoomEvosMoves ; HOUNDOOM
 	dw FossilKabutopsEvosMoves
 	dw FossilAerodactylEvosMoves
 	dw MonGhostEvosMoves
@@ -789,6 +789,7 @@ ZubatEvosMoves:
 
 GolbatEvosMoves:
 ; Evolutions
+	db EVOLVE_LEVEL, 40, CROBAT
 	db 0
 ; Learnset
 	db 12, GUST
@@ -1847,6 +1848,7 @@ HorseaEvosMoves:
 
 SeadraEvosMoves:
 ; Evolutions
+	db EVOLVE_ITEM, WATER_STONE, 1, KINGDRA
 	db 0
 ; Learnset
 	db 10, SMOKESCREEN
@@ -2537,4 +2539,451 @@ MissingNoB5EvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+	db 0
+
+; Imported Gen II level-up learnsets. Evolution methods are not in the CSV.
+
+CyndaquilEvosMoves:
+; Evolutions
+	db EVOLVE_LEVEL, 14, QUILAVA
+	db 0
+; Learnset
+	db 7, EMBER
+	db 13, QUICK_ATTACK
+	db 20, SMOKESCREEN
+	db 27, FLAMETHROWER
+	db 34, FLARE_BLITZ
+	db 0
+
+QuilavaEvosMoves:
+; Evolutions
+	db EVOLVE_LEVEL, 36, TYPHLOSION
+	db 0
+; Learnset
+	db 7, EMBER
+	db 13, QUICK_ATTACK
+	db 21, SMOKESCREEN
+	db 31, FLAMETHROWER
+	db 41, FLARE_BLITZ
+	db 0
+
+TyphlosionEvosMoves:
+; Evolutions (not provided by CSV)
+	db 0 ; no evolutions
+; Learnset
+	db 7, EMBER
+	db 13, QUICK_ATTACK
+	db 21, SMOKESCREEN
+	db 31, FLAMETHROWER
+	db 45, FLARE_BLITZ
+	db 60, HYPER_BEAM
+	db 0
+
+ChikoritaEvosMoves:
+; Evolutions
+	db EVOLVE_LEVEL, 16, BAYLEEF
+	db 0
+; Learnset
+	db 8, VINE_WHIP
+	db 15, POISONPOWDER
+	db 22, RECOVER ; substitutes for SYNTHESIS (not implemented)
+	db 29, RAZOR_LEAF
+	db 36, BODY_SLAM
+	db 43, MEGA_DRAIN
+	db 0
+
+BayleefEvosMoves:
+; Evolutions
+	db EVOLVE_LEVEL, 32, MEGANIUM
+	db 0
+; Learnset
+	db 8, VINE_WHIP
+	db 15, POISONPOWDER
+	db 23, RECOVER ; substitutes for SYNTHESIS (not implemented)
+	db 31, RAZOR_LEAF
+	db 39, BODY_SLAM
+	db 47, MEGA_DRAIN
+	db 0
+
+MeganiumEvosMoves:
+; Evolutions (not provided by CSV)
+	db 0 ; no evolutions
+; Learnset
+	db 8, VINE_WHIP
+	db 15, POISONPOWDER
+	db 23, RECOVER ; substitutes for SYNTHESIS (not implemented)
+	db 31, RAZOR_LEAF
+	db 41, BODY_SLAM
+	db 51, MEGA_DRAIN
+	db 60, SOLARBEAM
+	db 0
+
+TotodileEvosMoves:
+; Evolutions
+	db EVOLVE_LEVEL, 18, CROCONAW
+	db 0
+; Learnset
+	db 7, WATER_GUN
+	db 13, BITE
+	db 20, RAGE
+	db 27, STRING_SHOT ; substitutes for SCARY_FACE (not implemented)
+	db 35, SLASH
+	db 43, HYDRO_PUMP
+	db 0
+
+CroconawEvosMoves:
+; Evolutions
+	db EVOLVE_LEVEL, 30, FERALIGATR
+	db 0
+; Learnset
+	db 7, WATER_GUN
+	db 13, BITE
+	db 21, RAGE
+	db 28, STRING_SHOT ; substitutes for SCARY_FACE (not implemented)
+	db 37, SLASH
+	db 45, HYDRO_PUMP
+	db 0
+
+FeraligatrEvosMoves:
+; Evolutions (not provided by CSV)
+	db 0 ; no evolutions
+; Learnset
+	db 7, WATER_GUN
+	db 13, BITE
+	db 21, RAGE
+	db 28, STRING_SHOT ; substitutes for SCARY_FACE (not implemented)
+	db 38, SLASH
+	db 48, HYDRO_PUMP
+	db 0
+
+CrobatEvosMoves:
+; Evolutions (not provided by CSV)
+	db 0 ; no evolutions
+; Learnset
+	db 6, BITE
+	db 12, WING_ATTACK
+	db 19, CONFUSE_RAY
+	db 27, AIR_SLASH
+	db 36, HAZE
+	db 46, BRAVE_BIRD
+	db 0
+
+KingdraEvosMoves:
+; Evolutions (not provided by CSV)
+	db 0 ; no evolutions
+; Learnset
+	db 8, LEER
+	db 15, WATER_GUN
+	db 22, DRAGON_RAGE ; substitutes for TWISTER (not implemented)
+	db 30, AGILITY
+	db 40, HYDRO_PUMP
+	db 50, OUTRAGE
+	db 0
+
+MarillEvosMoves:
+; Evolutions
+	db EVOLVE_LEVEL, 18, AZUMARILL
+	db 0
+; Learnset
+	db 6, TAIL_WHIP
+	db 12, BUBBLEBEAM
+	db 18, DEFENSE_CURL
+	db 24, HEADBUTT ; substitutes for ROLLOUT (not implemented)
+	db 30, BODY_SLAM
+	db 0
+
+AzumarillEvosMoves:
+; Evolutions (not provided by CSV)
+	db 0 ; no evolutions
+; Learnset
+	db 6, TAIL_WHIP
+	db 12, BUBBLEBEAM
+	db 18, DEFENSE_CURL
+	db 25, HEADBUTT ; substitutes for ROLLOUT (not implemented)
+	db 33, BODY_SLAM
+	db 42, HYDRO_PUMP
+	db 0
+
+MisdreavusEvosMoves:
+; Evolutions (not provided by CSV)
+	db 0 ; no evolutions
+; Learnset
+	db 6, DISABLE ; substitutes for SPITE (not implemented)
+	db 13, CONFUSE_RAY
+	db 21, SHADOW_BALL
+	db 30, BIND ; substitutes for MEAN_LOOK (not implemented)
+	db 40, PSYCHIC_M
+	db 0
+
+SwinubEvosMoves:
+; Evolutions
+	db EVOLVE_LEVEL, 33, PILOSWINE
+	db 0
+; Learnset
+	db 7, ICE_BEAM ; substitutes for POWDER_SNOW (not implemented)
+	db 13, SAND_ATTACK ; substitutes for MUD_SLAP (not implemented)
+	db 19, BIDE ; substitutes for ENDURE (not implemented)
+	db 25, TAKE_DOWN
+	db 31, MIST
+	db 37, BLIZZARD
+	db 0
+
+PiloswineEvosMoves:
+; Evolutions (not provided by CSV)
+	db 0 ; no evolutions
+; Learnset
+	db 7, ICE_BEAM ; substitutes for POWDER_SNOW (not implemented)
+	db 13, HORN_ATTACK
+	db 21, FURY_ATTACK
+	db 31, MIST
+	db 41, EARTHQUAKE
+	db 51, BLIZZARD
+	db 0
+
+HeracrossEvosMoves:
+; Evolutions (not provided by CSV)
+	db 0 ; no evolutions
+; Learnset
+	db 6, HORN_ATTACK
+	db 12, BIDE ; substitutes for ENDURE (not implemented)
+	db 19, FURY_ATTACK
+	db 27, COUNTER
+	db 35, DRAIN_PUNCH
+	db 44, MEGAHORN
+	db 0
+
+MareepEvosMoves:
+; Evolutions
+	db EVOLVE_LEVEL, 15, FLAAFFY
+	db 0
+; Learnset
+	db 9, THUNDERSHOCK
+	db 16, THUNDER_WAVE
+	db 23, STRING_SHOT ; substitutes for COTTON_SPORE (not implemented)
+	db 30, LIGHT_SCREEN
+	db 37, DISCHARGE
+	db 0
+
+FlaaffyEvosMoves:
+; Evolutions
+	db EVOLVE_LEVEL, 30, AMPHAROS
+	db 0
+; Learnset
+	db 9, THUNDERSHOCK
+	db 16, THUNDER_WAVE
+	db 25, STRING_SHOT ; substitutes for COTTON_SPORE (not implemented)
+	db 33, LIGHT_SCREEN
+	db 41, DISCHARGE
+	db 0
+
+AmpharosEvosMoves:
+; Evolutions (not provided by CSV)
+	db 0 ; no evolutions
+; Learnset
+	db 9, THUNDERSHOCK
+	db 16, THUNDER_WAVE
+	db 25, STRING_SHOT ; substitutes for COTTON_SPORE (not implemented)
+	db 35, LIGHT_SCREEN
+	db 44, DISCHARGE
+	db 54, THUNDER
+	db 0
+
+SlugmaEvosMoves:
+; Evolutions
+	db EVOLVE_LEVEL, 38, MAGCARGO
+	db 0
+; Learnset
+	db 8, EMBER
+	db 15, ROCK_THROW
+	db 22, AMNESIA
+	db 29, FLAMETHROWER
+	db 36, ROCK_SLIDE
+	db 0
+
+MagcargoEvosMoves:
+; Evolutions (not provided by CSV)
+	db 0 ; no evolutions
+; Learnset
+	db 8, EMBER
+	db 15, ROCK_THROW
+	db 22, AMNESIA
+	db 30, FLAMETHROWER
+	db 38, ROCK_SLIDE
+	db 48, EARTH_POWER
+	db 0
+
+PhanpyEvosMoves:
+; Evolutions
+	db EVOLVE_LEVEL, 25, DONPHAN
+	db 0
+; Learnset
+	db 9, DEFENSE_CURL
+	db 17, FLAMETHROWER
+	db 25, HEADBUTT ; substitutes for ROLLOUT (not implemented)
+	db 33, TAKE_DOWN
+	db 41, EARTHQUAKE
+	db 0
+
+DonphanEvosMoves:
+; Evolutions (not provided by CSV)
+	db 0 ; no evolutions
+; Learnset
+	db 9, DEFENSE_CURL
+	db 17, HORN_ATTACK
+	db 25, HEADBUTT ; substitutes for ROLLOUT (not implemented)
+	db 33, FURY_ATTACK
+	db 41, EARTHQUAKE
+	db 0
+
+GligarEvosMoves:
+; Evolutions (not provided by CSV)
+	db 0 ; no evolutions
+; Learnset
+	db 6, SAND_ATTACK
+	db 13, HARDEN
+	db 20, QUICK_ATTACK
+	db 28, SLASH
+	db 36, SCREECH
+	db 44, EARTH_POWER
+	db 0
+
+HoppipEvosMoves:
+; Evolutions
+	db EVOLVE_LEVEL, 18, SKIPLOOM
+	db 0
+; Learnset
+	db 5, RECOVER ; substitutes for SYNTHESIS (not implemented)
+	db 10, TAIL_WHIP
+	db 15, TACKLE
+	db 20, POISONPOWDER
+	db 25, STUN_SPORE
+	db 30, SLEEP_POWDER
+	db 0
+
+SkiploomEvosMoves:
+; Evolutions
+	db EVOLVE_LEVEL, 27, JUMPLUFF
+	db 0
+; Learnset
+	db 5, RECOVER ; substitutes for SYNTHESIS (not implemented)
+	db 10, TAIL_WHIP
+	db 15, TACKLE
+	db 22, POISONPOWDER
+	db 28, STUN_SPORE
+	db 34, SLEEP_POWDER
+	db 0
+
+JumpluffEvosMoves:
+; Evolutions (not provided by CSV)
+	db 0 ; no evolutions
+; Learnset
+	db 5, RECOVER ; substitutes for SYNTHESIS (not implemented)
+	db 10, TAIL_WHIP
+	db 15, TACKLE
+	db 22, POISONPOWDER
+	db 29, STUN_SPORE
+	db 36, SLEEP_POWDER
+	db 43, AIR_SLASH
+	db 0
+
+TeddiursaEvosMoves:
+; Evolutions
+	db EVOLVE_LEVEL, 30, URSARING
+	db 0
+; Learnset
+	db 8, FURY_SWIPES
+	db 15, LICK
+	db 22, REST
+	db 29, SLASH
+	db 36, HEADBUTT ; substitutes for SNORE (not implemented)
+	db 43, THRASH
+	db 0
+
+UrsaringEvosMoves:
+; Evolutions (not provided by CSV)
+	db 0 ; no evolutions
+; Learnset
+	db 8, FURY_SWIPES
+	db 15, LICK
+	db 22, REST
+	db 29, SLASH
+	db 38, STRING_SHOT ; substitutes for SCARY_FACE (not implemented)
+	db 47, HYPER_BEAM ; substitutes for HYPER_VOICE (not implemented)
+	db 0
+
+GirafarigEvosMoves:
+; Evolutions (not provided by CSV)
+	db 0 ; no evolutions
+; Learnset
+	db 7, CONFUSION
+	db 13, STOMP
+	db 20, AGILITY
+	db 27, REFLECT ; substitutes for BATON_PASS (not implemented)
+	db 35, PSYCHIC_M
+	db 43, MEDITATE ; substitutes for CALM_MIND (not implemented)
+	db 0
+
+LarvitarEvosMoves:
+; Evolutions
+	db EVOLVE_LEVEL, 30, PUPITAR
+	db 0
+; Learnset
+	db 8, SAND_ATTACK ; substitutes for SANDSTORM (not implemented)
+	db 15, SCREECH
+	db 22, ROCK_THROW
+	db 29, STOMP
+	db 36, ROCK_SLIDE
+	db 43, OUTRAGE
+	db 0
+
+PupitarEvosMoves:
+; Evolutions
+	db EVOLVE_LEVEL, 55, TYRANITAR
+	db 0
+; Learnset
+	db 8, SAND_ATTACK ; substitutes for SANDSTORM (not implemented)
+	db 15, SCREECH
+	db 22, ROCK_THROW
+	db 31, ROCK_SLIDE
+	db 40, EARTHQUAKE
+	db 49, OUTRAGE
+	db 0
+
+TyranitarEvosMoves:
+; Evolutions (not provided by CSV)
+	db 0 ; no evolutions
+; Learnset
+	db 8, SAND_ATTACK ; substitutes for SANDSTORM (not implemented)
+	db 15, SCREECH
+	db 22, ROCK_THROW
+	db 31, ROCK_SLIDE
+	db 42, EARTHQUAKE
+	db 53, OUTRAGE
+	db 61, HYPER_BEAM
+	db 0
+
+HoundourEvosMoves:
+; Evolutions
+	db EVOLVE_LEVEL, 24, HOUNDOOM
+	db 0
+; Learnset
+	db 7, LICK
+	db 13, ROAR
+	db 20, BITE
+	db 27, WILL_O_WISP
+	db 34, FLAMETHROWER
+	db 41, SHADOW_BALL
+	db 0
+
+HoundoomEvosMoves:
+; Evolutions (not provided by CSV)
+	db 0 ; no evolutions
+; Learnset
+	db 7, LICK
+	db 13, ROAR
+	db 20, BITE
+	db 28, WILL_O_WISP
+	db 36, FLAMETHROWER
+	db 45, SHADOW_BALL
+	db 54, FIRE_BLAST
 	db 0
