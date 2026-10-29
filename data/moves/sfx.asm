@@ -168,6 +168,18 @@ MoveSoundTable:
 	db SFX_BATTLE_2F,          $20, $80 ; ELECTRO_BALL ; marcelnote - new move, placeholder SFX for now
 	db SFX_BATTLE_2C,          $d8, $04 ; WILL_O_WISP  ; marcelnote - new move, placeholder SFX for now
 	db SFX_BATTLE_2C,          $d8, $04 ; HEX          ; marcelnote - new move, placeholder SFX for now
+	db SFX_BATTLE_1E,          $00, $60 ; MEGAHORN
+	db SFX_BATTLE_2C,          $d8, $04 ; SHADOW_BALL
+	db SFX_BATTLE_0D,          $f0, $ff ; GUNK_SHOT
+	db SFX_BATTLE_20,          $00, $80 ; OUTRAGE
+	db SFX_BATTLE_0D,          $00, $80 ; DRAIN_PUNCH
+	db SFX_BATTLE_22,          $00, $80 ; EARTH_POWER
+	db SFX_BATTLE_12,          $10, $a0 ; BRAVE_BIRD
+	db SFX_BATTLE_12,          $00, $a0 ; AIR_SLASH
+	db SFX_BATTLE_0D,          $10, $60 ; FLARE_BLITZ
+	db SFX_BATTLE_13,          $00, $a0 ; DISCHARGE
+	db SFX_BATTLE_0E,          $f0, $20 ; ICICLE_SPEAR
+	db SFX_BATTLE_21,          $12, $10 ; ROOST
 	db SFX_BATTLE_0B,          $00, $80 ; STRUGGLE
 	assert_table_length NUM_ATTACKS
 	db SFX_BATTLE_0B,          $00, $80

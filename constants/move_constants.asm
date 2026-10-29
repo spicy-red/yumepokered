@@ -173,7 +173,19 @@
 	const ELECTRO_BALL ; $A5 ; marcelnote - new move
 	const WILL_O_WISP  ; $A6 ; marcelnote - new move
 	const HEX          ; $A7 ; marcelnote - new move
-	const STRUGGLE     ; $A8
+	const MEGAHORN     ; $A8 ; new move
+	const SHADOW_BALL  ; $A9 ; new move
+	const GUNK_SHOT    ; $AA ; new move
+	const OUTRAGE      ; $AB ; new move
+	const DRAIN_PUNCH  ; $AC ; new move
+	const EARTH_POWER  ; $AD ; new move
+	const BRAVE_BIRD   ; $AE ; new move
+	const AIR_SLASH    ; $AF ; new move
+	const FLARE_BLITZ  ; $B0 ; new move
+	const DISCHARGE    ; $B1 ; new move
+	const ICICLE_SPEAR ; $B2 ; new move
+	const ROOST        ; $B3 ; new move
+	const STRUGGLE     ; $B4
 DEF NUM_ATTACKS EQU const_value - 1
 
 DEF CANNOT_MOVE EQU $ff

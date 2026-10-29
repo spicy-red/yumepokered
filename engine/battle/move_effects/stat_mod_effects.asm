@@ -146,8 +146,19 @@ StatModifierDownEffect: ; marcelnote - optimized
 	push af                            ; save c flag (set = side effect)
 	jr nc, .mainEffect
 	; side effect
+	ldh a, [hWhoseTurn]
+	and a
+	ld a, [wPlayerMoveNum]
+	jr z, .gotMoveNum
+	ld a, [wEnemyMoveNum]
+.gotMoveNum
+	cp SHADOW_BALL
+	ld b, 33 percent + 1
+	jr nz, .gotSideEffectChance
+	ld b, 20 percent + 1
+.gotSideEffectChance
 	call BattleRandom
-	cp 33 percent + 1           ; chance for side effects
+	cp b
 	jr nc, .butItFailed         ; here we'd like 'ret nc' but we have to pop af
 	ld a, [de]                  ; a = [w<User>MoveEffect]
 	sub ATTACK_DOWN_SIDE_EFFECT ; a = stat offset (0 to 3)

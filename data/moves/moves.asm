@@ -178,5 +178,17 @@ Moves:
 	move ELECTRO_BALL, NO_ADDITIONAL_EFFECT,        55, ELECTRIC,      95, 20 ; marcelnote - new move
 	move WILL_O_WISP,  BURN_EFFECT,                  0, FIRE,          75, 15 ; marcelnote - new move
 	move HEX,          HEX_EFFECT,                  70, GHOST,        100, 15 ; marcelnote - new move
+	move MEGAHORN,     NO_ADDITIONAL_EFFECT,       120, BUG,           85, 10 ; new move
+	move SHADOW_BALL,  SPECIAL_DOWN_SIDE_EFFECT,    80, GHOST,        100, 15 ; new move
+	move GUNK_SHOT,    POISON_SIDE_EFFECT1,        120, POISON,        80, 25 ; new move, 20% poison chance
+	move OUTRAGE,      THRASH_PETAL_DANCE_EFFECT,  120, DRAGON,       100, 15 ; new move
+	move DRAIN_PUNCH,  DRAIN_HP_EFFECT,             75, FIGHTING,     100, 10 ; new move
+	move EARTH_POWER,  SPECIAL_DOWN_SIDE_EFFECT,    90, GROUND,       100, 10 ; new move
+	move BRAVE_BIRD,   RECOIL_EFFECT,              120, FLYING,       100, 15 ; new move
+	move AIR_SLASH,    FLINCH_SIDE_EFFECT1,         75, FLYING,        95, 15 ; new move
+	move FLARE_BLITZ,  RECOIL_EFFECT,              120, FIRE,         100, 15 ; new move
+	move DISCHARGE,    PARALYZE_SIDE_EFFECT2,       80, ELECTRIC,     100, 15 ; new move
+	move ICICLE_SPEAR, TWO_TO_FIVE_ATTACKS_EFFECT,  25, ICE,          100, 30 ; new move
+	move ROOST,        HEAL_EFFECT,                  0, FLYING,       100, 10 ; new move
 	move STRUGGLE,     RECOIL_EFFECT,               50, BIRD,         100, 10 ; marcelnote - changed from NORMAL
 	assert_table_length NUM_ATTACKS

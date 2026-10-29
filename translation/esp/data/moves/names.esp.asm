@@ -168,5 +168,17 @@ MoveNames::
 	li "BOLA VOLTIO"  ; marcelnote - new move
 	li "FUEGO FATUO"  ; marcelnote - new move
 	li "INFORTUNIO"   ; marcelnote - new move
+	li "MEGACUERNO"  ; new move
+	li "BOLA SOMBRA" ; new move
+	li "BOMBA LODO"  ; new move
+	li "ENFADO"      ; new move
+	li "PUÑO DRENAJE" ; new move
+	li "TIERRA VIVA" ; new move
+	li "PAJARO OSADO" ; new move
+	li "TAJO AEREO"  ; new move
+	li "ENVITE IGNEO" ; new move
+	li "ONDA VOLTIO" ; new move
+	li "CARÁMBANO"   ; new move
+	li "RESPIRO"     ; new move
 	li "FORCEJEO"     ; marcelnote - was COMBATE
 	assert_list_length NUM_ATTACKS

@@ -168,5 +168,17 @@ MoveNames::
 	li "ELECTRO BALL" ; marcelnote - new move
 	li "WILL-O-WISP"  ; marcelnote - new move
 	li "HEX"          ; marcelnote - new move
+	li "MEGAHORN"     ; new move
+	li "SHADOW BALL"  ; new move
+	li "GUNK SHOT"    ; new move
+	li "OUTRAGE"       ; new move
+	li "DRAIN PUNCH"  ; new move
+	li "EARTH POWER"  ; new move
+	li "BRAVE BIRD"   ; new move
+	li "AIR SLASH"    ; new move
+	li "FLARE BLITZ"  ; new move
+	li "DISCHARGE"    ; new move
+	li "ICICLE SPEAR" ; new move
+	li "ROOST"         ; new move
 	li "STRUGGLE"
 	assert_list_length NUM_ATTACKS

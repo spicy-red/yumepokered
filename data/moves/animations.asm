@@ -167,6 +167,18 @@ AttackAnimationPointers:
 	dw ElectroBallAnim  ; marcelnote - new move
 	dw WillOWispAnim    ; marcelnote - new move
 	dw HexAnim          ; marcelnote - new move
+	dw HornAttackAnim   ; MEGAHORN
+	dw HexAnim          ; SHADOW_BALL
+	dw SludgeAnim       ; GUNK_SHOT
+	dw ThrashAnim       ; OUTRAGE
+	dw MegaPunchAnim    ; DRAIN_PUNCH
+	dw EarthquakeAnim   ; EARTH_POWER
+	dw SkyAttackAnim    ; BRAVE_BIRD
+	dw WingAttackAnim   ; AIR_SLASH
+	dw FireBlastAnim    ; FLARE_BLITZ
+	dw ThunderAnim      ; DISCHARGE
+	dw SpikeCannonAnim  ; ICICLE_SPEAR
+	dw RestAnim         ; ROOST
 	dw StruggleAnim
 	assert_table_length NUM_ATTACKS
 	dw ShowPicAnim

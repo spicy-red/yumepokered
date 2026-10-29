@@ -168,5 +168,17 @@ MoveNames::
 	li "BOULE ELEK"  ; marcelnote - new move
 	li "FEU FOLLET"  ; marcelnote - new move
 	li "CHATIMENT"   ; marcelnote - new move
+	li "MEGACORNE"    ; new move
+	li "BALL'OMBRE"   ; new move
+	li "DETRICANON"   ; new move
+	li "COLERE"       ; new move
+	li "VAMPIPOING"   ; new move
+	li "TELLURIFORCE" ; new move
+	li "RAPACE"       ; new move
+	li "LAME D'AIR"   ; new move
+	li "BOUTEFEU"     ; new move
+	li "COUP D'JUS"   ; new move
+	li "ECLATS GLACE" ; new move
+	li "ATTERRISSAGE" ; new move
 	li "LUTTE"
 	assert_list_length NUM_ATTACKS
