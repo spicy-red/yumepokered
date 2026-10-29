@@ -4,7 +4,7 @@
 	;   hp  atk  def  spd  spc
 
 	db GRASS, FLYING ; type
-	db 45 ; provisional catch rate
+	db 255 ; catch rate
 	db 65 ; provisional base exp
 
 	db SPRITE_DIM_LARGE

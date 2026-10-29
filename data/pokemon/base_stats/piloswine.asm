@@ -4,7 +4,7 @@
 	;   hp  atk  def  spd  spc
 
 	db ICE, GROUND ; type
-	db 45 ; provisional catch rate
+	db 75 ; catch rate
 	db 65 ; provisional base exp
 
 	db SPRITE_DIM_LARGE

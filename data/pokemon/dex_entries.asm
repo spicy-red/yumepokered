@@ -1558,328 +1558,327 @@ VictreebelDexEntry:
 	text_far _VictreebelDexEntry
 	text_end
 
-; The CSV does not include species categories or size/weight data.
 CyndaquilDexEntry:
-	db "???@"
-	db 0, 0
-	dw 0
-	db 0
-	dw 0
+	db "FIRE MOUSE@"
+	db 1, 8
+	dw 174
+	db 5
+	dw 79
 	text_far _CyndaquilDexEntry
 	text_end
 
 QuilavaDexEntry:
-	db "???@"
-	db 0, 0
-	dw 0
-	db 0
-	dw 0
+	db "VOLCANO@"
+	db 2, 11
+	dw 419
+	db 9
+	dw 190
 	text_far _QuilavaDexEntry
 	text_end
 
 TyphlosionDexEntry:
-	db "???@"
-	db 0, 0
-	dw 0
-	db 0
-	dw 0
+	db "VOLCANO@"
+	db 5, 7
+	dw 1753
+	db 17
+	dw 795
 	text_far _TyphlosionDexEntry
 	text_end
 
 ChikoritaDexEntry:
-	db "???@"
-	db 0, 0
-	dw 0
-	db 0
-	dw 0
+	db "LEAF@"
+	db 2, 11
+	dw 141
+	db 9
+	dw 64
 	text_far _ChikoritaDexEntry
 	text_end
 
 BayleefDexEntry:
-	db "???@"
-	db 0, 0
-	dw 0
-	db 0
-	dw 0
+	db "LEAF@"
+	db 3, 11
+	dw 348
+	db 12
+	dw 158
 	text_far _BayleefDexEntry
 	text_end
 
 MeganiumDexEntry:
-	db "???@"
-	db 0, 0
-	dw 0
-	db 0
-	dw 0
+	db "HERB@"
+	db 5, 11
+	dw 2216
+	db 18
+	dw 1005
 	text_far _MeganiumDexEntry
 	text_end
 
 TotodileDexEntry:
-	db "???@"
-	db 0, 0
-	dw 0
-	db 0
-	dw 0
+	db "BIG JAW@"
+	db 2, 0
+	dw 209
+	db 6
+	dw 95
 	text_far _TotodileDexEntry
 	text_end
 
 CroconawDexEntry:
-	db "???@"
-	db 0, 0
-	dw 0
-	db 0
-	dw 0
+	db "BIG JAW@"
+	db 3, 7
+	dw 551
+	db 11
+	dw 250
 	text_far _CroconawDexEntry
 	text_end
 
 FeraligatrDexEntry:
-	db "???@"
-	db 0, 0
-	dw 0
-	db 0
-	dw 0
+	db "BIG JAW@"
+	db 7, 7
+	dw 1958
+	db 23
+	dw 888
 	text_far _FeraligatrDexEntry
 	text_end
 
 CrobatDexEntry:
-	db "???@"
-	db 0, 0
-	dw 0
-	db 0
-	dw 0
+	db "BAT@"
+	db 5, 11
+	dw 1653
+	db 18
+	dw 750
 	text_far _CrobatDexEntry
 	text_end
 
 KingdraDexEntry:
-	db "???@"
-	db 0, 0
-	dw 0
-	db 0
-	dw 0
+	db "DRAGON@"
+	db 5, 11
+	dw 3351
+	db 18
+	dw 1520
 	text_far _KingdraDexEntry
 	text_end
 
 MarillDexEntry:
-	db "???@"
-	db 0, 0
-	dw 0
-	db 0
-	dw 0
+	db "AQUA MOUSE@"
+	db 1, 4
+	dw 187
+	db 4
+	dw 85
 	text_far _MarillDexEntry
 	text_end
 
 AzumarillDexEntry:
-	db "???@"
-	db 0, 0
-	dw 0
-	db 0
-	dw 0
+	db "AQUA RABBIT@"
+	db 2, 7
+	dw 628
+	db 8
+	dw 285
 	text_far _AzumarillDexEntry
 	text_end
 
 MisdreavusDexEntry:
-	db "???@"
-	db 0, 0
-	dw 0
-	db 0
-	dw 0
+	db "SCREECH@"
+	db 2, 4
+	dw 22
+	db 7
+	dw 10
 	text_far _MisdreavusDexEntry
 	text_end
 
 SwinubDexEntry:
-	db "???@"
-	db 0, 0
-	dw 0
-	db 0
-	dw 0
+	db "PIG@"
+	db 1, 4
+	dw 143
+	db 4
+	dw 65
 	text_far _SwinubDexEntry
 	text_end
 
 PiloswineDexEntry:
-	db "???@"
-	db 0, 0
-	dw 0
-	db 0
-	dw 0
+	db "SWINE@"
+	db 3, 7
+	dw 1230
+	db 11
+	dw 558
 	text_far _PiloswineDexEntry
 	text_end
 
 HeracrossDexEntry:
-	db "???@"
-	db 0, 0
-	dw 0
-	db 0
-	dw 0
+	db "SINGLE HORN@"
+	db 4, 11
+	dw 1190
+	db 15
+	dw 540
 	text_far _HeracrossDexEntry
 	text_end
 
 MareepDexEntry:
-	db "???@"
-	db 0, 0
-	dw 0
-	db 0
-	dw 0
+	db "WOOL@"
+	db 2, 0
+	dw 172
+	db 6
+	dw 78
 	text_far _MareepDexEntry
 	text_end
 
 FlaaffyDexEntry:
-	db "???@"
-	db 0, 0
-	dw 0
-	db 0
-	dw 0
+	db "WOOL@"
+	db 2, 7
+	dw 293
+	db 8
+	dw 133
 	text_far _FlaaffyDexEntry
 	text_end
 
 AmpharosDexEntry:
-	db "???@"
-	db 0, 0
-	dw 0
-	db 0
-	dw 0
+	db "LIGHT@"
+	db 4, 7
+	dw 1356
+	db 14
+	dw 615
 	text_far _AmpharosDexEntry
 	text_end
 
 SlugmaDexEntry:
-	db "???@"
-	db 0, 0
-	dw 0
-	db 0
-	dw 0
+	db "LAVA@"
+	db 2, 4
+	dw 772
+	db 7
+	dw 350
 	text_far _SlugmaDexEntry
 	text_end
 
 MagcargoDexEntry:
-	db "???@"
-	db 0, 0
-	dw 0
-	db 0
-	dw 0
+	db "LAVA@"
+	db 2, 7
+	dw 1213
+	db 8
+	dw 550
 	text_far _MagcargoDexEntry
 	text_end
 
 PhanpyDexEntry:
-	db "???@"
-	db 0, 0
-	dw 0
-	db 0
-	dw 0
+	db "LONG NOSE@"
+	db 1, 8
+	dw 739
+	db 5
+	dw 335
 	text_far _PhanpyDexEntry
 	text_end
 
 DonphanDexEntry:
-	db "???@"
-	db 0, 0
-	dw 0
-	db 0
-	dw 0
+	db "ARMOR@"
+	db 3, 7
+	dw 2646
+	db 11
+	dw 1200
 	text_far _DonphanDexEntry
 	text_end
 
 GligarDexEntry:
-	db "???@"
-	db 0, 0
-	dw 0
-	db 0
-	dw 0
+	db "FLY SCORP.@"
+	db 3, 7
+	dw 1429
+	db 11
+	dw 648
 	text_far _GligarDexEntry
 	text_end
 
 HoppipDexEntry:
-	db "???@"
-	db 0, 0
-	dw 0
-	db 0
-	dw 0
+	db "COTTONWEED@"
+	db 1, 4
+	dw 11
+	db 4
+	dw 5
 	text_far _HoppipDexEntry
 	text_end
 
 SkiploomDexEntry:
-	db "???@"
-	db 0, 0
-	dw 0
-	db 0
-	dw 0
+	db "COTTONWEED@"
+	db 2, 0
+	dw 22
+	db 6
+	dw 10
 	text_far _SkiploomDexEntry
 	text_end
 
 JumpluffDexEntry:
-	db "???@"
-	db 0, 0
-	dw 0
-	db 0
-	dw 0
+	db "COTTONWEED@"
+	db 2, 7
+	dw 66
+	db 8
+	dw 30
 	text_far _JumpluffDexEntry
 	text_end
 
 TeddiursaDexEntry:
-	db "???@"
-	db 0, 0
-	dw 0
-	db 0
-	dw 0
+	db "LITTLE BEAR@"
+	db 2, 0
+	dw 194
+	db 6
+	dw 88
 	text_far _TeddiursaDexEntry
 	text_end
 
 UrsaringDexEntry:
-	db "???@"
-	db 0, 0
-	dw 0
-	db 0
-	dw 0
+	db "HIBERNATOR@"
+	db 5, 11
+	dw 2773
+	db 18
+	dw 1258
 	text_far _UrsaringDexEntry
 	text_end
 
 GirafarigDexEntry:
-	db "???@"
-	db 0, 0
-	dw 0
-	db 0
-	dw 0
+	db "LONG NECK@"
+	db 4, 11
+	dw 915
+	db 15
+	dw 415
 	text_far _GirafarigDexEntry
 	text_end
 
 LarvitarDexEntry:
-	db "???@"
-	db 0, 0
-	dw 0
-	db 0
-	dw 0
+	db "ROCK SKIN@"
+	db 2, 0
+	dw 1587
+	db 6
+	dw 720
 	text_far _LarvitarDexEntry
 	text_end
 
 PupitarDexEntry:
-	db "???@"
-	db 0, 0
-	dw 0
-	db 0
-	dw 0
+	db "HARD SHELL@"
+	db 3, 11
+	dw 3351
+	db 12
+	dw 1520
 	text_far _PupitarDexEntry
 	text_end
 
 TyranitarDexEntry:
-	db "???@"
-	db 0, 0
-	dw 0
-	db 0
-	dw 0
+	db "ARMOR@"
+	db 6, 7
+	dw 4453
+	db 20
+	dw 2020
 	text_far _TyranitarDexEntry
 	text_end
 
 HoundourDexEntry:
-	db "???@"
-	db 0, 0
-	dw 0
-	db 0
-	dw 0
+	db "DARK@"
+	db 2, 0
+	dw 238
+	db 6
+	dw 108
 	text_far _HoundourDexEntry
 	text_end
 
 HoundoomDexEntry:
-	db "???@"
-	db 0, 0
-	dw 0
-	db 0
-	dw 0
+	db "DARK@"
+	db 4, 7
+	dw 772
+	db 14
+	dw 350
 	text_far _HoundoomDexEntry
 	text_end
 

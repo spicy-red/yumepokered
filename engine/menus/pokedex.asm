@@ -472,7 +472,7 @@ ShowPokedexDataInternal:
 	ld e, a
 	ld d, [hl] ; de = address of pokedex entry
 
-	hlcoord 9, 4
+	hlcoord 8, 4 ; leave room for 11-character species categories
 	call PlaceString ; print species name
 
 	ld h, b
