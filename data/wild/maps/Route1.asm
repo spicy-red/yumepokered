@@ -3,12 +3,12 @@ Route1WildMons:
 	db  3, PIDGEY
 	db  3, RATTATA
 	db  3, SPEAROW
-	db  2, RATTATA
-	db  2, PIDGEY
-	db  3, PIDGEY
-	db  3, MANKEY
+	db  2, FARFETCHD
+	db  2, MANKEY
+	db  3, PIKACHU
+	db  3, CUBONE
 	db  4, PIKACHU
-	db  4, SPEAROW
+	db  4, MACHOP
 	db  5, EEVEE
 	end_grass_wildmons
 
