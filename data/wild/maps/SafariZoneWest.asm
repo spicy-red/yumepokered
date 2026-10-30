@@ -6,7 +6,7 @@ SafariZoneWestWildMons:
 	db 24, EXEGGCUTE
 	db 33, NIDORINO
 	db 33, NIDORINA
-	db 25, NIDORAN_M
+	db 25, LARVITAR
 	db 31, EXEGGUTOR
 	db 26, TAUROS
 	db 28, KANGASKHAN

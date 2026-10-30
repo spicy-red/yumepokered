@@ -1,13 +1,13 @@
 SafariZoneCenterWildMons:
 	def_grass_wildmons 30 ; encounter rate
-	db 22, HERACROSS
+	db 22, FARFETCHD
 	db 25, RHYHORN
 	db 24, EXEGGCUTE
-	db 31, NIDORINO
+	db 31, MR_MIME
 	db 25, EXEGGCUTE
 	db 31, NIDORINA
-	db 30, PARASECT
-	db 23, PINSIR
+	db 30, TAUROS
+	db 23, HERACROSS
 	db 23, SCYTHER
 	db 23, CHANSEY
 	end_grass_wildmons
