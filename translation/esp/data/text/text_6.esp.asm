@@ -253,12 +253,6 @@ _ItemUseNotYoursToUseText::
 	line "porque no es tuyo"
 	prompt
 
-; TODO - Spanish translation
-_ItemUseFujisNotesText:: ; marcelnote - new
-	text "It's filled with"
-	line "complex formulas."
-	prompt
-
 _ItemUseNoEffectText::
 	text "No surtirá ningún"
 	line "efecto."

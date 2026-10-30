@@ -66,7 +66,7 @@ ItemUsePtrTable:
 	dw ItemUseEvoStone   ; LEAF_STONE
 	dw UnusableItem      ; CARD_KEY ; marcelnote - was ItemUseCardKey but not used because didn't work
 	dw UnusableItem      ; NUGGET
-	dw ItemUseFujisNotes ; FUJIS_NOTES ; marcelnote - new, was ITEM_32
+	dw UnusableItem      ; ITEM_32
 	dw ItemUsePokeDoll   ; POKE_DOLL
 	dw ItemUseMedicine   ; FULL_HEAL
 	dw ItemUseMedicine   ; REVIVE
@@ -2359,10 +2359,6 @@ ItemUseNotYoursToUse:
 	ld hl, ItemUseNotYoursToUseText
 	jr ItemUseFailed
 
-ItemUseFujisNotes:
-	ld hl, ItemUseFujisNotesText
-	jr ItemUseFailed
-
 ThrowBallAtTrainerMon:
 	call RunDefaultPaletteCommand
 	call LoadScreenTilesFromBuffer1 ; restore saved screen
@@ -2398,10 +2394,6 @@ ItemUseNotTimeText:
 
 ItemUseNotYoursToUseText:
 	text_far _ItemUseNotYoursToUseText
-	text_end
-
-ItemUseFujisNotesText: ; marcelnote - new
-	text_far _ItemUseFujisNotesText
 	text_end
 
 ItemUseNoEffectText:

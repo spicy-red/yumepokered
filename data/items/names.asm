@@ -49,7 +49,7 @@ ItemNames::
 	li "LEAF STONE"
 	li "CARD KEY"
 	li "NUGGET"
-	li "FUJI's NOTES"  ; marcelnote - new, was ITEM_32
+	li "ITEM32"      ; unused
 	li "POKé DOLL"
 	li "FULL HEAL"
 	li "REVIVE"

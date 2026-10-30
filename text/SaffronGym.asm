@@ -74,6 +74,24 @@ _SaffronGymSabrinaTM46NoRoomText::
 	line "of other items!"
 	done
 
+_SaffronGymSabrinaReceivedCitrusPassText::
+	text "SABRINA: Take this"
+	line "CITRUS PASS!@"
+	text_end
+
+_SaffronGymSabrinaCitrusPassExplanationText::
+	text_start
+	para "Now you can sail"
+	line "to MANDARIN ISLAND"
+	cont "from VERMILION."
+	done
+
+_SaffronGymSabrinaCitrusPassNoRoomText::
+	text "Your BAG is full."
+	line "Make room, then"
+	cont "speak to me again."
+	done
+
 _SaffronGymGymGuideChampInMakingText::
 	text "Yo! Champ in"
 	line "making!"

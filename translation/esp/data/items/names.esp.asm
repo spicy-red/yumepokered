@@ -49,7 +49,7 @@ ItemNames::
 	li "PIEDRA HOJA"
 	li "LL.MAGNÉTICA"
 	li "PEPITA"
-	li "FUJI's NOTES"  ; marcelnote - new, was ITEM_32 ; TODO - Spanish translation
+	li "ITEM32"        ; unused
 	li "POKé MUÑECA"
 	li "CURA TOTAL"
 	li "REVIVIR"

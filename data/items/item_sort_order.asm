@@ -31,7 +31,7 @@ ENDM
 
 	item_sort_rank OAKS_PARCEL
 	item_sort_rank GOLD_TEETH
-	item_sort_rank FUJIS_NOTES
+	item_sort_rank ITEM_32
 
 	item_sort_rank LIFT_KEY
 	item_sort_rank CARD_KEY

@@ -79,6 +79,25 @@ _SaffronGymSabrinaTM46NoRoomText::
 	cont "objetos!"
 	done
 
+_SaffronGymSabrinaReceivedCitrusPassText::
+	text "SABRINA: Toma el"
+	line "PASE CITRUS!@"
+	text_end
+
+_SaffronGymSabrinaCitrusPassExplanationText::
+	text_start
+	para "Ahora podrás ir"
+	line "a la ISLA MANDARIN"
+	cont "en ferry desde"
+	cont "VERMILION."
+	done
+
+_SaffronGymSabrinaCitrusPassNoRoomText::
+	text "¡Tu mochila está"
+	line "llena! Haz sitio y"
+	cont "vuelve a hablarme."
+	done
+
 _SaffronGymGymGuideChampInMakingText::
 	text "¡Hola, posible"
 	line "campeón!"

@@ -189,7 +189,7 @@
 	const TOGGLE_POKEMON_MANSION_B1F_ITEM_3    ; C0 X
 	const TOGGLE_POKEMON_MANSION_B1F_ITEM_4    ; C1 X
 	const TOGGLE_POKEMON_MANSION_B1F_ITEM_5    ; C2 X
-	const TOGGLE_POKEMON_MANSION_B1F_FUJIS_NOTES ; marcelnote - new
+	const TOGGLE_POKEMON_MANSION_B1F_UNUSED     ; unused placeholder preserves toggle indices
 	const TOGGLE_POKEMON_MANSION_B1F_HP_UP     ; marcelnote - new
 	const TOGGLE_SAFARI_ZONE_EAST_ITEM_1       ; C3 X
 	const TOGGLE_SAFARI_ZONE_EAST_ITEM_2       ; C4 X

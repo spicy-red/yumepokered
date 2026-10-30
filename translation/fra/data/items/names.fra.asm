@@ -49,7 +49,7 @@ ItemNames::
 	li "PIERREPLANTE"
 	li "CARTE MAGN."
 	li "PEPITE"
-	li "CARNET FUJI"
+	li "ITEM32"      ; unused
 	li "POKéPOUPEE"
 	li "TOTAL SOIN"
 	li "RAPPEL"

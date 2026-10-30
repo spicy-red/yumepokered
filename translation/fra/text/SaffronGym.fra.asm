@@ -83,6 +83,26 @@ _SaffronGymSabrinaTM46NoRoomText::
 	line "est plein!"
 	done
 
+_SaffronGymSabrinaReceivedCitrusPassText::
+	text "SABRINA: Prends"
+	line "ce PASSE CITRUS!@"
+	text_end
+
+_SaffronGymSabrinaCitrusPassExplanationText::
+	text_start
+	para "Tu peux rejoindre"
+	line "l'ILE MANDARINE"
+	cont "en ferry depuis"
+	cont "CARMIN SUR MER."
+	done
+
+_SaffronGymSabrinaCitrusPassNoRoomText::
+	text "Ton inventaire"
+	line "est plein! Fais de"
+	cont "la place, puis"
+	cont "reviens me voir."
+	done
+
 _SaffronGymGymGuideChampInMakingText::
 	text_asm
 	ld a, [wStatusFlags4]

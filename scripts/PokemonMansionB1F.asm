@@ -66,7 +66,6 @@ PokemonMansionB1F_TextPointers:
 	dw_const PickUpItemText,                  TEXT_POKEMONMANSIONB1F_TM_SOLARBEAM
 	dw_const PokemonMansionB1FDiarySept1Text, TEXT_POKEMONMANSIONB1F_DIARY_SEPT1
 	dw_const PickUpItemText,                  TEXT_POKEMONMANSIONB1F_SECRET_KEY
-	dw_const PickUpItemText,                  TEXT_POKEMONMANSIONB1F_FUJIS_NOTES ; marcelnote - new
 	dw_const PickUpItemText,                  TEXT_POKEMONMANSIONB1F_HP_UP       ; marcelnote - new
 	dw_const PokemonMansionB1FDiaryMay24Text, TEXT_POKEMONMANSIONB1F_DIARY_MAY24 ; marcelnote - new
 	; bg

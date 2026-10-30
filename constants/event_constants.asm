@@ -99,7 +99,7 @@
 	const_skip 3 ; marcelnote - removed EVENT_RESCUED_MR_FUJI_2, added pay phone
 	const EVENT_CALLED_MOM_LAVENDER
 	const EVENT_GOT_POKE_FLUTE
-	const EVENT_GAVE_FUJIS_NOTES ; marcelnote - new
+	const_skip ; unused event slot
 	const EVENT_GOT_CITRUS_PASS  ; marcelnote - new
 	const EVENT_POSTGAME_AGATHA  ; marcelnote - postgame Agatha event
 	const EVENT_SPOKE_DIRECTOR   ; marcelnote - postgame Agatha event

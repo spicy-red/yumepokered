@@ -56,7 +56,7 @@
 	const LEAF_STONE    ; $2F
 	const CARD_KEY      ; $30
 	const NUGGET        ; $31
-	const FUJIS_NOTES   ; $32 ; marcelnote - new, was unused
+	const ITEM_32       ; $32 ; unused
 	const POKE_DOLL     ; $33
 	const FULL_HEAL     ; $34
 	const REVIVE        ; $35

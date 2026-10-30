@@ -19,10 +19,10 @@ SaffronGymSetMapAndTiles: ; marcelnote - open Saffron Gym gate
 	bit BIT_MARSHBADGE, a
 	ret z  ; gate closed before getting Marsh Badge
 	CheckEvent EVENT_BECAME_CHAMPION
-	jr z, UpdateSaffronGymTileBlocks ; gate open before being champion
+	jp z, UpdateSaffronGymTileBlocks ; gate open before being champion
 	CheckHideShow TOGGLE_FIGHTING_DOJO_BRUNO
 	ret z ; gate closed while Bruno is at Fighting Dojo
-	jr UpdateSaffronGymTileBlocks
+	jp UpdateSaffronGymTileBlocks
 
 .LoadNames:
 	ld a, SABRINA
@@ -70,10 +70,39 @@ SaffronGymReceiveTM46: ; marcelnote - optimized
 	ld hl, wObtainedBadges
 	set BIT_MARSHBADGE, [hl]
 	SetEventRange EVENT_BEAT_SAFFRON_GYM_TRAINER_0, EVENT_BEAT_SAFFRON_GYM_TRAINER_6
+	call SaffronGymGiveCitrusPass
 	ld a, SFX_TELEPORT_EXIT_1
 	call PlaySound
 	call UpdateSaffronGymTileBlocks ; marcelnote - open Saffron Gym gate
 	jr SaffronGymSetDefaultScript
+
+SaffronGymGiveCitrusPass:
+	CheckEvent EVENT_GOT_CITRUS_PASS
+	ret nz
+	ld b, CITRUS_PASS
+	call IsItemInBag
+	jr z, .givePass
+	SetEvent EVENT_GOT_CITRUS_PASS
+	ret
+.givePass
+	lb bc, CITRUS_PASS, 1
+	call GiveItem
+	ld hl, .NoRoomText
+	jr nc, .printText
+	SetEvent EVENT_GOT_CITRUS_PASS
+	ld hl, .ReceivedText
+.printText
+	jp PrintText
+
+.ReceivedText:
+	text_far _SaffronGymSabrinaReceivedCitrusPassText
+	sound_get_key_item
+	text_far _SaffronGymSabrinaCitrusPassExplanationText
+	text_end
+
+.NoRoomText:
+	text_far _SaffronGymSabrinaCitrusPassNoRoomText
+	text_end
 
 UpdateSaffronGymTileBlocks: ; marcelnote - open Saffron Gym gate
 	ld hl, wCurrentMapScriptFlags
@@ -251,8 +280,14 @@ SaffronGymSabrinaText:
 	CheckEvent EVENT_BEAT_SABRINA
 	jr z, .beforeBeat
 	CheckEventReuseA EVENT_GOT_TM46
+	jr z, .receiveTM46
+	CheckEvent EVENT_GOT_CITRUS_PASS
 	ld hl, .PostBattleAdviceText
 	ret nz
+	call SaffronGymGiveCitrusPass
+	call DisableWaitingAfterTextDisplay
+	rst TextScriptEnd
+.receiveTM46
 	call SaffronGymReceiveTM46
 	call DisableWaitingAfterTextDisplay
 	rst TextScriptEnd
@@ -487,6 +522,11 @@ SaffronGymBrunoInspiringText: ; marcelnote - postgame Bruno
 
 SaffronGymSabrinaRematchText: ; marcelnote - Sabrina rematch
 	text_asm
+	CheckEvent EVENT_GOT_CITRUS_PASS
+	jr nz, .checkRematch
+	call SaffronGymGiveCitrusPass
+	rst TextScriptEnd
+.checkRematch
 	CheckEvent EVENT_BEAT_SABRINA_REMATCH
 	ld hl, SaffronGymAfterRematchText
 	ret nz

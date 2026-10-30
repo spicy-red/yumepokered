@@ -274,8 +274,3 @@ _PokeBeeperBoxIsFullText:: ; marcelnote - new for PokéBeeper
 	line "pleine! Trouve"
 	cont "vite un PC!"
 	prompt
-
-_ItemUseFujisNotesText:: ; marcelnote - new
-	text "C'est rempli de"
-	line "mots compliqués."
-	prompt
