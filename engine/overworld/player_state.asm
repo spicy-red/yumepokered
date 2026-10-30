@@ -153,13 +153,13 @@ PrintSafariZoneSteps::
 	cp SUMMER_BEACH_HOUSE ; marcelnote - was CERULEAN_CAVE_2F, changed to account for new map_constants order
 	ret nc
 	hlcoord 0, 0
-	lb bc, 3, 7
+	lb bc, 3, 9
 	call TextBoxBorder
 	hlcoord 1, 1
 	ld de, wSafariSteps
-	lb bc, 2, 3
+	lb bc, 2, 4
 	call PrintNumber
-	hlcoord 4, 1
+	hlcoord 5, 1
 	ld de, SafariSteps
 	call PlaceString
 	hlcoord 1, 3
@@ -178,7 +178,7 @@ PrintSafariZoneSteps::
 	jp PrintNumber
 
 SafariSteps:
-	db "/500@"
+	db "/5000@"
 
 SafariBallText:
 	db "BALL×× @"

@@ -1434,12 +1434,10 @@ ENDC
 ItemUseBait:
 	ld hl, ThrewBaitText
 	call PrintText
-	ld hl, wEnemyMonActualCatchRate
-	srl [hl] ; halve catch rate
 	ld a, BAIT_ANIM
 	ld hl, wSafariBaitFactor
-	ld de, wSafariEscapeFactor
-	jr BaitRockCommon
+	call SafariItemSetup
+	jr SafariBaitCommon
 
 ; for CASCADEBADGE when used from the
 ; ITEM window, which corresponds to
@@ -1455,28 +1453,34 @@ ItemUseRock:
 .noCarry
 	ld [hl], a
 	ld a, ROCK_ANIM
-	ld hl, wSafariEscapeFactor
-	ld de, wSafariBaitFactor
+	call SafariItemSetup
+	jr SafariItemAnimate
 
-BaitRockCommon:
-	ld [wAnimationID], a
-	xor a
-	ld [wAnimationType], a
-	ldh [hWhoseTurn], a
-	ld [de], a ; zero escape factor (for bait), zero bait factor (for rock)
-.randomLoop ; loop until a random number less than 5 is generated
+SafariBaitCommon:
+	; Increase bait duration, saturating at $ff.
+	.randomLoop
 	call Random
 	and 7
 	cp 5
 	jr nc, .randomLoop
-	inc a ; increment the random number, giving a range from 1 to 5 inclusive
+	inc a
 	ld b, a
 	ld a, [hl]
-	add b ; increase bait factor (for bait), increase escape factor (for rock)
+	add b
 	jr nc, .noCarry
 	ld a, $ff
 .noCarry
 	ld [hl], a
+	jr SafariItemAnimate
+
+SafariItemSetup:
+	ld [wAnimationID], a
+	xor a
+	ld [wAnimationType], a
+	ldh [hWhoseTurn], a
+	ret
+
+SafariItemAnimate:
 	predef MoveAnimation ; do animation
 	ld c, 70
 	jp DelayFrames

@@ -612,7 +612,7 @@ CeladonGymToggleData:
 	db CELADON_GYM, CELADONGYM_ERIKA, ON           ; marcelnote - default Erika
 	db CELADON_GYM, CELADONGYM_ERIKA_REMATCH, OFF  ; marcelnote - rematch Erika
 CeladonGroveSouthGateToggleData:
-	db CELADON_GROVE_SOUTH_GATE, CELADONGROVESOUTHGATE_ROCKET, ON  ; marcelnote - blocking the way
+	db CELADON_GROVE_SOUTH_GATE, CELADONGROVESOUTHGATE_ROCKET, OFF ; marcelnote - grove accessible from the start
 FuchsiaGymToggleData:
 	db FUCHSIA_GYM, FUCHSIAGYM_KOGA, ON           ; marcelnote - default Koga
 	db FUCHSIA_GYM, FUCHSIAGYM_KOGA_REMATCH, OFF  ; marcelnote - rematch Koga

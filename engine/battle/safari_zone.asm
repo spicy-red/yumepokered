@@ -7,20 +7,7 @@ PrintSafariZoneBattleText:
 	ld hl, SafariZoneEatingText
 	jr .done
 .noBait
-	dec hl
-	ld a, [hl]
-	and a
-	ret z
-	dec [hl]
-	ld hl, SafariZoneAngryText
-	jr nz, .done
-	push hl
-	ld a, [wEnemyMonSpecies]
-	ld [wCurSpecies], a
-	call GetMonHeader
-	ld a, [wMonHCatchRate]
-	ld [wEnemyMonActualCatchRate], a
-	pop hl
+	ret
 .done
 	push hl
 	call LoadScreenTilesFromBuffer1

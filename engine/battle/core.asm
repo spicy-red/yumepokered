@@ -174,24 +174,18 @@ StartBattle:
 	ld a, [wEnemyMonSpeed + 1]
 	add a
 	ld b, a ; init b (which is later compared with random value) to (enemy speed % 256) * 2
-	jr c, EnemyRan ; if (enemy speed % 256) > 127, the enemy runs
+	jr nc, .capEscapeChance
+	ld b, $ff ; cap the doubled speed before reducing the flee chance
+.capEscapeChance
+	srl b
+	srl b ; reduce the base flee chance to one quarter
 	ld a, [wSafariBaitFactor]
 	and a ; is bait factor 0?
-	jr z, .checkEscapeFactor
+	jr z, .compareWithRandomValue
 ; bait factor is not 0
 ; divide b by 4 (making the mon less likely to run)
 	srl b
 	srl b
-.checkEscapeFactor
-	ld a, [wSafariEscapeFactor]
-	and a ; is escape factor 0?
-	jr z, .compareWithRandomValue
-; escape factor is not 0
-; multiply b by 2 (making the mon more likely to run)
-	sla b
-	jr nc, .compareWithRandomValue
-; cap b at 255
-	ld b, $ff
 .compareWithRandomValue
 	call Random
 	cp b
