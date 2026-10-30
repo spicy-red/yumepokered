@@ -4,7 +4,7 @@ DiglettsCaveWildMons:
 	db 18, DIGLETT
 	db 19, DIGLETT
 	db 17, DIGLETT
-	db 20, DIGLETT
+	db 20, LARVITAR
 	db 16, DIGLETT
 	db 15, DIGLETT
 	db 21, DIGLETT

@@ -1,110 +1,221 @@
-; marcelnote - revamped Super Rod encounters
 ; super rod encounters
 SuperRodData:
 	; map, fishing group
-	dbw PALLET_TOWN,         .Group1
-	dbw VIRIDIAN_CITY,       .Group2
-	dbw CERULEAN_CITY,       .Group2
-	dbw VERMILION_CITY,      .Group1
-	dbw CELADON_CITY,        .Group3
-	dbw FUCHSIA_CITY,        .Group2
-	dbw CINNABAR_ISLAND,     .Group1
-	dbw MANDARIN_ISLAND,     .Group12 ; marcelnote - new map
-	dbw ROUTE_2,             .Group2  ; marcelnote - map now has water
-	dbw ROUTE_4,             .Group2
-	dbw ROUTE_6,             .Group4
-	dbw ROUTE_10,            .Group5
-	dbw ROUTE_11,            .Group1
-	dbw ROUTE_12,            .Group1
-	dbw ROUTE_13,            .Group1
-	dbw ROUTE_16,            .Group2  ; marcelnote - map now has water
-	dbw ROUTE_17,            .Group1
-	dbw ROUTE_18,            .Group1
-	dbw ROUTE_19,            .Group1
-	dbw ROUTE_20,            .Group1
-	dbw ROUTE_21,            .Group1
-	dbw ROUTE_22,            .Group2
-	dbw ROUTE_23,            .Group6
-	dbw ROUTE_24,            .Group2
-	dbw ROUTE_25,            .Group7
-	dbw ROUTE_28,            .Group8 ; marcelnote - new route
-	dbw ORANGE_ROUTE_1,      .Group1 ; marcelnote - new route
-	dbw MT_MOON_SQUARE,      .Group2 ; marcelnote - new map
-	dbw CERULEAN_GYM,        .Group9
-	dbw VERMILION_DOCK,      .Group1
-	dbw CELADON_GROVE,       .Group3  ; marcelnote - new map
-	dbw SAFARI_ZONE_EAST,    .Group11
-	dbw SAFARI_ZONE_NORTH,   .Group11
-	dbw SAFARI_ZONE_WEST,    .Group11
-	dbw SAFARI_ZONE_CENTER,  .Group11
-	dbw SEAFOAM_ISLANDS_B3F, .Group10
-	dbw SEAFOAM_ISLANDS_B4F, .Group10
-	dbw CINNABAR_VOLCANO_2F, .Group1  ; marcelnote - new map
-	dbw MANDARIN_DOCK,       .Group12 ; marcelnote - new map
-	dbw CERULEAN_CAVE_B1F,   .Group6
-	dbw CERULEAN_CAVE_1F,    .Group6
-	dbw MT_SILVER_2F,        .Group13 ; marcelnote - new map
+	dbw PALLET_TOWN, .Group1
+	dbw VIRIDIAN_CITY, .Group2
+	dbw CERULEAN_CITY, .Group3
+	dbw VERMILION_CITY, .Group4
+	dbw CELADON_CITY, .Group5
+	dbw FUCHSIA_CITY, .Group6
+	dbw CINNABAR_ISLAND, .Group7
+	dbw MANDARIN_ISLAND, .Group8
+	dbw ROUTE_2, .Group9
+	dbw ROUTE_4, .Group9
+	dbw ROUTE_6, .Group10
+	dbw ROUTE_10, .Group11
+	dbw ROUTE_11, .Group12
+	dbw ROUTE_12, .Group13
+	dbw ROUTE_13, .Group13
+	dbw ROUTE_16, .Group9
+	dbw ROUTE_17, .Group13
+	dbw ROUTE_18, .Group13
+	dbw ROUTE_19, .Group14
+	dbw ROUTE_20, .Group15
+	dbw ROUTE_21, .Group16
+	dbw ROUTE_22, .Group17
+	dbw ROUTE_23, .Group18
+	dbw ROUTE_24, .Group17
+	dbw ROUTE_25, .Group19
+	dbw ROUTE_28, .Group20
+	dbw ORANGE_ROUTE_1, .Group21
+	dbw MT_MOON_SQUARE, .Group22
+	dbw CERULEAN_GYM, .Group23
+	dbw VERMILION_DOCK, .Group24
+	dbw CELADON_GROVE, .Group25
+	dbw SAFARI_ZONE_EAST, .Group26
+	dbw SAFARI_ZONE_NORTH, .Group27
+	dbw SAFARI_ZONE_WEST, .Group28
+	dbw SAFARI_ZONE_CENTER, .Group27
+	dbw SEAFOAM_ISLANDS_B3F, .Group29
+	dbw SEAFOAM_ISLANDS_B4F, .Group30
+	dbw CINNABAR_VOLCANO_2F, .Group31
+	dbw MANDARIN_DOCK, .Group32
+	dbw CERULEAN_CAVE_B1F, .Group18
+	dbw CERULEAN_CAVE_1F, .Group18
+	dbw MT_SILVER_2F, .Group33
 	db -1 ; end
 
 ; fishing groups
 ; number of monsters, followed by level/monster pairs
 
-; MAGIKARP, POLIWAG, GOLDEEN and evolutions
-; KRABBY, HORSEA, PSYDUCK, SLOWPOKE, TENTACOOL and evolutions
-; SHELLDER, STARYU
-; special: SQUIRTLE, WARTORTLE, DRATINI, GRIMER, MUK
-
-.Group1: ; PALLET_TOWN, VERMILION_CITY, CINNABAR_ISLAND,
-         ; ROUTE_11, ROUTE_12, ROUTE_13, ROUTE_17, ROUTE_18, ROUTE_19, ROUTE_20, ROUTE_21,
-         ; VERMILION_DOCK, CINNABAR_VOLCANO_2F
+.Group1: ; PALLET_TOWN
 	db 8
-	db 27, KRABBY
-	db 27, HORSEA
+	db 27, SHELLDER
+	db 27, SLOWPOKE
 	db 25, STARYU
 	db 27, STARYU
 	db 25, SHELLDER
 	db 27, SHELLDER
 	db 25, TENTACOOL
-	db 25, MAGIKARP
+	db 25, STARYU
 
-.Group2: ; VIRIDIAN_CITY, CERULEAN_CITY, FUCHSIA_CITY,
-         ; ROUTE_4, ROUTE_22, ROUTE_24, MT_MOON_SQUARE
+.Group2: ; VIRIDIAN_CITY
 	db 6
-	db 27, POLIWAG
+	db 27, HORSEA
 	db 25, POLIWHIRL
-	db 27, GOLDEEN
+	db 27, HORSEA
 	db 25, SEAKING
-	db 25, PSYDUCK
-	db 25, MAGIKARP
+	db 25, HORSEA
+	db 25, SHELLDER
 
-.Group3: ; CELADON_CITY, CELADON_GROVE
+.Group3: ; CERULEAN_CITY
+	db 6
+	db 27, SLOWPOKE
+	db 25, POLIWHIRL
+	db 27, STARYU
+	db 25, SEAKING
+	db 25, HORSEA
+	db 25, SHELLDER
+
+.Group4: ; VERMILION_CITY
+	db 8
+	db 27, SLOWPOKE
+	db 27, STARYU
+	db 25, STARYU
+	db 27, STARYU
+	db 25, SHELLDER
+	db 27, SHELLDER
+	db 25, TENTACOOL
+	db 25, TENTACOOL
+
+.Group5: ; CELADON_CITY
 	db 7
 	db 25, POLIWHIRL
 	db 27, POLIWHIRL
-	db 25, PSYDUCK
-	db 27, PSYDUCK
-	db 25, SLOWPOKE
-	db 27, SLOWPOKE
-	db 27, KRABBY
+	db 25, HORSEA
+	db 27, HORSEA
+	db 25, SHELLDER
+	db 27, STARYU
+	db 27, HORSEA
 
-.Group4: ; ROUTE_6
-	db 5
-	db 25, KRABBY
-	db 27, KRABBY
-	db 25, PSYDUCK
-	db 27, PSYDUCK
-	db 23, SQUIRTLE
-
-.Group5: ; ROUTE_10
+.Group6: ; FUCHSIA_CITY
 	db 6
-	db 27, GOLDEEN
+	db 27, SLOWPOKE
+	db 25, POLIWHIRL
+	db 27, SLOWPOKE
+	db 25, SEAKING
+	db 25, SLOWPOKE
+	db 25, TENTACOOL
+
+.Group7: ; CINNABAR_ISLAND
+	db 8
+	db 27, POLIWAG
+	db 27, POLIWAG
+	db 25, STARYU
+	db 27, STARYU
+	db 25, SHELLDER
+	db 27, SHELLDER
+	db 25, PSYDUCK
+	db 25, GOLDEEN
+
+.Group8: ; MANDARIN_ISLAND
+	db 4
+	db 25, HORSEA
+	db 25, SHELLDER
+	db 27, POLIWAG
+	db 31, MUK
+
+.Group9: ; ROUTE_2, ROUTE_4, ROUTE_16
+	db 6
+	db 27, POLIWHIRL
+	db 25, POLIWHIRL
+	db 27, POLIWHIRL
+	db 25, SEAKING
+	db 25, GOLDEEN
+	db 25, GOLDEEN
+
+.Group10: ; ROUTE_6
+	db 5
+	db 25, GOLDEEN
+	db 27, POLIWHIRL
+	db 25, GOLDEEN
+	db 27, POLIWHIRL
+	db 23, SLOWPOKE
+
+.Group11: ; ROUTE_10
+	db 6
+	db 27, POLIWHIRL
 	db 25, SEAKING
 	db 25, KRABBY
 	db 27, KRABBY
-	db 23, SLOWPOKE
-	db 25, SLOWPOKE
+	db 23, SQUIRTLE
+	db 25, GOLDEEN
 
-.Group6: ; ROUTE_23, CERULEAN_CAVE_*
+.Group12: ; ROUTE_11
+	db 8
+	db 27, POLIWHIRL
+	db 27, POLIWHIRL
+	db 25, STARYU
+	db 27, STARYU
+	db 25, SHELLDER
+	db 27, SHELLDER
+	db 25, TENTACOOL
+	db 25, GOLDEEN
+
+.Group13: ; ROUTE_12, ROUTE_13, ROUTE_17, ROUTE_18
+	db 8
+	db 27, POLIWHIRL
+	db 27, POLIWHIRL
+	db 25, STARYU
+	db 27, STARYU
+	db 25, SHELLDER
+	db 27, SHELLDER
+	db 25, GOLDEEN
+	db 25, GOLDEEN
+
+.Group14: ; ROUTE_19
+	db 8
+	db 27, POLIWHIRL
+	db 27, POLIWHIRL
+	db 25, MARILL
+	db 27, POLIWHIRL
+	db 25, GOLDEEN
+	db 27, POLIWHIRL
+	db 25, GOLDEEN
+	db 25, GOLDEEN
+
+.Group15: ; ROUTE_20
+	db 8
+	db 27, POLIWHIRL
+	db 27, POLIWHIRL
+	db 25, GOLDEEN
+	db 27, POLIWHIRL
+	db 25, GOLDEEN
+	db 27, SLOWPOKE
+	db 25, GOLDEEN
+	db 25, GOLDEEN
+
+.Group16: ; ROUTE_21
+	db 8
+	db 27, POLIWHIRL
+	db 27, SLOWPOKE
+	db 25, GOLDEEN
+	db 27, POLIWHIRL
+	db 25, GOLDEEN
+	db 27, SLOWPOKE
+	db 25, GOLDEEN
+	db 25, GOLDEEN
+
+.Group17: ; ROUTE_22, ROUTE_24
+	db 6
+	db 27, SHELLDER
+	db 25, POLIWHIRL
+	db 27, STARYU
+	db 25, SEAKING
+	db 25, SHELLDER
+	db 25, STARYU
+
+.Group18: ; ROUTE_23, CERULEAN_CAVE_B1F, CERULEAN_CAVE_1F
 	db 5
 	db 37, POLIWHIRL
 	db 34, SLOWBRO
@@ -112,64 +223,141 @@ SuperRodData:
 	db 36, SEADRA
 	db 34, GOLDUCK
 
-.Group7: ; ROUTE_25
+.Group19: ; ROUTE_25
 	db 8
-	db 27, GOLDEEN
+	db 27, SHELLDER
 	db 25, SEAKING
-	db 25, KRABBY
-	db 27, KRABBY
-	db 25, PSYDUCK
-	db 27, PSYDUCK
-	db 23, DRATINI
-	db 25, MAGIKARP
+	db 25, TENTACOOL
+	db 27, STARYU
+	db 25, TENTACOOL
+	db 27, SHELLDER
+	db 23, SLOWPOKE
+	db 25, STARYU
 
-.Group8: ; ROUTE_28
+.Group20: ; ROUTE_28
 	db 6
-	db 38, DRATINI
+	db 38, SEEL
 	db 43, STARMIE
 	db 43, CLOYSTER
-	db 47, SLOWBRO
-	db 49, GOLDUCK
-	db 50, GYARADOS
+	db 47, SHELLDER
+	db 49, KABUTO
+	db 50, OMANYTE
 
-.Group9: ; CERULEAN_GYM
-	db 4
-	db 27, GOLDEEN
+.Group21: ; ORANGE_ROUTE_1
+	db 8
+	db 27, SLOWPOKE
+	db 27, STARYU
+	db 25, STARYU
+	db 27, STARYU
+	db 25, SHELLDER
+	db 27, SHELLDER
+	db 25, PSYDUCK
+	db 25, GOLDEEN
+
+.Group22: ; MT_MOON_SQUARE
+	db 6
+	db 27, HORSEA
+	db 25, POLIWHIRL
+	db 27, HORSEA
 	db 25, SEAKING
-	db 25, HORSEA
+	db 25, TENTACOOL
+	db 25, TENTACOOL
+
+.Group23: ; CERULEAN_GYM
+	db 4
+	db 27, POLIWAG
+	db 25, SEAKING
+	db 25, TENTACOOL
 	db 25, PSYDUCK
 
-.Group10: ; SEAFOAM_ISLANDS_*
+.Group24: ; VERMILION_DOCK
 	db 8
-	db 32, STARYU
-	db 34, STARYU
-	db 32, SHELLDER
-	db 34, SHELLDER
-	db 40, SEADRA
+	db 27, POLIWAG
+	db 27, POLIWAG
+	db 25, STARYU
+	db 27, STARYU
+	db 25, SHELLDER
+	db 27, SHELLDER
+	db 25, TENTACOOL
+	db 25, TENTACOOL
+
+.Group25: ; CELADON_GROVE
+	db 7
+	db 25, POLIWHIRL
+	db 27, POLIWHIRL
+	db 25, TENTACOOL
+	db 27, HORSEA
+	db 25, SHELLDER
+	db 27, STARYU
+	db 27, HORSEA
+
+.Group26: ; SAFARI_ZONE_EAST
+	db 4
+	db 23, SQUIRTLE
+	db 25, KRABBY
+	db 25, TENTACOOL
+	db 25, SHELLDER
+
+.Group27: ; SAFARI_ZONE_NORTH, SAFARI_ZONE_CENTER
+	db 4
+	db 23, SQUIRTLE
+	db 25, KRABBY
+	db 25, STARYU
+	db 25, TENTACOOL
+
+.Group28: ; SAFARI_ZONE_WEST
+	db 4
+	db 23, SQUIRTLE
+	db 25, KRABBY
+	db 25, HORSEA
+	db 25, SHELLDER
+
+.Group29: ; SEAFOAM_ISLANDS_B3F
+	db 8
+	db 32, SLOWPOKE
+	db 34, PSYDUCK
+	db 32, SLOWPOKE
+	db 34, PSYDUCK
+	db 40, HORSEA
+	db 40, STARYU
+	db 38, POLIWHIRL
+	db 35, SLOWPOKE
+
+.Group30: ; SEAFOAM_ISLANDS_B4F
+	db 8
+	db 32, KRABBY
+	db 34, KRABBY
+	db 32, KRABBY
+	db 34, KRABBY
+	db 40, KRABBY
 	db 40, KINGLER
 	db 38, DEWGONG
-	db 35, WARTORTLE
+	db 35, KRABBY
 
-.Group11: ; SAFARI_ZONE_*
-	db 4
-	db 23, DRATINI
-	db 25, KRABBY
-	db 25, PSYDUCK
+.Group31: ; CINNABAR_VOLCANO_2F
+	db 8
+	db 27, SLOWPOKE
+	db 27, SHELLDER
+	db 25, STARYU
+	db 27, STARYU
+	db 25, SHELLDER
+	db 27, SHELLDER
 	db 25, SLOWPOKE
+	db 25, STARYU
 
-.Group12: ; MANDARIN_ISLAND, MANDARIN_DOCK
+.Group32: ; MANDARIN_DOCK
 	db 4
-	db 25, TENTACOOL
-	db 25, GRIMER
-	db 27, GRIMER
+	db 25, HORSEA
+	db 25, HORSEA
+	db 27, POLIWAG
 	db 31, MUK
 
-.Group13: ; MT_SILVER_2F
+.Group33: ; MT_SILVER_2F
 	db 7
-	db 51, KABUTOPS
-	db 51, OMASTAR
-	db 54, KABUTOPS
-	db 54, OMASTAR
-	db 57, SEAKING
-	db 56, GOLDUCK
-	db 56, SLOWBRO
+	db 51, MAGIKARP
+	db 51, MAGIKARP
+	db 54, MAGIKARP
+	db 54, MAGIKARP
+	db 57, MAGIKARP
+	db 56, MAGIKARP
+	db 56, MAGIKARP

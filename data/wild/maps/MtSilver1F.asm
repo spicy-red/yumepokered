@@ -11,7 +11,6 @@ MtSilver1FWildMons:
 	db 53, RHYDON
 	db 49, KANGASKHAN
 	db 47, SNORLAX
-	; Machamp, Nidoking, Nidoqueen
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate

@@ -1,24 +1,13 @@
 SafariZoneWestWildMons:
 	def_grass_wildmons 30 ; encounter rate
-IF DEF(_RED)
-	db 25, NIDORAN_M
+	db 25, NIDORAN_F
 	db 26, DODUO
-	db 23, VENONAT
+	db 23, HOPPIP
 	db 24, EXEGGCUTE
 	db 33, NIDORINO
-	db 26, EXEGGCUTE
-	db 25, NIDORAN_F
-ENDC
-IF (DEF(_BLUE) || DEF(_GREEN)) ; marcelnote: Green has same encounters as Blue for now
-	db 25, NIDORAN_F
-	db 26, DODUO
-	db 23, VENONAT
-	db 24, EXEGGCUTE
 	db 33, NIDORINA
-	db 26, EXEGGCUTE
 	db 25, NIDORAN_M
-ENDC
-	db 31, EXEGGUTOR ; marcelnote - was 31, VENOMOTH
+	db 31, EXEGGUTOR
 	db 26, TAUROS
 	db 28, KANGASKHAN
 	end_grass_wildmons
