@@ -185,7 +185,8 @@
 	const DISCHARGE    ; $B1 ; new move
 	const ICICLE_SPEAR ; $B2 ; new move
 	const ROOST        ; $B3 ; new move
-	const STRUGGLE     ; $B4
+	const HEADACHE     ; $B4 ; hidden trainer-Psyduck move
+	const STRUGGLE     ; $B5
 DEF NUM_ATTACKS EQU const_value - 1
 
 DEF CANNOT_MOVE EQU $ff

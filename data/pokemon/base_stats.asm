@@ -188,4 +188,5 @@ INCLUDE "data/pokemon/base_stats/pupitar.asm"
 INCLUDE "data/pokemon/base_stats/tyranitar.asm"
 INCLUDE "data/pokemon/base_stats/houndour.asm"
 INCLUDE "data/pokemon/base_stats/houndoom.asm"
-	assert_table_length NUM_POKEMON
+INCLUDE "data/pokemon/base_stats/odos_psyduck.asm"
+	assert_table_length NUM_POKEMON + 1

@@ -187,4 +187,5 @@ MonPartyData:
 	nybble ICON_MON       ; TYRANITAR
 	nybble ICON_QUADRUPED ; HOUNDOUR
 	nybble ICON_QUADRUPED ; HOUNDOOM
-	end_nybble_array NUM_POKEMON
+	nybble ICON_MON       ; hidden trainer Psyduck
+	end_nybble_array NUM_POKEMON + 1

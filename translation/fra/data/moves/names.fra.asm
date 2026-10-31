@@ -180,5 +180,6 @@ MoveNames::
 	li "COUP D'JUS"   ; new move
 	li "ECLATS GLACE" ; new move
 	li "ATTERRISSAGE" ; new move
+	li "MIGRAINE"     ; hidden trainer-Psyduck move
 	li "LUTTE"
 	assert_list_length NUM_ATTACKS

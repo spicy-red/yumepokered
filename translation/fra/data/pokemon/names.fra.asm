@@ -190,4 +190,5 @@ MonsterNames::
 	db "CHETIFLOR@"
 	db "BOUSTIFLOR"
 	db "EMPIFLOR@@"
+	db "PSYKOKWAK?@"
 	assert_table_length NUM_POKEMON_INDEXES

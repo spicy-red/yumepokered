@@ -190,4 +190,5 @@ MonsterNames::
 	dname "BELLSPROUT"
 	dname "WEEPINBELL"
 	dname "VICTREEBEL"
+	dname "PSYDUCK?"
 	assert_table_length NUM_POKEMON_INDEXES

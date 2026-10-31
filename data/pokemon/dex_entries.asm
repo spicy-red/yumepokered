@@ -190,6 +190,7 @@ PokedexEntryPointers:
 	dw BellsproutDexEntry
 	dw WeepinbellDexEntry
 	dw VictreebelDexEntry
+	dw PsyduckDexEntry
 	assert_table_length NUM_POKEMON_INDEXES
 
 ; string: species name

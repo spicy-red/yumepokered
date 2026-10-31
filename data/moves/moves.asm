@@ -190,5 +190,6 @@ Moves:
 	move DISCHARGE,    PARALYZE_SIDE_EFFECT2,       80, ELECTRIC,     100, 15 ; new move
 	move ICICLE_SPEAR, TWO_TO_FIVE_ATTACKS_EFFECT,  25, ICE,          100, 30 ; new move
 	move ROOST,        HEAL_EFFECT,                  0, FLYING,       100, 10 ; new move
+	move HEADACHE,     THRASH_PETAL_DANCE_EFFECT,  200, BIRD,         100,  5 ; hidden trainer-Psyduck move
 	move STRUGGLE,     RECOIL_EFFECT,               50, BIRD,         100, 10 ; marcelnote - changed from NORMAL
 	assert_table_length NUM_ATTACKS

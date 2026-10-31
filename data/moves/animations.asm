@@ -179,6 +179,7 @@ AttackAnimationPointers:
 	dw ThunderAnim      ; DISCHARGE
 	dw SpikeCannonAnim  ; ICICLE_SPEAR
 	dw RestAnim         ; ROOST
+	dw PsychicAnim      ; HEADACHE
 	dw StruggleAnim
 	assert_table_length NUM_ATTACKS
 	dw ShowPicAnim

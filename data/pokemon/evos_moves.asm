@@ -201,6 +201,7 @@ EvosMovesPointerTable:
 	dw BellsproutEvosMoves
 	dw WeepinbellEvosMoves
 	dw VictreebelEvosMoves
+	dw OdoPsyduckEvosMoves
 	assert_table_length NUM_POKEMON_INDEXES
 
 ; marcelnote - Learnsets have been extensively reworked; no line-by-line comments here,
@@ -1205,11 +1206,19 @@ VictreebelEvosMoves:
 	db 13, CONSTRICT
 	db 16, STUN_SPORE
 	db 19, POISONPOWDER
-	db 25, ACID
-	db 29, WRAP
-	db 34, RAZOR_LEAF
-	db 42, SLEEP_POWDER
-	db 51, SLAM
+	db 24, RAZOR_LEAF
+	db 29, SLEEP_POWDER
+	db 34, SLAM
+	db 39, SOLARBEAM
+	db 0
+
+OdoPsyduckEvosMoves:
+; Evolutions
+	db 0
+; Learnset
+	db 1, HEADACHE
+	db 13, AMNESIA
+	db 16, SPLASH
 	db 0
 
 TentacoolEvosMoves:

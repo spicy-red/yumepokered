@@ -194,3 +194,4 @@
 	const DEX_HOUNDOOM       ; 187
 
 DEF NUM_POKEMON EQU const_value - 1
+	const DEX_ODOS_PSYDUCK ; 188, used only to index hidden trainer-Psyduck data

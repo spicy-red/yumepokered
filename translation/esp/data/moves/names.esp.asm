@@ -180,5 +180,6 @@ MoveNames::
 	li "ONDA VOLTIO" ; new move
 	li "CARÁMBANO"   ; new move
 	li "RESPIRO"     ; new move
+	li "DOLOR CABEZA" ; hidden odo-Psyduck move
 	li "FORCEJEO"     ; marcelnote - was COMBATE
 	assert_list_length NUM_ATTACKS

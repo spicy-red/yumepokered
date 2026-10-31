@@ -180,6 +180,7 @@ MoveSoundTable:
 	db SFX_BATTLE_13,          $00, $a0 ; DISCHARGE
 	db SFX_BATTLE_0E,          $f0, $20 ; ICICLE_SPEAR
 	db SFX_BATTLE_21,          $12, $10 ; ROOST
+	db SFX_PSYCHIC_M,          $00, $80 ; HEADACHE
 	db SFX_BATTLE_0B,          $00, $80 ; STRUGGLE
 	assert_table_length NUM_ATTACKS
 	db SFX_BATTLE_0B,          $00, $80
