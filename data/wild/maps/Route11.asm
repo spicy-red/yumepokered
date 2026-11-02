@@ -8,8 +8,8 @@ Route11WildMons:
 	db 13, DROWZEE
 	db 14, EKANS
 	db 17, SPEAROW
-	db 11, SCYTHER
-	db 11, PINSIR
+	db 11, FARFETCHD
+	db 11, JYNX
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate

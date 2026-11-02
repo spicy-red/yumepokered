@@ -8,8 +8,8 @@ ViridianForestWildMons:
 	db  6, KAKUNA
 	db  6, PIKACHU
 	db  3, VENONAT 
-	db  3, CHIKORITA
-	db  5, TEDDIURSA
+	db  3, TANGELA
+	db  5, CHIKORITA
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate

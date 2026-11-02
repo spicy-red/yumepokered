@@ -9,7 +9,7 @@ MtMoonB1FWildMons:
 	db 10, ZUBAT
 	db 11, ZUBAT
 	db  9, CLEFAIRY
-	db  9, GEODUDE
+	db  9, PHANPY
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate

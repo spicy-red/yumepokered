@@ -4,10 +4,10 @@ SeafoamIslands1FWildMons:
 	db 30, PSYDUCK
 	db 30, KRABBY
 	db 28, KRABBY
-	db 29, GOLBAT
+	db 29, TOTODILE
 	db 27, SQUIRTLE
 	db 28, SLOWPOKE
-	db 38, GOLDUCK
+	db 38, SWINUB
 	db 38, SLOWBRO
 	db 31, WARTORTLE
 	end_grass_wildmons

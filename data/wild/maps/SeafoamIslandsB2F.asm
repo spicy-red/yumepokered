@@ -8,7 +8,7 @@ SeafoamIslandsB2FWildMons:
 	db 29, SQUIRTLE
 	db 37, GOLDUCK
 	db 37, SLOWBRO
-	db 30, GOLBAT
+	db 30, TOTODILE
 	db 33, WARTORTLE
 	end_grass_wildmons
 

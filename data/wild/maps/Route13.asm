@@ -8,8 +8,8 @@ Route13WildMons:
 	db 26, ODDISH
 	db 30, GLOOM
 	db 25, DITTO
-	db 24, SCYTHER
-	db 24, PINSIR
+	db 24, LICKITUNG
+	db 24, SLOWPOKE
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate

@@ -354,7 +354,7 @@ GoodRodData:
 	db 15, POLIWAG
 	db 17, POLIWAG
 	db 15, PSYDUCK
-	db 17, PSYDUCK
+	db 17, DRATINI
 	db 15, SLOWPOKE
 	db 17, SLOWPOKE
 	db 15, SQUIRTLE

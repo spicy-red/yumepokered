@@ -828,6 +828,7 @@ DEF INDIGO_PLATEAU_EVENTS_START EQU const_value
 	const EVENT_BEAT_BLAINE_REMATCH
 DEF INDIGO_PLATEAU_EVENTS_END EQU const_value - 1
 	const EVENT_BECAME_CHAMPION    ; marcelnote - new event to mark postgame
+	const EVENT_HEARD_OAK_POSTGAME_HINT ; marcelnote - postgame Route 1 hint
 
 ; Victory Road 1F events
 	const_next $910

@@ -5,7 +5,7 @@ Route23WildMons:
 	db 41, ARBOK
 	db 36, NIDORINA
 	db 37, PERSIAN
-	db 38, MAREEP
+	db 15, ABRA
 	db 36, NIDORINO
 	db 43, DITTO
 	db 41, FEAROW

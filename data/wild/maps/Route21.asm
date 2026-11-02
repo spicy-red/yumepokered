@@ -20,7 +20,7 @@ Route21WildMons:
 	db 21, SHELLDER
 	db 21, STARYU
 	db 30, TENTACOOL
-	db 35, TENTACOOL
+	db 25, SLOWPOKE
 	db 35, TENTACRUEL
-	db 40, TENTACOOL
+	db 40, TENTACRUEL
 	end_water_wildmons

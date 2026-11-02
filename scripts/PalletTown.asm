@@ -28,6 +28,15 @@ IF DEF(_DEBUG) ; marcelnote - added to skip in debug mode
 	call DebugPressedOrHeldB
 	ret nz
 ENDC
+	CheckEvent EVENT_BECAME_CHAMPION
+	jr z, .checkOakAppearance
+	CheckEvent EVENT_HEARD_OAK_POSTGAME_HINT
+	jr nz, .checkOakAppearance
+	SetEvent EVENT_HEARD_OAK_POSTGAME_HINT
+	ld a, TEXT_PALLETTOWN_POSTGAME_OAK_HINT
+	ldh [hTextID], a
+	jp DisplayTextID
+.checkOakAppearance
 	ld a, [wYCoord]
 	cp 1 ; is player near north exit?
 	ret nz
@@ -147,6 +156,7 @@ PalletTown_TextPointers:
 	dw_const PalletTownPlayersHouseSignText, TEXT_PALLETTOWN_PLAYERSHOUSE_SIGN
 	dw_const PalletTownRivalsHouseSignText,  TEXT_PALLETTOWN_RIVALSHOUSE_SIGN
 	dw_const PalletTownYellowsHouseSignText, TEXT_PALLETTOWN_YELLOWSHOUSE_SIGN ; marcelnote - Yellow's house
+	dw_const PalletTownPostgameOakHintText,  TEXT_PALLETTOWN_POSTGAME_OAK_HINT
 
 PalletTownOakText: ; marcelnote - optimized
 	text_asm
@@ -186,6 +196,10 @@ PalletTownFisherText:
 
 PalletTownGirl2Text: ; marcelnote - new
 	text_far _PalletTownGirl2Text
+	text_end
+
+PalletTownPostgameOakHintText: ; marcelnote - postgame Route 1 hint
+	text_far _PalletTownPostgameOakHintText
 	text_end
 
 PalletTownOaksLabSignText:

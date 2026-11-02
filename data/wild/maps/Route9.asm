@@ -6,10 +6,10 @@ Route9WildMons:
 	db 13, SPEAROW
 	db 15, SANDSHREW
 	db 17, EKANS
-	db 17, SPEAROW
-	db 15, EKANS
+	db 17, MACHOP
+	db 15, BUTTERFREE
 	db 14, BEEDRILL
-	db 14, BUTTERFREE
+	db 14, HOPPIP
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate

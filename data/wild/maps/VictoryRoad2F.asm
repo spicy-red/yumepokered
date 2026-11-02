@@ -2,7 +2,7 @@ VictoryRoad2FWildMons:
 	def_grass_wildmons 10 ; encounter rate
 	db 27, MACHOP
 	db 29, GEODUDE
-	db 36, PUPITAR
+	db 36, MACHOKE
 	db 39, ONIX
 	db 42, ONIX
 	db 39, PRIMEAPE

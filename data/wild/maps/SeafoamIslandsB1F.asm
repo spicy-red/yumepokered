@@ -1,7 +1,7 @@
 SeafoamIslandsB1FWildMons:
 	def_grass_wildmons 10 ; encounter rate
 	db 30, SLOWPOKE
-	db 30, PSYDUCK
+	db 30, TOTODILE
 	db 30, KRABBY
 	db 32, SLOWPOKE
 	db 32, PSYDUCK

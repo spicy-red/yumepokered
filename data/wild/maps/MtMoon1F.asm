@@ -8,8 +8,8 @@ MtMoon1FWildMons:
 	db 10, ZUBAT
 	db 10, GEODUDE
 	db  8, PARAS
-	db 11, ONIX
-	db  8, CLEFAIRY
+	db 11, CLEFAIRY
+	db  8, SWINUB
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate

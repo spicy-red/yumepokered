@@ -84,3 +84,14 @@ _PalletTownYellowsHouseSignText:: ; marcelnote - new
 	; traducción por NunWinter
 	text "Casa de ODO"
 	done
+
+_PalletTownPostgameOakHintText:: ; marcelnote - postgame Route 1 hint
+	text "El PROF. OAK"
+	line "pasó a verte"
+	cont "mientras no"
+	cont "estabas."
+
+	para "Te pidió que"
+	line "lo vieras en"
+	cont "la RUTA 1."
+	done

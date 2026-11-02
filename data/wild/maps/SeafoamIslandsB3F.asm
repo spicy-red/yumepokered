@@ -8,7 +8,7 @@ SeafoamIslandsB3FWildMons:
 	db 31, SQUIRTLE
 	db 28, JYNX
 	db 31, KRABBY
-	db 39, KINGLER
+	db 20, TOTODILE
 	db 35, WARTORTLE
 	end_grass_wildmons
 

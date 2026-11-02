@@ -360,4 +360,4 @@ SuperRodData:
 	db 54, MAGIKARP
 	db 57, MAGIKARP
 	db 56, MAGIKARP
-	db 56, MAGIKARP
+	db 56, GYARADOS

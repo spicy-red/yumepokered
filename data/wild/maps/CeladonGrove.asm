@@ -6,10 +6,10 @@ CeladonGroveWildMons:
 	db 22, SKIPLOOM
 	db 20, BELLSPROUT
 	db 23, WEEPINBELL
-	db 20, BULBASAUR
+	db 20, EXEGGCUTE
 	db 19, EXEGGCUTE
-	db 21, EXEGGCUTE
-	db 23, GLOOM
+	db 21, CHIKORITA
+	db 23, BULBASAUR
 	db 24, HERACROSS
 	end_grass_wildmons
 

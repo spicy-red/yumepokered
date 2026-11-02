@@ -5,11 +5,11 @@ PowerPlantWildMons:
 	db 24, PIKACHU
 	db 32, ELECTRODE
 	db 32, MAGNETON
-	db 35, TEDDIURSA
+	db 35, RAICHU
 	db 33, RAICHU
 	db 33, ELECTABUZZ
 	db 36, RAICHU
-	db 36, ELECTABUZZ
+	db 15, MAREEP
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate

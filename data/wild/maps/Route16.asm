@@ -9,7 +9,7 @@ Route16WildMons:
 	db 22, DODUO
 	db 22, KOFFING
 	db 23, RATICATE
-	db 25, RATICATE
+	db 25, WEEZING
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate

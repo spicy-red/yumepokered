@@ -86,3 +86,13 @@ _PalletTownYellowsHouseSignText:: ; marcelnote - added Yellow's house
 	text "MAISON DE"
 	line "ODO"
 	done
+
+_PalletTownPostgameOakHintText:: ; marcelnote - postgame Route 1 hint
+	text "Le PROF. CHEN"
+	line "est passé te voir"
+	cont "pendant ton"
+	cont "absence."
+
+	para "Il t'attend sur"
+	line "la ROUTE 1."
+	done

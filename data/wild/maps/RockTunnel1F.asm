@@ -3,13 +3,13 @@ RockTunnel1FWildMons:
 	db 16, ZUBAT
 	db 17, ZUBAT
 	db 17, GEODUDE
-	db 15, SWINUB
+	db 15, GEODUDE
 	db 16, GEODUDE
-	db 18, ZUBAT
-	db 15, ZUBAT
-	db 17, MACHOP
-	db 13, ONIX
-	db 15, ONIX
+	db 18, MACHOP
+	db 15, MACHOP
+	db 17, ONIX
+	db 13, SWINUB
+	db 15, LARVITAR
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate

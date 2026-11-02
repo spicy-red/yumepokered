@@ -5,9 +5,9 @@ Route24WildMons:
 	db 12, PIDGEY
 	db 12, ODDISH
 	db 13, BELLSPROUT
-	db 10, ABRA
+	db 15, ABRA
 	db 14, BELLSPROUT
-	db  7, MAREEP
+	db  7, VENONAT
 	db  8, ABRA
 	db  8, TOTODILE
 	end_grass_wildmons

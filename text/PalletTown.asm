@@ -76,3 +76,13 @@ _PalletTownYellowsHouseSignJustMovedInText:: ; marcelnote - added Yellow's house
 _PalletTownYellowsHouseSignText:: ; marcelnote - added Yellow's house
 	text "ODO's HOUSE"
 	done
+
+_PalletTownPostgameOakHintText:: ; marcelnote - postgame Route 1 hint
+	text "PROF.OAK stopped"
+	line "by while you were"
+	cont "away."
+
+	para "He asked you to"
+	line "meet him on"
+	cont "ROUTE 1."
+	done

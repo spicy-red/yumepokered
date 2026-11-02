@@ -192,6 +192,33 @@ _Route1OakOneMoreThingText:: ; marcelnote - postgame Oak battle
 	para "Je te parie qu'elle"
 	line "aimerait défier"
 	cont "le vrai champion!"
+
+	para "Elle t'attend"
+	line "à MT.SILVER."
+
+	para "Avant le combat,"
+	line "je te conseille"
+	cont "l'ÎLE MANDARIN"
+	cont "pour t'entraîner."
+
+	para "LORELEI aide à"
+	line "l'USINE SILPH de"
+	cont "l'ÎLE MANDARIN."
+
+	para "BRUNO est au DOJO"
+	line "de SAFRANIA. Il"
+	cont "veut que tu ailles"
+	cont "voir son élève à"
+	cont "l'ARENE."
+
+	para "AGATHA est à la"
+	line "TOUR #MON de"
+	cont "LAVANVILLE pour la"
+	cont "protéger."
+
+	para "LANCE traque un"
+	line "#MON sauvage au"
+	cont "VOLCAN."
 	done
 
 .GirlText
@@ -220,4 +247,31 @@ _Route1OakOneMoreThingText:: ; marcelnote - postgame Oak battle
 	line "aimerait défier"
 	cont "la véritable"
 	cont "championne!"
+
+	para "Elle t'attend"
+	line "à MT.SILVER."
+
+	para "Avant le combat,"
+	line "je te conseille"
+	cont "l'ÎLE MANDARIN"
+	cont "pour t'entraîner."
+
+	para "LORELEI aide à"
+	line "l'USINE SILPH de"
+	cont "l'ÎLE MANDARIN."
+
+	para "BRUNO est au DOJO"
+	line "de SAFRANIA. Il"
+	cont "veut que tu ailles"
+	cont "voir son élève à"
+	cont "l'ARENE."
+
+	para "AGATHA est à la"
+	line "TOUR #MON de"
+	cont "LAVANVILLE pour la"
+	cont "protéger."
+
+	para "LANCE traque un"
+	line "#MON sauvage au"
+	cont "VOLCAN."
 	done

@@ -1,6 +1,6 @@
 Route18WildMons:
 	def_grass_wildmons 25 ; encounter rate
-	db 22, QUILAVA
+	db 22, SPEAROW
 	db 23, PONYTA
 	db 24, DODUO
 	db 25, PONYTA

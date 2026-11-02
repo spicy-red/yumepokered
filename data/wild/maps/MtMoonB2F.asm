@@ -8,8 +8,8 @@ MtMoonB2FWildMons:
 	db 10, PARAS
 	db 12, PARAS
 	db 10, CLEFAIRY
-	db 12, ZUBAT
-	db 12, CLEFAIRY
+	db 12, SWINUB
+	db 12, PHANPY
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate

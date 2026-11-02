@@ -1,15 +1,15 @@
 ; marcelnote - new location
 MtSilver1FWildMons:
 	def_grass_wildmons 10 ; encounter rate
-	db 51, GOLEM
-	db 52, GOLBAT
-	db 54, GOLEM
-	db 48, HITMONCHAN
-	db 48, HITMONLEE
-	db 50, RHYDON
+	db 51, GOLBAT
+	db 52, GRAVELER
+	db 30, PHANPY
+	db 48, MACHOKE
+	db 48, ONIX
+	db 54, DONPHAN
 	db 46, KANGASKHAN
-	db 53, RHYDON
-	db 49, KANGASKHAN
+	db 52, RHYDON
+	db 20, LARVITAR
 	db 47, SNORLAX
 	end_grass_wildmons
 

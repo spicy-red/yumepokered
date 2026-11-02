@@ -135,4 +135,35 @@ _Route1OakOneMoreThingText:: ; marcelnote - postgame Oak battle
 	para "I bet she'd like"
 	line "to face the"
 	cont "true champion!"
+
+	para "She's waiting"
+	line "at MT.SILVER."
+
+	para "Before you face"
+	line "her, consider"
+	cont "training on"
+	cont "MANDARIN ISLAND."
+
+	para "LORELEI is helping"
+	line "at SILPH FACTORY"
+	cont "on MANDARIN"
+	cont "ISLAND."
+
+	para "BRUNO's at the"
+	line "FIGHTING DOJO in"
+	cont "SAFFRON. He wants"
+	cont "you to visit the"
+	cont "SAFFRON GYM."
+
+	para "AGATHA is at"
+	line "POKEMON TOWER in"
+	cont "LAVENDER."
+
+	para "She opposes its"
+	line "conversion into a"
+	cont "RADIO TOWER."
+
+	para "LANCE is tracking"
+	line "a wild #MON in"
+	cont "CINNABAR VOLCANO."
 	done

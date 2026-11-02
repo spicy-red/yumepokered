@@ -5,11 +5,11 @@ SafariZoneCenterWildMons:
 	db 24, EXEGGCUTE
 	db 31, MR_MIME
 	db 25, EXEGGCUTE
-	db 31, NIDORINA
+	db 31, RHYHORN
 	db 30, TAUROS
-	db 23, HERACROSS
-	db 23, SCYTHER
 	db 23, CHANSEY
+	db 23, HERACROSS
+	db 23, WOBBUFFET
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate

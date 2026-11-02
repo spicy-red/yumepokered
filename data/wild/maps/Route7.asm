@@ -3,13 +3,13 @@ Route7WildMons:
 	db 19, PIDGEY
 	db 19, ODDISH
 	db 18, MEOWTH
-	db 18, GROWLITHE
-	db 22, FLAAFFY
+	db 18, TANGELA
+	db 22, CUBONE
 	db 19, MANKEY
 	db 22, BELLSPROUT
 	db 20, VULPIX
 	db 20, GROWLITHE
-	db 20, MANKEY
+	db 20, MAREEP
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate

@@ -8,8 +8,8 @@ Route15WildMons:
 	db 26, ODDISH
 	db 30, WEEPINBELL
 	db 28, PIDGEOTTO
-	db 25, GRIMER
-	db 30, GLOOM
+	db 25, PONYTA
+	db 15, CHANSEY
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate

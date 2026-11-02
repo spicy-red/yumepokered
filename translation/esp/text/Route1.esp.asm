@@ -159,4 +159,34 @@ _Route1OakOneMoreThingText:: ; marcelnote - postgame Oak battle
 	line "querría"
 	cont "enfrentarse al"
 	cont "verdadero campeón!"
+
+	para "Te espera en"
+	line "MT.SILVER."
+
+	para "Antes del combate,"
+	line "te recomiendo"
+	cont "entrenar en la"
+	cont "ISLA MANDARIN."
+
+	para "LORELEI ayuda en"
+	line "SILPH CO. de la"
+	cont "ISLA MANDARIN."
+
+	para "BRUNO está en el"
+	line "DOJO-KARATE de"
+	cont "AZAFRÁN. Quiere"
+	cont "que visites el"
+	cont "GIMNASIO AZAFRÁN."
+
+	para "AGATHA está en la"
+	line "TORRE POKÉMON de"
+	cont "LAVANDA."
+
+	para "Quiere protegerla"
+	line "de su conversión"
+	cont "en una RADIO."
+
+	para "LANCE busca un"
+	line "#MON salvaje en"
+	cont "el VOLCÁN CANELA."
 	done

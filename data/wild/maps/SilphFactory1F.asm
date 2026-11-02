@@ -10,7 +10,7 @@ SilphFactory1FWildMons:
 	db 36, HYPNO
 	db 38, HYPNO
 	db 37, MUK
-	db 39, MUK
+	db 39, PORYGON
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate

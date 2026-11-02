@@ -7,8 +7,8 @@ Route25WildMons:
 	db 14, BELLSPROUT
 	db 12, ABRA
 	db 10, ABRA
-	db  9, CHIKORITA
-	db  8, CYNDAQUIL
+	db  9, PIDGEY
+	db  8, PIDGEY
 	db  8, CHARMANDER
 	end_grass_wildmons
 
