@@ -46,7 +46,7 @@ TrainerNames::
 	li "CHANNELER"
 	li "AGATHA"
 	li "LANCE"
-	li "YELLOW"  ; marcelnote - new trainer class
+	li "ODO"     ; marcelnote - new trainer class
 	li "WILL"    ; marcelnote - new trainer class
 	li "<PKMN> TRAINER"    ; Red   ; marcelnote - new trainer class
 	li "<PKMN> TRAINER"    ; Green ; marcelnote - new trainer class

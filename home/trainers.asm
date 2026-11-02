@@ -393,7 +393,7 @@ PlayTrainerMusic:: ; marcelnote - optimized
 	ret z
 	cp OPP_RIVAL3
 	ret z
-	cp OPP_YELLOW ; marcelnote - no EngagedTrainer music for Yellow
+	cp OPP_ODO ; marcelnote - no EngagedTrainer music for Odo
 	ret z
 	ld a, [wGymLeaderNo]
 	and a

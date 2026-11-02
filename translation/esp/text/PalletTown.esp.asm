@@ -82,5 +82,5 @@ _PalletTownYellowsHouseSignJustMovedInText:: ; marcelnote - new
 
 _PalletTownYellowsHouseSignText:: ; marcelnote - new
 	; traducción por NunWinter
-	text "Casa de AMARILLO"
+	text "Casa de ODO"
 	done

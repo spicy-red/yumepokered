@@ -46,7 +46,7 @@ TrainerDataPointers:
 	dw ChannelerData
 	dw AgathaData
 	dw LanceData
-	dw YellowData   ; marcelnote - new trainer class
+	dw OdoData      ; marcelnote - new trainer class
 	dw WillData     ; marcelnote - new trainer class
 	dw RedData      ; marcelnote - new trainer class, but useless here because will be random
 	dw GreenData    ; marcelnote - new trainer class, but useless here because will be random
@@ -864,9 +864,9 @@ Rival3Data:
 	db $FF, 61, PIDGEOT, 59, ALAKAZAM, 61, RHYDON, 61, GYARADOS, 63, ARCANINE, 65, VENUSAUR, 0
 	db $FF, 61, PIDGEOT, 59, ALAKAZAM, 61, RHYDON, 61, EXEGGUTOR, 63, GYARADOS, 65, CHARIZARD, 0
 	; marcelnote - new rematch teams
-	db $FF, 90, PIDGEOT, 90, ALAKAZAM, 90, RHYDON, 90, ARCANINE, 90, EXEGGUTOR, 95, BLASTOISE, 0
-	db $FF, 90, PIDGEOT, 90, ALAKAZAM, 90, RHYDON, 90, GYARADOS, 90, ARCANINE, 95, VENUSAUR, 0
-	db $FF, 90, PIDGEOT, 90, ALAKAZAM, 90, RHYDON, 90, EXEGGUTOR, 90, GYARADOS, 95, CHARIZARD, 0
+	db $FF, 60, PIDGEOT, 90, ALAKAZAM, 90, RHYDON, 90, ARCANINE, 90, EXEGGUTOR, 95, BLASTOISE, 0
+	db $FF, 60, PIDGEOT, 90, ALAKAZAM, 90, RHYDON, 90, GYARADOS, 90, ARCANINE, 95, VENUSAUR, 0
+	db $FF, 60, PIDGEOT, 90, ALAKAZAM, 90, RHYDON, 90, EXEGGUTOR, 90, GYARADOS, 95, CHARIZARD, 0
 
 ProfOakData: ; marcelnote - adapted unused teams for postgame Oak battle
 ; Unused
@@ -878,9 +878,8 @@ ProfOakData: ; marcelnote - adapted unused teams for postgame Oak battle
 	db $FF, 66, TAUROS, 67, ELECTRODE, 68, RAPIDASH, 69, VICTREEBEL, 70, BLASTOISE, 72, NIDOKING, 0
 	; ideas: MUK, PRIMEAPE, ELECTABUZZ, JOLTEON
 
-YellowData:  ; marcelnote - new postgame battle
-	db $FF, 78, DODRIO, 80, CHANSEY, 88, BUTTERFREE, 78, OMASTAR, 78, NINETALES, 94, PIKACHU, 0
-	;db $FF, 5, CATERPIE, 5, PIKACHU, 0 ; testing
+OdoData:  ; marcelnote - new postgame battle
+	db $FF, 78, HOUNDOOM, 95, WOBBUFFET, 80, HERACROSS, 78, TYRANITAR, 100, MUK, 100, ODOS_PSYDUCK, 0
 
 WillData:  ; marcelnote - new postgame battle
 	db $FF, 54, SLOWBRO, 52, MR_MIME, 55, JYNX, 54, HYPNO, 56, EXEGGUTOR, 0

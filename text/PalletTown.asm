@@ -74,5 +74,5 @@ _PalletTownYellowsHouseSignJustMovedInText:: ; marcelnote - added Yellow's house
 	done
 
 _PalletTownYellowsHouseSignText:: ; marcelnote - added Yellow's house
-	text "YELLOW's HOUSE"
+	text "ODO's HOUSE"
 	done

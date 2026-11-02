@@ -1,6 +1,6 @@
 	db DEX_WOBBUFFET ; pokedex id
 
-	db 250,  33,  60,  33,  60
+	db 250,  33,  80,  33,  80
 	;   hp  atk  def  spd  spc
 
 	db PSYCHIC_TYPE, PSYCHIC_TYPE ; type

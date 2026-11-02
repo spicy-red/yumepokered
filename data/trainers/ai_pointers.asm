@@ -51,7 +51,7 @@ TrainerAIPointers:
 	dbw 3, GenericAI      ; CHANNELER
 	dbw 1, AgathaAI       ; AGATHA    ; 8% chance to switch, 42% chance of Hyper Potion if HP < 1/4 HPMax
 	dbw 1, LanceAI        ; LANCE     ; 50% chance of Hyper Potion if HP < 1/3 HPMax, otherwise 25% of Full Heal if status condition
-	dbw 1, Rival3AI       ; YELLOW ; marcelnote - new trainer class
+	dbw 1, Rival3AI       ; ODO ; marcelnote - new trainer class
 	dbw 1, LoreleiAI      ; WILL   ; marcelnote - new trainer class
 	dbw 3, GenericAI      ; RED    ; marcelnote - new trainer class
 	dbw 3, GenericAI      ; GREEN  ; marcelnote - new trainer class

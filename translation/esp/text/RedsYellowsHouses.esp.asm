@@ -98,34 +98,34 @@ _YellowsHouse1FDadUnpackingText:: ; marcelnote - new for Yellow's house
 ; TODO - Spanish translation
 _YellowsHouse1FDadJustMissedHerText:: ; marcelnote - new for Yellow's house
 	text "Oh, you just"
-	line "missed her!"
+	line "missed ODO!"
 
-	para "My daughter ran"
-	line "off to get her"
+	para "My kid ran off"
+	line "to get their"
 	cont "first #MON"
 	cont "from PROF.OAK."
 
-	para "The excitment"
-	line "kept her up all"
-	cont "night, so she"
+	para "The excitement"
+	line "kept ODO up all"
+	cont "night, so they"
 	cont "overslept!"
 	done
 
 ; TODO - Spanish translation
 _YellowsHouse1FDadJustRunIntoHerText:: ; marcelnote - new for Yellow's house
-	text "My daughter is"
-	line "always looking"
+	text "My kid is always"
+	line "looking"
 	cont "for adventure!"
 
 	para "I'm sure you'll"
-	line "run into her"
+	line "run into ODO"
 	cont "before long."
 	done
 
 ; TODO - Spanish translation
 _YellowsHouse1FDadYellowIsBackText:: ; marcelnote - new for Yellow's house
 	text "It's wonderful to"
-	line "have YELLOW home"
+	line "have ODO home"
 	cont "again!"
 
 	para "Seeing the kind-"
@@ -157,13 +157,11 @@ _YellowsHouse2FAsleepText:: ; marcelnote - new for Yellow's house
 _YellowsHouse2FYellowText:: ; marcelnote - new for Yellow's house
 	text "Oh, <PLAYER>!"
 	line "I came back home"
-	cont "to spend some"
-	cont "time with dad."
+	cont "to visit my dad."
 
-	para "I thought he might"
-	line "like a little"
-	cont "company, and"
-	cont "honestly..."
+	para "I thought he'd"
+	line "like company,"
+	cont "and honestly..."
 	cont "I missed him too!"
 	done
 

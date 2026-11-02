@@ -1,51 +1,36 @@
 _MtSilver3FYellowBattleText::
-	text "Oh! <PLAYER>,"
-	line "is it?"
+	text "Oh, <PLAYER>!"
+	line "I've been waiting"
+	cont "to meet you."
 
-	para "I am glad to"
-	line "finally meet you."
-
-	para "My name is YELLOW."
-	line "I started my"
-	cont "#MON journey"
-	cont "from PALLET TOWN,"
+	para "My journey began"
+	line "in PALLET TOWN,"
 	cont "not long after"
-	cont "<RIVAL> and you."
+	cont "yours and <RIVAL>'s."
 
-	para "I've heard all"
-	line "about your"
-	cont "achievements."
-
-	para "Defeating TEAM"
-	line "ROCKET, becoming"
-	cont "the champion..."
+	para "Since then, I've"
+	line "watched you take"
+	cont "down TEAM ROCKET"
+	cont "and become"
+	cont "CHAMPION."
 
 	para "You've set the bar"
-	line "high for the rest"
-	cont "of us!"
+	line "high, <PLAYER>."
+	cont "But how strong"
+	cont "are you, really?"
 
-	para "But strength alone"
-	line "doesn't define a"
-	cont "trainer."
+	para "I've brought my"
+	line "strongest team."
+	cont "No holding back."
+	cont "Show me what"
+	cont "real power looks"
+	cont "like!"
 
-	para "This journey that"
-	line "we're on..."
-	cont "It's not about"
-	cont "winning or"
-	cont "losing."
-
-	para "Nurturing the bond"
-	line "we share with our"
-	cont "#MON, that is"
-	cont "our real battle."
-
-	para "So show me,"
-	line "<PLAYER>."
-
-	para "Are you really"
-	line "the very best,"
-	cont "like no one"
-	cont "ever was?"
+	para "Come on, <PLAYER>!"
+	line "Let's see if your"
+	cont "reputation can"
+	cont "survive a real"
+	cont "challenge!"
 	done
 
 _MtSilver3FYellowDefeatedText::

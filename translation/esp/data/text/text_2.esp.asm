@@ -181,7 +181,7 @@ _GymStatueText3:: ; marcelnote - added for Yellow
 	line "GANADORES:"
 	cont "<RIVAL>"
 	cont "<PLAYER>"
-	cont "YELLOW"
+	cont "ODO"
 	done
 
 _BookcaseText::

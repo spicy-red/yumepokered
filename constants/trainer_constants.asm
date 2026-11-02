@@ -62,7 +62,7 @@ ENDM
 	trainer_const CHANNELER      ; $2D
 	trainer_const AGATHA         ; $2E
 	trainer_const LANCE          ; $2F
-	trainer_const YELLOW         ; $30 ; marcelnote - new trainer class
+	trainer_const ODO            ; $30 ; marcelnote - new trainer class
 	trainer_const WILL           ; $30 ; marcelnote - new trainer class
 	trainer_const RED            ; $30 ; marcelnote - new trainer class
 	trainer_const GREEN          ; $30 ; marcelnote - new trainer class

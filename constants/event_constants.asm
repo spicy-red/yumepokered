@@ -782,7 +782,7 @@
 ; Mt. Silver events ; marcelnote - new location
 	const_next $860
 	const_skip
-	const EVENT_BEAT_YELLOW
+	const EVENT_BEAT_ODO
 	const EVENT_BOOSTED_EXP_ALL
 
 ; Safari Zone events

@@ -28,7 +28,7 @@ MtSilver3FYellowPostBattleScript:
 	predef ShowObjectCont
 	call UpdateSprites
 	call Delay3
-	SetEvent EVENT_BEAT_YELLOW
+	SetEvent EVENT_BEAT_ODO
 	call GBFadeInFromBlack
 	ld c, 50
 	call DelayFrames

@@ -46,7 +46,7 @@ TrainerNames::
 	li "EXORCISTE"
 	li "AGATHA"
 	li "PETER"
-	li "YELLOW"
+	li "ODO"
 	li "CLEMENT"
 	li "DRESSEUR<PKMN>"    ; Red
 	li "DRESSEUR<PKMN>"    ; Green

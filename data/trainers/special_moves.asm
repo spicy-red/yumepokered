@@ -1,5 +1,5 @@
 ; marcelnote - imported file from pokeyellow to deal with Special Moves
-; Yellow entry format:
+; Odo entry format:
 ;	db trainerclass, trainerid
 ;	repeat { db partymon location, partymon move, move id }
 ;	db 0 ; marcelnote - changed terminator 0 to $ff to avoid bugs with NO_MOVE (=0) entries
@@ -644,29 +644,37 @@ SpecialTrainerMoves:
 	db 6, 3, FIRE_BLAST
 	db $ff
 
-	db YELLOW, 1
-	; Dodrio - JUMP_KICK, DRILL_PECK, DOUBLE_TEAM, MEGA_KICK
-	db 1, 2, DRILL_PECK
-	db 1, 3, DOUBLE_TEAM
-	; Chansey - SOFTBOILED, MINIMIZE, PSYCHIC_M, DOUBLE_EDGE
-	db 2, 1, SOFTBOILED
-	db 2, 2, MINIMIZE
-	db 2, 3, PSYCHIC_M
-	; Butterfree - MEGA_DRAIN, PSYCHIC_M, RAZOR_WIND, SLEEP_POWDER
-	db 3, 1, MEGA_DRAIN
-	db 3, 2, PSYCHIC_M
-	db 3, 4, SLEEP_POWDER
-	; Omastar - TOXIC, ROCK_SLIDE, CLAMP, SURF
-	db 4, 1, TOXIC
-	db 4, 2, ROCK_SLIDE
-	db 4, 4, SURF
-	; Ninetales - WILL_O_WISP, CONFUSE_RAY, HEX, FIRE_SPIN
-	db 5, 1, WILL_O_WISP
-	db 5, 2, CONFUSE_RAY
-	db 5, 3, HEX
-	; Pikachu - THUNDERBOLT, SURF, THUNDER, THUNDER_WAVE
-	db 6, 2, SURF
-	db 6, 4, THUNDER_WAVE
+	db ODO, 1
+	; Houndoom
+	db 1, 1, FLAMETHROWER
+	db 1, 2, SHADOW_BALL
+	db 1, 3, SOLARBEAM
+	db 1, 4, WILL_O_WISP
+	; Wobbuffet has no level-up learnset in this game.
+	db 2, 1, RETALIATE
+	db 2, 2, NO_MOVE
+	db 2, 3, NO_MOVE
+	db 2, 4, NO_MOVE
+	; Heracross
+	db 3, 1, MEGAHORN
+	db 3, 2, DRAIN_PUNCH
+	db 3, 3, SWORDS_DANCE
+	db 3, 4, ROCK_SLIDE
+	; Tyranitar
+	db 4, 1, ROCK_SLIDE
+	db 4, 2, EARTHQUAKE
+	db 4, 3, HYPER_BEAM
+	db 4, 4, BLIZZARD
+	; Muk
+	db 5, 1, GUNK_SHOT
+	db 5, 2, MINIMIZE
+	db 5, 3, EARTHQUAKE
+	db 5, 4, TOXIC
+	; Odo's Psyduck ace
+	db 6, 1, HEADACHE
+	db 6, 2, AMNESIA
+	db 6, 3, NO_MOVE
+	db 6, 4, NO_MOVE
 	db $ff
 
 	db -1 ; end

@@ -41,6 +41,6 @@ RedsYellowsHouses_Object:
 	object_event 29,  3, SPRITE_DAD, WALK, UP_DOWN, TEXT_YELLOWSHOUSE1F_DAD_UNPACKING ; marcelnote - Yellow's dad
 	object_event 33,  4, SPRITE_DAD, STAY, LEFT, TEXT_YELLOWSHOUSE1F_DAD_SITTING      ; marcelnote - Yellow's dad
 	object_event 42,  6, SPRITE_YELLOW_ASLEEP, STAY, NONE, TEXT_YELLOWSHOUSE2F_ASLEEP ; marcelnote - Yellow asleep
-	object_event 31,  3, SPRITE_YELLOW, WALK, ANY_DIR, TEXT_YELLOWSHOUSE2F_YELLOW     ; marcelnote - Yellow
+	object_event 31,  3, SPRITE_RED, WALK, ANY_DIR, TEXT_YELLOWSHOUSE2F_YELLOW        ; marcelnote - Odo
 
 	def_warps_to REDS_YELLOWS_HOUSES

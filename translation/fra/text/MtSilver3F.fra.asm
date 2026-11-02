@@ -8,105 +8,71 @@ _MtSilver3FYellowBattleText::
 	ret
 
 .BoyText
-	text "Oh! <PLAYER>,"
-	line "n'est-ce pas?"
+	text "Oh, <PLAYER>!"
+	line "J'espérais te"
+	cont "rencontrer."
 
-	para "Ravie de te"
-	line "recontrer enfin."
-	cont "Je suis YELLOW."
-
-	para "J'ai aussi commencé"
-	line "mon voyage au"
+	para "Mon aventure a"
+	line "commencé à"
 	cont "BOURG PALETTE,"
-	cont "peu après <RIVAL>"
-	cont "et toi."
+	cont "peu après la"
+	cont "tienne et celle"
+	cont "de <RIVAL>."
 
-	para "J'ai beaucoup"
-	line "entendu parler"
-	cont "de tes exploits!"
-
-	para "Vaincre la TEAM"
-	line "ROCKET, devenir"
-	cont "le CHAMPION..."
+	para "Depuis, j'ai suivi"
+	line "ton parcours:"
+	cont "TEAM ROCKET,"
+	cont "puis CHAMPION."
 
 	para "Tu as placé la"
-	line "barre bien haut"
-	cont "pour nous tous!"
+	line "barre très haut."
+	cont "Mais quelle est"
+	cont "ta vraie force?"
 
-	para "Mais un dresseur"
-	line "ne se résume pas"
-	cont "à sa seule force."
+	para "J'ai entraîné mon"
+	line "équipe au maximum."
+	cont "Pas de quartier."
+	cont "Montre-moi ta"
+	cont "vraie puissance!"
 
-	para "Notre aventure,"
-	line "notre vraie"
-	cont "victoire, c'est"
-	cont "le lien qui nous"
-	cont "unit à nos"
-	cont "#MON."
-
-	para "Alors montre-moi,"
-	line "<PLAYER>."
-
-	para "Après t'être battu"
-	line "sans répit, après"
-	cont "avoir tout fait"
-	cont "pour être"
-	cont "vainqueur..."
-
-	para "Aujourd'hui, es-tu"
-	line "enfin le meilleur"
-	cont "dresseur?"
+	para "Allez, <PLAYER>!"
+	line "Voyons si tu es"
+	cont "à la hauteur"
+	cont "d'un vrai défi!"
 	done
 
 .GirlText
-	text "Oh! <PLAYER>,"
-	line "n'est-ce pas?"
+	text "Oh, <PLAYER>!"
+	line "J'espérais te"
+	cont "rencontrer."
 
-	para "Ravie de te"
-	line "recontrer enfin."
-	cont "Je suis YELLOW."
-
-	para "J'ai aussi commencé"
-	line "mon voyage au"
+	para "Mon aventure a"
+	line "commencé à"
 	cont "BOURG PALETTE,"
-	cont "peu après <RIVAL>"
-	cont "et toi."
+	cont "peu après la"
+	cont "tienne et celle"
+	cont "de <RIVAL>."
 
-	para "J'ai beaucoup"
-	line "entendu parler"
-	cont "de tes exploits!"
-
-	para "Vaincre la TEAM"
-	line "ROCKET, devenir"
-	cont "la CHAMPIONNE..."
+	para "Depuis, j'ai suivi"
+	line "ton parcours:"
+	cont "TEAM ROCKET,"
+	cont "puis CHAMPIONNE."
 
 	para "Tu as placé la"
-	line "barre bien haut"
-	cont "pour nous tous!"
+	line "barre très haut."
+	cont "Mais quelle est"
+	cont "ta vraie force?"
 
-	para "Mais une dresseuse"
-	line "ne se résume pas"
-	cont "à sa seule force."
+	para "J'ai entraîné mon"
+	line "équipe au maximum."
+	cont "Pas de quartier."
+	cont "Montre-moi ta"
+	cont "vraie puissance!"
 
-	para "Notre aventure,"
-	line "notre vraie"
-	cont "victoire, c'est"
-	cont "le lien qui nous"
-	cont "unit à nos"
-	cont "#MON."
-
-	para "Alors montre-moi,"
-	line "<PLAYER>."
-
-	para "Après t'être battue"
-	line "sans répit, après"
-	cont "avoir tout fait"
-	cont "pour être"
-	cont "vainqueur..."
-
-	para "Aujourd'hui, es-tu"
-	line "enfin le meilleur"
-	cont "dresseur?"
+	para "Allez, <PLAYER>!"
+	line "Voyons si tu es"
+	cont "à la hauteur"
+	cont "d'un vrai défi!"
 	done
 
 _MtSilver3FYellowDefeatedText::

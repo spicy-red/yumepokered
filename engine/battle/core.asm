@@ -899,7 +899,7 @@ TrainerBattleVictory: ; marcelnote - music choice code was optimized, and added 
 	and a
 	jr nz, .gotMusic
 	ld a, [wTrainerClass]
-	cp YELLOW
+	cp ODO
 	jr z, .gotMusic
 	cp PROF_OAK
 	jr z, .gotMusic

@@ -12,6 +12,6 @@ MtSilver3F_Object:
 	;bg_event 15, 23, TEXT_MTMOON1F_BEWARE_ZUBAT_SIGN
 
 	def_object_events
-	object_event  9,  5, SPRITE_YELLOW, STAY, UP, TEXT_MTSILVER3F_YELLOW, OPP_YELLOW, 1
+	object_event  9,  5, SPRITE_RED, STAY, UP, TEXT_MTSILVER3F_YELLOW, OPP_ODO, 1
 
 	def_warps_to MT_SILVER_3F

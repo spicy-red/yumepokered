@@ -46,7 +46,7 @@ TrainerNames::
 	li "EXORCISTA"
 	li "AGATHA"
 	li "LANCE"
-	li "AMARILLO"  ; marcelnote - new trainer class
+	li "ODO"     ; marcelnote - new trainer class
 	li "MENTO"     ; marcelnote - new trainer class
 	li "ENTRENADOR"    ; Red   ; marcelnote - new trainer class, see Gen2
 	li "ENTRENADOR"    ; Green ; marcelnote - new trainer class, see Gen2

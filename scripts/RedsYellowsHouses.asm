@@ -137,7 +137,7 @@ YellowsHouse1FDadUnpackingText: ; marcelnote - new for Yellow's House
 
 YellowsHouse1FDadSittingText: ; marcelnote - new for Yellow's House
 	text_asm
-	CheckEvent EVENT_BEAT_YELLOW
+	CheckEvent EVENT_BEAT_ODO
 	ld hl, .YellowIsBackText
 	ret nz
 	CheckEvent EVENT_BEAT_BROCK

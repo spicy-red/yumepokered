@@ -83,33 +83,31 @@ _YellowsHouse1FDadUnpackingText:: ; marcelnote - new for Yellow's house
 	done
 
 _YellowsHouse1FDadJustMissedHerText:: ; marcelnote - new for Yellow's house
-	text "Ah, tu l'as"
-	line "ratée de peu!"
+	text "Ah, tu as raté"
+	line "ODO de peu!"
 
-	para "Ma fille a filé"
+	para "Mon enfant a filé"
 	line "chercher son"
 	cont "premier #MON"
 	cont "au laboratoire du"
 	cont "PROF. CHEN."
 
-	para "Elle était si"
-	line "excitée qu'elle"
-	cont "n'en a pas dormi"
-	cont "de la nuit!"
+	para "L'excitation a"
+	line "empêché ODO de"
+	cont "dormir de la nuit!"
 	done
 
 _YellowsHouse1FDadJustRunIntoHerText:: ; marcelnote - new for Yellow's house
-	text "Ma fille est"
-	line "toujours en quête"
-	cont "d'aventure!"
+	text "Mon enfant aime"
+	line "l'aventure!"
 
-	para "Tu la croiseras"
+	para "Tu croiseras ODO"
 	line "bientôt,"
 	cont "j'en suis sûr."
 	done
 
 _YellowsHouse1FDadYellowIsBackText:: ; marcelnote - new for Yellow's house
-	text "YELLOW est rentrée"
+	text "ODO est de retour"
 	line "à la maison!"
 	cont "Quel bonheur!"
 
@@ -131,16 +129,15 @@ _YellowsHouse1FTVText:: ; marcelnote - new for Yellow's house
 	done
 
 _YellowsHouse2FAsleepText:: ; marcelnote - new for Yellow's house
-	text "Elle dort à"
+	text "ODO dort à"
 	line "poings fermés."
-	cont "Laisse-là dormir!"
+	cont "Laisse ODO dormir!"
 	done
 
 _YellowsHouse2FYellowText:: ; marcelnote - new for Yellow's house
 	text "Oh, <PLAYER>!"
-	line "Je suis rentrée"
-	cont "pour passer du"
-	cont "temps avec papa."
+	line "Je suis de retour"
+	cont "pour voir papa."
 
 	para "Je me suis dit"
 	line "que ça lui ferait"

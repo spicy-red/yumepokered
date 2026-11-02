@@ -54,7 +54,7 @@ TrainerPicAndMoneyPointers::
 	pic_money ChannelerPic,    3000
 	pic_money AgathaPic,       9900
 	pic_money LancePic,        9900
-	pic_money YellowPic,       9900 ; marcelnote - new trainer class
+	pic_money RedPicFront,     9900 ; marcelnote - Odo uses Red's portrait
 	pic_money WillPic,         9900 ; marcelnote - new trainer class
 	pic_money RedPicFront,        0 ; marcelnote - new trainer class
 	pic_money GreenPicFront,      0 ; marcelnote - new trainer class

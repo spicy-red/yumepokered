@@ -22,7 +22,7 @@ Moves:
 	move THUNDERPUNCH, PARALYZE_SIDE_EFFECT1,       75, ELECTRIC,     100, 40
 	move SCRATCH,      NO_ADDITIONAL_EFFECT,        40, NORMAL,       100, 35
 	move VICEGRIP,     NO_ADDITIONAL_EFFECT,        55, NORMAL,       100, 30
-	move GUILLOTINE,   NO_ADDITIONAL_EFFECT,       190, NORMAL,        65, 15
+	move GUILLOTINE,   OHKO_EFFECT,         		 1, NORMAL,        40, 15
 	move RAZOR_WIND,   HYPER_BEAM_EFFECT,          120,    BUG,       100, 15 ; marcelnote - changed from NORMAL, CHARGE_EFFECT, acc 75
 	move SWORDS_DANCE, ATTACK_UP2_EFFECT,            0, NORMAL,       100, 30
 	move CUT,          NO_ADDITIONAL_EFFECT,        60,    BUG,        95, 35 ; marcelnote - changed from NORMAL, pp 30
@@ -42,7 +42,7 @@ Moves:
 	move HEADBUTT,     FLINCH_SIDE_EFFECT2,         70, NORMAL,       100, 25
 	move HORN_ATTACK,  NO_ADDITIONAL_EFFECT,        65, NORMAL,       100, 25
 	move FURY_ATTACK,  TWO_TO_FIVE_ATTACKS_EFFECT,  15, NORMAL,        95, 20 ; marcelnote - changed from acc 85
-	move HORN_DRILL,   NO_ADDITIONAL_EFFECT,       170, NORMAL,        65, 15
+	move HORN_DRILL,   OHKO_EFFECT,       			 1, NORMAL,        30, 15
 	move TACKLE,       NO_ADDITIONAL_EFFECT,        35, NORMAL,        95, 35
 	move BODY_SLAM,    PARALYZE_SIDE_EFFECT2,       85, NORMAL,       100, 25
 	move WRAP,         TRAPPING_EFFECT,             15, NORMAL,        85, 20
@@ -75,7 +75,7 @@ Moves:
 	move AURORA_BEAM,  ATTACK_DOWN_SIDE_EFFECT,     65, ICE,          100, 35
 	move HYPER_BEAM,   HYPER_BEAM_EFFECT,          150, NORMAL,        90, 15
 	move PECK,         NO_ADDITIONAL_EFFECT,        35, FLYING,       100, 35
-	move DRILL_PECK,   NO_ADDITIONAL_EFFECT,        80, FLYING,       100, 25
+	move DRILL_PECK,   NO_ADDITIONAL_EFFECT,        90, FLYING,       100, 25
 	move SUBMISSION,   RECOIL_EFFECT,               80, FIGHTING,     100, 35
 	move LOW_KICK,     FLINCH_SIDE_EFFECT2,         50, FIGHTING,     100, 30
 	move COUNTER,      NO_ADDITIONAL_EFFECT,         1, FIGHTING,     100, 30
@@ -100,7 +100,7 @@ Moves:
 	move THUNDER,      PARALYZE_SIDE_EFFECT1,      140, ELECTRIC,      70, 20
 	move ROCK_THROW,   NO_ADDITIONAL_EFFECT,        60, ROCK,          90, 40 ; marcelnote - changed from acc 65
 	move EARTHQUAKE,   NO_ADDITIONAL_EFFECT,       100, GROUND,       100, 15
-	move FISSURE,      NO_ADDITIONAL_EFFECT,       170, GROUND,        65, 15
+	move FISSURE	   OHKO_EFFECT, 				1,  GROUND,        30, 15
 	move DIG,          CHARGE_EFFECT,              100, GROUND,       100, 15 ; marcelnote - changed from pwr 100, pp 10
 	move TOXIC,        POISON_EFFECT,                0, POISON,        85, 10
 	move CONFUSION,    CONFUSION_SIDE_EFFECT,       50, PSYCHIC_TYPE, 100, 40
@@ -153,7 +153,7 @@ Moves:
 	move BARRAGE,      TWO_TO_FIVE_ATTACKS_EFFECT,  20, NORMAL,        85, 20
 	move LEECH_LIFE,   DRAIN_HP_EFFECT,             60, BUG,          100, 15 ; marcelnote - changed from pwr 20
 	move LOVELY_KISS,  SLEEP_EFFECT,                 0, NORMAL,        85, 25
-	move SKY_ATTACK,   CHARGE_EFFECT,              200, FLYING,       100, 20 ; marcelnote - changed from acc 90, pp 5
+	move SKY_ATTACK,   CHARGE_EFFECT,              220, FLYING,       100, 20 ; marcelnote - changed from acc 90, pp 5
 	move TRANSFORM,    TRANSFORM_EFFECT,             0, NORMAL,       100, 10
 	move BUBBLE,       SPEED_DOWN_SIDE_EFFECT,      20, WATER,        100, 30
 	move DIZZY_PUNCH,  CONFUSION_SIDE_EFFECT,       80, NORMAL,       100, 10 ; marcelnote - changed from NO_ADDITIONAL_EFFECT, pwr 70
@@ -181,14 +181,14 @@ Moves:
 	move MEGAHORN,     NO_ADDITIONAL_EFFECT,       120, BUG,           85, 10 ; new move
 	move SHADOW_BALL,  SPECIAL_DOWN_SIDE_EFFECT,    80, GHOST,        100, 15 ; new move
 	move GUNK_SHOT,    POISON_SIDE_EFFECT1,        120, POISON,        80, 25 ; new move, 20% poison chance
-	move OUTRAGE,      THRASH_PETAL_DANCE_EFFECT,  120, DRAGON,       100, 15 ; new move
+	move OUTRAGE,      THRASH_PETAL_DANCE_EFFECT,   90, DRAGON,       100, 15 ; new move
 	move DRAIN_PUNCH,  DRAIN_HP_EFFECT,             75, FIGHTING,     100, 10 ; new move
 	move EARTH_POWER,  SPECIAL_DOWN_SIDE_EFFECT,    90, GROUND,       100, 10 ; new move
-	move BRAVE_BIRD,   RECOIL_EFFECT,              120, FLYING,       100, 15 ; new move
-	move AIR_SLASH,    FLINCH_SIDE_EFFECT1,         75, FLYING,        95, 15 ; new move
-	move FLARE_BLITZ,  RECOIL_EFFECT,              120, FIRE,         100, 15 ; new move
-	move DISCHARGE,    PARALYZE_SIDE_EFFECT2,       80, ELECTRIC,     100, 15 ; new move
-	move ICICLE_SPEAR, TWO_TO_FIVE_ATTACKS_EFFECT,  25, ICE,          100, 30 ; new move
+	move BRAVE_BIRD,   RECOIL_EFFECT,              110, FLYING,       100, 15 ; new move
+	move AIR_SLASH,    FLINCH_SIDE_EFFECT1,         70, FLYING,        95, 15 ; new move
+	move FLARE_BLITZ,  RECOIL_EFFECT,              110, FIRE,         100, 15 ; new move
+	move DISCHARGE,    PARALYZE_SIDE_EFFECT2,       60, ELECTRIC,     100, 15 ; new move
+	move ICICLE_SPEAR, TWO_TO_FIVE_ATTACKS_EFFECT,  20, ICE,          100, 30 ; new move
 	move ROOST,        HEAL_EFFECT,                  0, FLYING,       100, 10 ; new move
 	move HEADACHE,     THRASH_PETAL_DANCE_EFFECT,  200, BIRD,         100,  5 ; hidden trainer-Psyduck move
 	move RETALIATE,    NO_ADDITIONAL_EFFECT,         1, BIRD,         100, 30 ; reflects 2x damage from physical or special attacks

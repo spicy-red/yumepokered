@@ -80,7 +80,7 @@ ReadTrainer:
 	jr nz, .findMaxPartyLevelLoop
 	ld [wCurEnemyLevel], a ; now a is max level of party Mons
 
-	CheckEvent EVENT_BEAT_YELLOW
+	CheckEvent EVENT_BEAT_ODO
 	ld hl, BattleHallMonsBeatYellowStart
 	ld de, BattleHallMonsEnd - BattleHallMonsBeatYellowStart
 	jr nz, .gotList
