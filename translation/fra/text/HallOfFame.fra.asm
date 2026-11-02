@@ -31,24 +31,48 @@ _HallOfFameOakText::
 	line "l'après-jeu,"
 	cont "<PLAYER>!"
 
-	para "Aide LORELEI,"
-	line "BRUNO, AGATHA et"
-	cont "LANCE à régler"
-	cont "leurs quatre"
-	cont "problèmes."
+	para "LORELEI aide à"
+	line "l'USINE SILPH de"
+	cont "l'ÎLE MANDARIN."
 
-	para "Puis bats les"
-	line "trois oiseaux"
-	cont "légendaires:"
+	para "BRUNO est au DOJO"
+	line "de SAFRANIA. Va"
+	cont "à l'ARENE pour"
+	cont "rencontrer son"
+	cont "élève."
+
+	para "AGATHA est à la"
+	line "TOUR #MON de"
+	cont "LAVANVILLE."
+
+	para "LANCE est au"
+	line "VOLCAN de"
+	cont "CRAMOIS'ILE."
+
+	para "N'oublie pas"
+	line "de passer chez"
+	cont "ODO à BOURG"
+	cont "PALETTE!"
+
+	para "Pour rejoindre"
+	line "ODO à MT.SILVER,"
+	cont "trouve-moi sur"
+	cont "la ROUTE 1 et"
+	cont "bats-moi. Le garde"
+	cont "de la ROUTE 22 te"
+	cont "laissera passer."
+
+	para "Les trois oiseaux"
+	line "légendaires sont"
+	cont "un autre défi:"
 	cont "ARTICUNO, ZAPDOS"
 	cont "et MOLTRES."
 
-	para "Ensuite, passe"
-	line "à mon LABO voir"
-	cont "<RIVAL>. Suis-le"
-	cont "au PLATEAU INDIGO"
-	cont "puis retrouve-moi"
-	cont "sur la ROUTE 1!"
+	para "Puis parle à"
+	line "<RIVAL> dans mon"
+	cont "LABO au sujet de"
+	cont "ton prochain"
+	cont "combat."
 	done
 
 _HallOfFameRivalText:: ; marcelnote - new text for E4 rematches

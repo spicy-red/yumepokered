@@ -122,6 +122,54 @@ _YellowsHouse1FDadJustRunIntoHerText:: ; marcelnote - new for Yellow's house
 	cont "before long."
 	done
 
+_YellowsHouse1FDadPostgameBeforeOakText:: ; marcelnote - postgame Mt. Silver hint
+	text "Creo que ODO se"
+	line "fue a entrenar"
+	cont "a MT.SILVER."
+
+	para "Primero busca al"
+	line "PROF. OAK en la"
+	cont "RUTA 1 y"
+	cont "derrótalo."
+	cont "Te dejará pasar"
+	cont "al guardia de la"
+	cont "RUTA 22."
+
+	para "Las aves"
+	line "legendarias son"
+	cont "otro reto."
+	cont "Tras vencer a"
+	cont "las tres, habla"
+	cont "con <RIVAL> en el"
+	cont "LAB de OAK."
+	cont "Luego irá a la"
+	cont "MESETA AÑIL para"
+	cont "una revancha."
+	done
+
+_YellowsHouse1FDadPostgameAfterOakText:: ; marcelnote - postgame Mt. Silver hint
+	text "Creo que ODO se"
+	line "fue a entrenar"
+	cont "a MT.SILVER."
+
+	para "Ahora que el PROF."
+	line "OAK te autorizó,"
+	cont "pasa al guardia de"
+	cont "la RUTA 22 y ve"
+	cont "hacia MT.SILVER."
+
+	para "Las aves"
+	line "legendarias son"
+	cont "otro reto."
+	cont "Tras vencer a"
+	cont "las tres, habla"
+	cont "con <RIVAL> en el"
+	cont "LAB de OAK."
+	cont "Luego irá a la"
+	cont "MESETA AÑIL para"
+	cont "una revancha."
+	done
+
 ; TODO - Spanish translation
 _YellowsHouse1FDadYellowIsBackText:: ; marcelnote - new for Yellow's house
 	text "It's wonderful to"

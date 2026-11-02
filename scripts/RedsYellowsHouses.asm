@@ -140,6 +140,14 @@ YellowsHouse1FDadSittingText: ; marcelnote - new for Yellow's House
 	CheckEvent EVENT_BEAT_ODO
 	ld hl, .YellowIsBackText
 	ret nz
+	CheckEvent EVENT_BECAME_CHAMPION
+	jr z, .checkBrock
+	CheckEvent EVENT_BEAT_ROUTE_1_OAK
+	ld hl, .PostgameAfterOakText
+	ret nz
+	ld hl, .PostgameBeforeOakText
+	ret
+.checkBrock
 	CheckEvent EVENT_BEAT_BROCK
 	ld hl, .RunIntoHerText
 	ret nz
@@ -158,7 +166,15 @@ YellowsHouse1FDadSittingText: ; marcelnote - new for Yellow's House
 	text_far _YellowsHouse1FDadYellowIsBackText
 	text_end
 
-YellowsHouse1FTVText: ; marcelnote - new for Yellow's House
+.PostgameBeforeOakText:
+	text_far _YellowsHouse1FDadPostgameBeforeOakText
+	text_end
+
+.PostgameAfterOakText:
+	text_far _YellowsHouse1FDadPostgameAfterOakText
+	text_end
+
+YellowsHouse1FTVText: ; marcelnote - new for Yellow's house
 	text_far _YellowsHouse1FTVText
 	text_end
 

@@ -969,6 +969,7 @@ MeowthEvosMoves:
 	db EVOLVE_LEVEL, 28, PERSIAN
 	db 0
 ; Learnset
+	db 6, PAY_DAY
 	db 8, TAIL_WHIP
 	db 12, BITE
 	db 16, PAY_DAY

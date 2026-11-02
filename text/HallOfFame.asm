@@ -30,25 +30,44 @@ _HallOfFameOakText::
 	line "postgame,"
 	cont "<PLAYER>!"
 
-	para "Help LORELEI,"
-	line "BRUNO, AGATHA,"
-	cont "and LANCE with"
-	cont "their four"
-	cont "postgame troubles."
+	para "LORELEI is at the"
+	line "SILPH FACTORY on"
+	cont "MANDARIN ISLAND."
 
-	para "Then defeat all"
-	line "three legendary"
-	cont "birds: ARTICUNO,"
-	cont "ZAPDOS, and"
-	cont "MOLTRES."
+	para "BRUNO is at the"
+	line "FIGHTING DOJO in"
+	cont "SAFFRON. Visit"
+	cont "the SAFFRON GYM"
+	cont "to meet his"
+	cont "student."
 
-	para "After that, visit"
-	line "my LAB and speak"
-	cont "to <RIVAL>. Follow"
-	cont "him to INDIGO"
-	cont "PLATEAU, then"
-	cont "find me on"
-	cont "ROUTE 1!"
+	para "AGATHA is at"
+	line "POKEMON TOWER in"
+	cont "LAVENDER."
+
+	para "LANCE is at"
+	line "CINNABAR VOLCANO."
+
+	para "Don't forget to"
+	line "visit ODO's house"
+	cont "in PALLET TOWN!"
+
+	para "To reach ODO at"
+	line "MT.SILVER, find me"
+	cont "on ROUTE 1 and"
+	cont "defeat me. Then"
+	cont "you can pass the"
+	cont "ROUTE 22 guard."
+
+	para "For another"
+	line "challenge, defeat"
+	cont "ARTICUNO, ZAPDOS,"
+	cont "and MOLTRES."
+
+	para "Then visit my LAB"
+	line "and speak to"
+	cont "<RIVAL> about"
+	cont "your next battle!"
 	done
 
 _HallOfFameRivalText:: ; marcelnote - new text for E4 rematches

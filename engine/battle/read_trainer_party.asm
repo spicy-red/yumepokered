@@ -253,12 +253,60 @@ MaxOutBossTrainerStatExp:
 	jr nz, .maxStatExpBytes
 	pop bc
 	dec b
-	ret z
+	jr z, .recalculateStats
 	push bc
 	ld bc, PARTYMON_STRUCT_LENGTH - NUM_STATS * 2
 	add hl, bc
 	pop bc
 	jr .maxStatExpLoop
+.recalculateStats
+	; AddPartyMon initialized HP before Stat Exp was added.
+	ld a, [wEnemyPartyCount]
+	ld b, a
+	ld hl, wEnemyMons
+.recalculateStatsLoop
+	push bc
+	push hl
+	ld a, [hl]
+	ld [wCurSpecies], a
+	call GetMonHeader
+	pop hl
+	push hl
+	ld bc, MON_LEVEL
+	add hl, bc
+	ld a, [hl]
+	ld [wCurEnemyLevel], a
+	pop hl
+	push hl
+	ld de, MON_STATS
+	add hl, de
+	ld d, h
+	ld e, l
+	pop hl
+	push hl
+	ld bc, MON_HP_EXP - 1
+	add hl, bc
+	ld b, 1
+	call CalcStats
+	pop hl
+	push hl
+	ld de, MON_MAXHP
+	add hl, de
+	ld a, [hli]
+	ld b, [hl]
+	pop hl
+	push hl
+	ld de, MON_HP
+	add hl, de
+	ld [hli], a
+	ld [hl], b
+	pop hl
+	ld bc, PARTYMON_STRUCT_LENGTH
+	add hl, bc
+	pop bc
+	dec b
+	jr nz, .recalculateStatsLoop
+	ret
 
 ; marcelnote -
 ; These are the lists of Mons for random battles.

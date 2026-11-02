@@ -127,6 +127,53 @@ _YellowsHouse1FDadYellowIsBackText:: ; marcelnote - new for Yellow's house
 	cont "a little while."
 	done
 
+_YellowsHouse1FDadPostgameBeforeOakText:: ; marcelnote - postgame Mt. Silver hint
+	text "I heard ODO went"
+	line "to train at"
+	cont "MT.SILVER."
+
+	para "First, find PROF."
+	line "OAK on ROUTE 1"
+	cont "and defeat him."
+	cont "He'll let you pass"
+	cont "through the gate."
+
+	para "The legendary"
+	line "birds are another"
+	cont "challenge."
+	cont "After beating all"
+	cont "three, go to OAK's"
+	cont "LAB and talk to"
+	cont "<RIVAL>."
+	cont "Then he'll head to"
+	cont "INDIGO PLATEAU for"
+	cont "a rematch."
+	done
+
+_YellowsHouse1FDadPostgameAfterOakText:: ; marcelnote - postgame Mt. Silver hint
+	text "I heard ODO went"
+	line "to train at"
+	cont "MT.SILVER."
+
+	para "Now that PROF.OAK"
+	line "has given you"
+	cont "permission, pass"
+	cont "the ROUTE 22 guard"
+	cont "and head for"
+	cont "MT.SILVER."
+
+	para "The legendary"
+	line "birds are another"
+	cont "challenge."
+	cont "After beating all"
+	cont "three, go to OAK's"
+	cont "LAB and talk to"
+	cont "<RIVAL>."
+	cont "Then he'll head to"
+	cont "INDIGO PLATEAU for"
+	cont "a rematch."
+	done
+
 _YellowsHouse1FTVText:: ; marcelnote - new for Yellow's house
 	text "It's not even"
 	line "plugged in yet."

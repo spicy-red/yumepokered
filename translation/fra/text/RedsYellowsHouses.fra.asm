@@ -106,6 +106,58 @@ _YellowsHouse1FDadJustRunIntoHerText:: ; marcelnote - new for Yellow's house
 	cont "j'en suis sûr."
 	done
 
+_YellowsHouse1FDadPostgameBeforeOakText:: ; marcelnote - postgame Mt. Silver hint
+	text "Je crois qu'ODO"
+	line "est partie"
+	cont "s'entraîner à"
+	cont "MT.SILVER."
+
+	para "Va d'abord voir"
+	line "le PROF. CHEN sur"
+	cont "la ROUTE 1 et"
+	cont "bats-le."
+	cont "Le garde de la"
+	cont "ROUTE 22 te"
+	cont "laissera passer."
+
+	para "Les oiseaux"
+	line "légendaires sont"
+	cont "un autre défi."
+	cont "Après les avoir"
+	cont "tous battus,"
+	cont "parle à <RIVAL>"
+	cont "au LABO de CHEN."
+	cont "Il ira alors au"
+	cont "PLATEAU INDIGO"
+	cont "pour un nouveau"
+	cont "combat."
+	done
+
+_YellowsHouse1FDadPostgameAfterOakText:: ; marcelnote - postgame Mt. Silver hint
+	text "Je crois qu'ODO"
+	line "est partie"
+	cont "s'entraîner à"
+	cont "MT.SILVER."
+
+	para "Le PROF. CHEN t'a"
+	line "donné son accord!"
+	cont "Passe le garde de"
+	cont "la ROUTE 22 pour"
+	cont "aller à MT.SILVER."
+
+	para "Les oiseaux"
+	line "légendaires sont"
+	cont "un autre défi."
+	cont "Après les avoir"
+	cont "tous battus,"
+	cont "parle à <RIVAL>"
+	cont "au LABO de CHEN."
+	cont "Il ira alors au"
+	cont "PLATEAU INDIGO"
+	cont "pour un nouveau"
+	cont "combat."
+	done
+
 _YellowsHouse1FDadYellowIsBackText:: ; marcelnote - new for Yellow's house
 	text "ODO est de retour"
 	line "à la maison!"
