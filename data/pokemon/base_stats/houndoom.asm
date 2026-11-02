@@ -1,6 +1,6 @@
 	db DEX_HOUNDOOM ; pokedex id
 
-	db  75,  90,  50,  95, 120
+	db  75, 110,  50,  95, 110
 	;   hp  atk  def  spd  spc
 
 	db FIRE, GHOST ; type

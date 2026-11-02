@@ -1,6 +1,6 @@
 	db DEX_HITMONCHAN ; pokedex id
 
-	db  65, 120,  90,  90,  110
+	db  65, 110,  90,  90,  110
 	;   hp  atk  def  spd  spc
 
 	db FIGHTING, FIGHTING ; type

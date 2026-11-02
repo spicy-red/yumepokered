@@ -1,6 +1,6 @@
 	db DEX_HOUNDOUR ; pokedex id
 
-	db  45,  60,  30,  65,  90
+	db  45,  70,  30,  70,  90
 	;   hp  atk  def  spd  spc
 
 	db FIRE, GHOST ; type

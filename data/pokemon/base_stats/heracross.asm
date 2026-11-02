@@ -1,6 +1,6 @@
 	db DEX_HERACROSS ; pokedex id
 
-	db  80, 125,  75,  85,  75
+	db  80, 125,  75,  85,  95
 	;   hp  atk  def  spd  spc
 
 	db BUG, FIGHTING ; type

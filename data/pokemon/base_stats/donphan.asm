@@ -1,6 +1,6 @@
 	db DEX_DONPHAN ; pokedex id
 
-	db  90, 120, 120,  50,  60
+	db  90, 120, 120,  50,  70
 	;   hp  atk  def  spd  spc
 
 	db GROUND, GROUND ; type
