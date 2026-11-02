@@ -57,10 +57,13 @@ RGBFIX  ?= $(RGBDS)rgbfix
 RGBGFX  ?= $(RGBDS)rgbgfx
 RGBLINK ?= $(RGBDS)rgblink
 
+VERSION ?= v0.1
+
 RGBASMFLAGS  ?= -Weverything -Wtruncation=1
 RGBLINKFLAGS ?= -Weverything -Wtruncation=1
 RGBFIXFLAGS  ?= -Weverything
 RGBGFXFLAGS  ?= -Weverything
+RGBASMFLAGS += -D GAME_VERSION=\"$(VERSION)\"
 
 
 ### Build targets
@@ -90,6 +93,7 @@ RGBGFXFLAGS  ?= -Weverything
 	compare \
 	check-pngs \
 	normalize-pngs \
+	FORCE_VERSION \
 	tools
 
 all: $(roms)
@@ -203,6 +207,13 @@ $1: $2 $$(shell tools/scan_includes $2) $(preinclude_deps) | rgbdscheck.o
 	$$(RGBASM) $$(RGBASMFLAGS) -o $$@ $$<
 endef
 
+main_red.o main_blue.o main_green.o main_blue_debug.o \
+main_red_vc.o main_blue_vc.o main_rouge.o main_verte.o \
+main_bleue.o main_bleue_debug.o main_rojo.o main_verde.o \
+main_azul.o main_azul_debug.o: FORCE_VERSION
+
+FORCE_VERSION:
+
 # Dependencies for objects (drop _red and _blue from asm file basenames)
 $(foreach obj, $(yumepokered_obj), $(eval $(call DEP,$(obj),$(obj:_red.o=.asm))))
 $(foreach obj, $(yumepokeblue_obj), $(eval $(call DEP,$(obj),$(obj:_blue.o=.asm))))
@@ -239,20 +250,20 @@ yumepokeazul.gb:        RGBLINKFLAGS += -p 0x00
 yumepokeazul_debug.gb:  RGBLINKFLAGS += -p 0xff
 
 RGBFIXFLAGS += -jsv -n 0 -k 01 -l 0x33 -m MBC3+RAM+BATTERY -r 03
-yumepokered.gb:         RGBFIXFLAGS += -p 0x00 -t "DansingQween"
-yumepokegreen.gb:       RGBFIXFLAGS += -p 0x00 -t "DansingQween"
-yumepokeblue.gb:        RGBFIXFLAGS += -p 0x00 -t "DansingQween"
-yumepokeblue_debug.gb:  RGBFIXFLAGS += -p 0xff -t "DansingQween"
-yumepokered_vc.gb:      RGBFIXFLAGS += -p 0x00 -t "DansingQween"
-yumepokeblue_vc.gb:     RGBFIXFLAGS += -p 0x00 -t "DansingQween"
-yumepokerouge.gb:       RGBFIXFLAGS += -p 0x00 -t "DansingQween"
-yumepokeverte.gb:       RGBFIXFLAGS += -p 0x00 -t "DansingQween"
-yumepokebleue.gb:       RGBFIXFLAGS += -p 0x00 -t "DansingQween"
-yumepokebleue_debug.gb: RGBFIXFLAGS += -p 0xff -t "DansingQween"
-yumepokerojo.gb:        RGBFIXFLAGS += -p 0x00 -t "DansingQween"
-yumepokeverde.gb:       RGBFIXFLAGS += -p 0x00 -t "DansingQween"
-yumepokeazul.gb:        RGBFIXFLAGS += -p 0x00 -t "DansingQween"
-yumepokeazul_debug.gb:  RGBFIXFLAGS += -p 0xff -t "DansingQween"
+yumepokered.gb:         RGBFIXFLAGS += -p 0x00 -t "$(VERSION)"
+yumepokegreen.gb:       RGBFIXFLAGS += -p 0x00 -t "$(VERSION)"
+yumepokeblue.gb:        RGBFIXFLAGS += -p 0x00 -t "$(VERSION)"
+yumepokeblue_debug.gb:  RGBFIXFLAGS += -p 0xff -t "$(VERSION)"
+yumepokered_vc.gb:      RGBFIXFLAGS += -p 0x00 -t "$(VERSION)"
+yumepokeblue_vc.gb:     RGBFIXFLAGS += -p 0x00 -t "$(VERSION)"
+yumepokerouge.gb:       RGBFIXFLAGS += -p 0x00 -t "$(VERSION)"
+yumepokeverte.gb:       RGBFIXFLAGS += -p 0x00 -t "$(VERSION)"
+yumepokebleue.gb:       RGBFIXFLAGS += -p 0x00 -t "$(VERSION)"
+yumepokebleue_debug.gb: RGBFIXFLAGS += -p 0xff -t "$(VERSION)"
+yumepokerojo.gb:        RGBFIXFLAGS += -p 0x00 -t "$(VERSION)"
+yumepokeverde.gb:       RGBFIXFLAGS += -p 0x00 -t "$(VERSION)"
+yumepokeazul.gb:        RGBFIXFLAGS += -p 0x00 -t "$(VERSION)"
+yumepokeazul_debug.gb:  RGBFIXFLAGS += -p 0xff -t "$(VERSION)"
 
 %.gb: $$(%_obj) layout.link
 	$(RGBLINK) $(RGBLINKFLAGS) -l layout.link -m $*.map -n $*.sym -o $@ $(filter %.o,$^)

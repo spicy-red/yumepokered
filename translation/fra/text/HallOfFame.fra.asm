@@ -26,6 +26,29 @@ _HallOfFameOakText::
 	line "Toi et tes chers"
 	cont "#MON êtes"
 	cont "tous célèbres!"
+
+	para "Bienvenue dans"
+	line "l'après-jeu,"
+	cont "<PLAYER>!"
+
+	para "Aide LORELEI,"
+	line "BRUNO, AGATHA et"
+	cont "LANCE à régler"
+	cont "leurs quatre"
+	cont "problèmes."
+
+	para "Puis bats les"
+	line "trois oiseaux"
+	cont "légendaires:"
+	cont "ARTICUNO, ZAPDOS"
+	cont "et MOLTRES."
+
+	para "Ensuite, passe"
+	line "à mon LABO voir"
+	cont "<RIVAL>. Suis-le"
+	cont "au PLATEAU INDIGO"
+	cont "puis retrouve-moi"
+	cont "sur la ROUTE 1!"
 	done
 
 _HallOfFameRivalText:: ; marcelnote - new text for E4 rematches

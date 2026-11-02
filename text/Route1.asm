@@ -122,25 +122,23 @@ _Route1OakOneMoreThingText:: ; marcelnote - postgame Oak battle
 	cont "guard at ROUTE 22"
 	cont "to let you pass."
 
-	para "Actually, I just"
-	line "authorized"
-	cont "another trainer"
-	cont "from PALLET, too."
+	para "Your final"
+	line "challenge is"
+	cont "ODO, said to be"
+	cont "the strongest"
+	cont "trainer to ever"
+	cont "exist!"
 
-	para "She defeated the"
+	para "He defeated the"
 	line "ELITE FOUR and"
 	cont "<RIVAL> at the"
 	cont "INDIGO PLATEAU!"
 
-	para "I bet she'd like"
-	line "to face the"
-	cont "true champion!"
-
-	para "She's waiting"
-	line "at MT.SILVER."
+	para "He's waiting for"
+	line "you at MT.SILVER."
 
 	para "Before you face"
-	line "her, consider"
+	line "him, consider"
 	cont "training on"
 	cont "MANDARIN ISLAND."
 

@@ -29,6 +29,32 @@ _HallOfFameOakText::
 	line "<PLAYER>, tú y"
 	cont "tus #MON ya"
 	cont "sois famosos!"
+
+	para "¡Te damos la"
+	line "bienvenida al"
+	cont "postjuego,"
+	cont "<PLAYER>!"
+
+	para "Ayuda a LORELEI,"
+	line "BRUNO, AGATHA y"
+	cont "LANCE con sus"
+	cont "cuatro problemas"
+	cont "del postjuego."
+
+	para "Después, derrota"
+	line "a las tres aves"
+	cont "legendarias:"
+	cont "ARTICUNO, ZAPDOS"
+	cont "y MOLTRES."
+
+	para "Luego, ve a mi"
+	line "LABORATORIO y"
+	cont "habla con"
+	cont "<RIVAL>. Síguelo"
+	cont "hasta la MESETA"
+	cont "AÑIL y después"
+	cont "búscame en la"
+	cont "RUTA 1."
 	done
 
 _HallOfFameRivalText:: ; marcelnote - new text for E4 rematches

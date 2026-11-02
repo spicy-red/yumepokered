@@ -100,7 +100,7 @@ Moves:
 	move THUNDER,      PARALYZE_SIDE_EFFECT1,      140, ELECTRIC,      70, 20
 	move ROCK_THROW,   NO_ADDITIONAL_EFFECT,        60, ROCK,          90, 40 ; marcelnote - changed from acc 65
 	move EARTHQUAKE,   NO_ADDITIONAL_EFFECT,       100, GROUND,       100, 15
-	move FISSURE	   OHKO_EFFECT, 				1,  GROUND,        30, 15
+	move FISSURE,	   OHKO_EFFECT, 				1,  GROUND,        30, 15
 	move DIG,          CHARGE_EFFECT,              100, GROUND,       100, 15 ; marcelnote - changed from pwr 100, pp 10
 	move TOXIC,        POISON_EFFECT,                0, POISON,        85, 10
 	move CONFUSION,    CONFUSION_SIDE_EFFECT,       50, PSYCHIC_TYPE, 100, 40

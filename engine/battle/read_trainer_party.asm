@@ -181,6 +181,7 @@ ReadTrainer:
 	jr nz, .loopSkipTrainer
 	jr .loopSpecialMoveData
 .FinishUp
+	call MaxOutBossTrainerStatExp
 ; clear wAmountMoneyWon addresses
 	xor a
 	ld de, wAmountMoneyWon
@@ -203,6 +204,61 @@ ReadTrainer:
 	dec b
 	jr nz, .LastLoop ; repeat wCurEnemyLevel times
 	ret
+
+MaxOutBossTrainerStatExp:
+	ld a, [wTrainerClass]
+	cp BROCK
+	jr z, .maxStatExp
+	cp MISTY
+	jr z, .maxStatExp
+	cp LT_SURGE
+	jr z, .maxStatExp
+	cp ERIKA
+	jr z, .maxStatExp
+	cp KOGA
+	jr z, .maxStatExp
+	cp SABRINA
+	jr z, .maxStatExp
+	cp BLAINE
+	jr z, .maxStatExp
+	cp GIOVANNI
+	jr z, .maxStatExp
+	cp LORELEI
+	jr z, .maxStatExp
+	cp BRUNO
+	jr z, .maxStatExp
+	cp AGATHA
+	jr z, .maxStatExp
+	cp LANCE
+	jr z, .maxStatExp
+	cp RIVAL3
+	jr z, .maxStatExp
+	cp PROF_OAK
+	jr z, .maxStatExp
+	cp ODO
+	ret nz
+.maxStatExp
+	ld a, [wEnemyPartyCount]
+	and a
+	ret z
+	ld b, a
+	ld hl, wEnemyMon1HPExp
+.maxStatExpLoop
+	push bc
+	ld c, NUM_STATS * 2
+	ld a, $ff
+.maxStatExpBytes
+	ld [hli], a
+	dec c
+	jr nz, .maxStatExpBytes
+	pop bc
+	dec b
+	ret z
+	push bc
+	ld bc, PARTYMON_STRUCT_LENGTH - NUM_STATS * 2
+	add hl, bc
+	pop bc
+	jr .maxStatExpLoop
 
 ; marcelnote -
 ; These are the lists of Mons for random battles.

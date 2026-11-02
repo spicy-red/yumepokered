@@ -6283,8 +6283,21 @@ LoadEnemyMonData:
 	ld a, [wCurEnemyLevel]
 	ld [de], a
 	inc de
-	ld b, $0
+	ld a, [wIsInBattle]
+	cp TRAINER_BATTLE
+	jr nz, .calculateWildMonStats
+	ld a, [wWhichPokemon]
+	ld bc, PARTYMON_STRUCT_LENGTH
+	ld hl, wEnemyMons
+	call AddNTimes
+	ld bc, MON_HP_EXP - 1
+	add hl, bc
+	ld b, 1
+	jr .calculateMonStats
+.calculateWildMonStats
+	ld b, 0
 	ld hl, wEnemyMonHP
+.calculateMonStats
 	push hl
 	call CalcStats
 	pop hl

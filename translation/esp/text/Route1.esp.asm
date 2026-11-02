@@ -144,21 +144,16 @@ _Route1OakOneMoreThingText:: ; marcelnote - postgame Oak battle
 	para "Ahora te dejará"
 	line "pasar."
 
-	para "De hecho,"
-	line "también autoricé"
-	cont "a otra"
-	cont "entrenadora de"
-	cont "PUEBLO PALETA."
+	para "Tu desafío final"
+	line "es ODO, ¡dicen"
+	cont "que es el mejor"
+	cont "entrenador que"
+	cont "ha existido!"
 
-	para "¡Ella derrotó al"
+	para "Él derrotó al"
 	line "ALTO MANDO y a"
 	cont "<RIVAL> en la"
 	cont "MESETA AÑIL!"
-
-	para "¡Apuesto a que"
-	line "querría"
-	cont "enfrentarse al"
-	cont "verdadero campeón!"
 
 	para "Te espera en"
 	line "MT.SILVER."

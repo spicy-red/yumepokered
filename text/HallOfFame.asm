@@ -25,6 +25,30 @@ _HallOfFameOakText::
 	line "<PLAYER>, you and"
 	cont "your #MON are"
 	cont "HALL OF FAMERs!"
+
+	para "Welcome to the"
+	line "postgame,"
+	cont "<PLAYER>!"
+
+	para "Help LORELEI,"
+	line "BRUNO, AGATHA,"
+	cont "and LANCE with"
+	cont "their four"
+	cont "postgame troubles."
+
+	para "Then defeat all"
+	line "three legendary"
+	cont "birds: ARTICUNO,"
+	cont "ZAPDOS, and"
+	cont "MOLTRES."
+
+	para "After that, visit"
+	line "my LAB and speak"
+	cont "to <RIVAL>. Follow"
+	cont "him to INDIGO"
+	cont "PLATEAU, then"
+	cont "find me on"
+	cont "ROUTE 1!"
 	done
 
 _HallOfFameRivalText:: ; marcelnote - new text for E4 rematches

@@ -128,7 +128,7 @@ MainMenu:
 	jp SpecialEnterMap
 
 VersionText:
-	db "DansingQween@"
+	db GAME_VERSION, "@"
 
 InitOptions:
 	ld a, 1 << BIT_FAST_TEXT_DELAY

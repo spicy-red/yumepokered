@@ -460,6 +460,7 @@ PidgeotEvosMoves:
 	db 46, MIRROR_MOVE
 	db 47, BRAVE_BIRD
 	db 53, SKY_ATTACK
+	db 55, ROOST
 	db 0
 
 RattataEvosMoves:
@@ -518,6 +519,7 @@ FearowEvosMoves:
 	db 40, AGILITY
 	db 46, SHARPEN
 	db 48, SKY_ATTACK
+	db 49, ROOST
 	db 0
 
 EkansEvosMoves:
@@ -2002,7 +2004,7 @@ MrMimeEvosMoves:
 	db 29, REFLECT
 	db 32, BARRIER
 	db 34, PSYBEAM
-	db 35, PSYCHIC
+	db 35, PSYCHIC_M
 	db 36, SHADOW_BALL
 	db 39, MIMIC
 	db 45, SUBSTITUTE
@@ -2368,6 +2370,7 @@ DragoniteEvosMoves:
 	db 55, WING_ATTACK
 	db 60, HYPER_BEAM
 	db 65, OUTRAGE
+	db 80, ROOST
 	db 0
 
 MewtwoEvosMoves:
@@ -3023,6 +3026,7 @@ LarvitarEvosMoves:
 	db 22, ROCK_THROW
 	db 29, STOMP
 	db 36, ROCK_SLIDE
+	db 38, SLAM
 	db 43, OUTRAGE
 	db 0
 
@@ -3036,6 +3040,7 @@ PupitarEvosMoves:
 	db 22, ROCK_THROW
 	db 31, ROCK_SLIDE
 	db 40, EARTHQUAKE
+	db 44, SLAM
 	db 49, OUTRAGE
 	db 0
 
@@ -3049,6 +3054,7 @@ TyranitarEvosMoves:
 	db 31, ROCK_SLIDE
 	db 42, EARTHQUAKE
 	db 53, OUTRAGE
+	db 57, SLAM
 	db 61, HYPER_BEAM
 	db 0
 

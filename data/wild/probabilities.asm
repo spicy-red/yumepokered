@@ -2,7 +2,7 @@ DEF wild_chance_slot = 0
 DEF wild_chance_total = 0
 
 MACRO wild_chance
-	ASSERT \1 >= 13, "Wild encounter slots must have at least 5% chance!"
+	ASSERT \1 >= 1, "Wild encounter slots must have at least 0% chance!"
 	DEF wild_chance_total += \1
 	db wild_chance_total - 1
 	db wild_chance_slot * 2
@@ -21,9 +21,9 @@ WildMonEncounterSlotChances:
 	wild_chance 24 ; 24/256 =  9.4% chance of slot 3
 	wild_chance 24 ; 24/256 =  9.4% chance of slot 4
 	wild_chance 24 ; 24/256 =  9.4% chance of slot 5
-	wild_chance 13 ; 20/256 =  7.8% chance of slot 6
+	wild_chance 23 ; 13/256 =  7.8% chance of slot 6
 	wild_chance 13 ; 13/256 =  5.1% chance of slot 7
 	wild_chance 13 ; 13/256 =  5.1% chance of slot 8
-	wild_chance 5 ;   5/256 =  1.9% chance of slot 9
+	wild_chance  3 ;  3/256 =  1.9% chance of slot 9
 	assert_table_length NUM_WILDMONS
 	ASSERT wild_chance_total == 256, "WildMonEncounterSlotChances sum to {d:wild_chance_total}, not 256!"

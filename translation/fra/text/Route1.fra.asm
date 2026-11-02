@@ -178,22 +178,18 @@ _Route1OakOneMoreThingText:: ; marcelnote - postgame Oak battle
 	cont "de t'ouvrir le"
 	cont "passage."
 
-	para "D'ailleurs, j'ai"
-	line "aussi donné mon"
-	cont "feu vert pour une"
-	cont "autre dresseuse"
-	cont "du BOURG PALETTE."
+	para "Ton ultime défi"
+	line "sera ODO, le plus"
+	cont "grand dresseur"
+	cont "qui ait jamais"
+	cont "existé!"
 
-	para "Elle a vaincu le"
+	para "Il a vaincu le"
 	line "CONSEIL des 4 et"
 	cont "<RIVAL> au"
 	cont "PLATEAU INDIGO!"
 
-	para "Je te parie qu'elle"
-	line "aimerait défier"
-	cont "le vrai champion!"
-
-	para "Elle t'attend"
+	para "Il t'attend"
 	line "à MT.SILVER."
 
 	para "Avant le combat,"
@@ -232,23 +228,18 @@ _Route1OakOneMoreThingText:: ; marcelnote - postgame Oak battle
 	cont "de t'ouvrir le"
 	cont "passage."
 
-	para "D'ailleurs, j'ai"
-	line "aussi donné mon"
-	cont "feu vert pour une"
-	cont "autre dresseuse"
-	cont "du BOURG PALETTE."
+	para "Ton ultime défi"
+	line "sera ODO, le plus"
+	cont "grand dresseur"
+	cont "qui ait jamais"
+	cont "existé!"
 
-	para "Elle a vaincu le"
+	para "Il a vaincu le"
 	line "CONSEIL des 4 et"
 	cont "<RIVAL> au"
 	cont "PLATEAU INDIGO!"
 
-	para "Je te parie qu'elle"
-	line "aimerait défier"
-	cont "la véritable"
-	cont "championne!"
-
-	para "Elle t'attend"
+	para "Il t'attend"
 	line "à MT.SILVER."
 
 	para "Avant le combat,"
