@@ -1461,19 +1461,12 @@ FlaaffyPicFrontCrystal::   INCBIN "gfx/pokemon/gen2/front/flaaffy.2bpp"
 FlaaffyPicFrontGreen::     INCBIN "gfx/pokemon/gen2/front/flaaffy.2bpp"
 FlaaffyPicBack::           INCBIN "gfx/pokemon/gen2/back/flaaffy.2bpp"
 
-SECTION "Girafarig Sprites", ROMX
-GirafarigPics::
-GirafarigPicFront::          INCBIN "gfx/pokemon/gen2/front/girafarig.2bpp"
-GirafarigPicFrontCrystal::   INCBIN "gfx/pokemon/gen2/front/girafarig.2bpp"
-GirafarigPicFrontGreen::     INCBIN "gfx/pokemon/gen2/front/girafarig.2bpp"
-GirafarigPicBack::           INCBIN "gfx/pokemon/gen2/back/girafarig.2bpp"
-
-SECTION "Gligar Sprites", ROMX
-GligarPics::
-GligarPicFront::          INCBIN "gfx/pokemon/gen2/front/gligar.2bpp"
-GligarPicFrontCrystal::   INCBIN "gfx/pokemon/gen2/front/gligar.2bpp"
-GligarPicFrontGreen::     INCBIN "gfx/pokemon/gen2/front/gligar.2bpp"
-GligarPicBack::           INCBIN "gfx/pokemon/gen2/back/gligar.2bpp"
+SECTION "Wobbuffet Sprites", ROMX
+WobbuffetPics::
+WobbuffetPicFront::          INCBIN "gfx/pokemon/gen2/front/wobbuffet.2bpp"
+WobbuffetPicFrontCrystal::   INCBIN "gfx/pokemon/gen2/front/wobbuffet.2bpp"
+WobbuffetPicFrontGreen::     INCBIN "gfx/pokemon/gen2/front/wobbuffet.2bpp"
+WobbuffetPicBack::           INCBIN "gfx/pokemon/gen2/back/wobbuffet.2bpp"
 
 SECTION "Heracross Sprites", ROMX
 HeracrossPics::

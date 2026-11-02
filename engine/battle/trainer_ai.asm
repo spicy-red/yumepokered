@@ -597,10 +597,17 @@ AIMoveChoiceExpert:
 	jr .nextMove
 .notRage
 
-	; --- Counter --- requires a Physical move from the player, with non-zero power
+	; --- Counter/Retaliate --- require a damaging move from the player
 	ld a, [wEnemyMoveNum]
 	cp COUNTER
+	jr z, .counter
+	cp RETALIATE
 	jr nz, .notCounter
+	ld a, [wPlayerMovePower]
+	and a
+	jp z, .heavyDiscourage
+	jr .notCounter
+.counter
 	ld a, [wPlayerMovePower]
 	and a
 	jp z, .heavyDiscourage
@@ -1517,7 +1524,20 @@ AISwitchIfEnoughMons:
 
 	ld a, d ; how many available monsters are there?
 	cp 2    ; don't bother if only 1
-	jr nc, SwitchEnemyMon
+	jr c, .notEnoughMons
+	ld hl, wBattleMonHP
+	ld a, [hli]
+	or [hl]
+	jr z, SwitchEnemyMon ; a fainted Wobbuffet no longer traps the enemy
+	ld a, [wPlayerMonNumber]
+	ld c, a
+	ld b, 0
+	ld hl, wPartySpecies
+	add hl, bc
+	ld a, [hl]
+	cp WOBBUFFET
+	jr nz, SwitchEnemyMon
+.notEnoughMons
 	and a
 	ret
 

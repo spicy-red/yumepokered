@@ -136,7 +136,7 @@ MonsterNames::
 	db "PHANPY@@@@"
 	db "DONPHAN@@@"
 	db "GROTADMORV"
-	db "GLIGAR@@@@"
+	db "QULBUTOKE@"
 	db "KRABBOSS@@"
 	db "CRUSTABRI@"
 	db "HOPPIP@@@@"
@@ -160,7 +160,6 @@ MonsterNames::
 	db "POISSOROY@"
 	db "TEDDIURSA@"
 	db "URSARING@@"
-	db "GIRAFARIG@"
 	db "LARVITAR@@"
 	db "PONYTA@@@@"
 	db "GALOPA@@@@"
@@ -190,5 +189,5 @@ MonsterNames::
 	db "CHETIFLOR@"
 	db "BOUSTIFLOR"
 	db "EMPIFLOR@@"
-	db "PSYKOKWAK?@"
+	db "PSYKOKWAK?"
 	assert_table_length NUM_POKEMON_INDEXES

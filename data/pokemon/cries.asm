@@ -143,7 +143,7 @@ CryData::
 	mon_cry SFX_CRY_00, $00, $00 ; PHANPY
 	mon_cry SFX_CRY_00, $00, $00 ; DONPHAN
 	mon_cry SFX_CRY_07, $EF, $FF ; Muk
-	mon_cry SFX_CRY_00, $00, $00 ; GLIGAR
+	mon_cry SFX_CRY_00, $00, $00 ; WOBBUFFET
 	mon_cry SFX_CRY_20, $EE, $E0 ; Kingler
 	mon_cry SFX_CRY_18, $6F, $E0 ; Cloyster
 	mon_cry SFX_CRY_00, $00, $00 ; HOPPIP
@@ -167,7 +167,6 @@ CryData::
 	mon_cry SFX_CRY_16, $10, $FF ; Seaking
 	mon_cry SFX_CRY_00, $00, $00 ; TEDDIURSA
 	mon_cry SFX_CRY_00, $00, $00 ; URSARING
-	mon_cry SFX_CRY_00, $00, $00 ; GIRAFARIG
 	mon_cry SFX_CRY_00, $00, $00 ; LARVITAR
 	mon_cry SFX_CRY_25, $00, $80 ; Ponyta
 	mon_cry SFX_CRY_25, $20, $C0 ; Rapidash

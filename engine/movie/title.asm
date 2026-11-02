@@ -458,7 +458,7 @@ ENDC
 ENDC
 
 DebugNewGamePlayerName:
-	db "<PK>MARCEL@"
+	db "DEBUGGER@"
 
 DebugNewGameRivalName:
 	db "SONYINC@"

@@ -147,7 +147,7 @@ EvosMovesPointerTable:
 	dw PhanpyEvosMoves ; PHANPY
 	dw DonphanEvosMoves ; DONPHAN
 	dw MukEvosMoves
-	dw GligarEvosMoves ; GLIGAR
+	dw WobbuffetEvosMoves ; WOBBUFFET
 	dw KinglerEvosMoves
 	dw CloysterEvosMoves
 	dw HoppipEvosMoves ; HOPPIP
@@ -171,7 +171,6 @@ EvosMovesPointerTable:
 	dw SeakingEvosMoves
 	dw TeddiursaEvosMoves ; TEDDIURSA
 	dw UrsaringEvosMoves ; URSARING
-	dw GirafarigEvosMoves ; GIRAFARIG
 	dw LarvitarEvosMoves ; LARVITAR
 	dw PonytaEvosMoves
 	dw RapidashEvosMoves
@@ -2844,16 +2843,10 @@ DonphanEvosMoves:
 	db 41, EARTHQUAKE
 	db 0
 
-GligarEvosMoves:
+WobbuffetEvosMoves:
 ; Evolutions (not provided by CSV)
 	db 0 ; no evolutions
 ; Learnset
-	db 6, SAND_ATTACK
-	db 13, HARDEN
-	db 20, QUICK_ATTACK
-	db 28, SLASH
-	db 36, SCREECH
-	db 44, EARTH_POWER
 	db 0
 
 HoppipEvosMoves:
@@ -2918,18 +2911,6 @@ UrsaringEvosMoves:
 	db 29, SLASH
 	db 38, STRING_SHOT ; substitutes for SCARY_FACE (not implemented)
 	db 47, HYPER_BEAM ; substitutes for HYPER_VOICE (not implemented)
-	db 0
-
-GirafarigEvosMoves:
-; Evolutions (not provided by CSV)
-	db 0 ; no evolutions
-; Learnset
-	db 7, CONFUSION
-	db 13, STOMP
-	db 20, AGILITY
-	db 27, REFLECT ; substitutes for BATON_PASS (not implemented)
-	db 35, PSYCHIC_M
-	db 43, MEDITATE ; substitutes for CALM_MIND (not implemented)
 	db 0
 
 LarvitarEvosMoves:

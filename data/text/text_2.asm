@@ -964,6 +964,11 @@ _CantEscapeText::
 	text "Can't escape!"
 	prompt
 
+_CantSwitchText::
+	text "WOBBUFFET prevents"
+	line "switching!"
+	prompt
+
 _NoRunningText::
 	text "No! There's no"
 	line "running from a"

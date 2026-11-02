@@ -181,5 +181,6 @@ MoveNames::
 	li "ICICLE SPEAR" ; new move
 	li "ROOST"         ; new move
 	li "HEADACHE"      ; hidden trainer-Psyduck move
+	li "RETALIATE"
 	li "STRUGGLE"
 	assert_list_length NUM_ATTACKS

@@ -59,7 +59,7 @@ IF DEF(_DEBUG)
 	jp StartNewGameDebug
 
 DebugBattlePlayerName:
-	db "Tom@"
+	db "DEBUGGER@"
 
 DebugBattleRivalName:
 	db "Juerry@"
@@ -95,7 +95,7 @@ TestBattle: ; unreferenced except in _DEBUG
 	dec a
 	ld [hl], a
 
-	; Give the player a level 20 Rhydon.
+	; Give the player three level 20 Rhydon.
 	ld a, RHYDON
 	ld [wCurPartySpecies], a
 	ld a, 20
@@ -104,9 +104,11 @@ TestBattle: ; unreferenced except in _DEBUG
 	ld [wMonDataLocation], a
 	ld [wCurMap], a
 	call AddPartyMon
+	call AddPartyMon
+	call AddPartyMon
 
-	; Fight against a level 20 Rhydon.
-	ld a, RHYDON
+	; Fight against a level 20 Wobbuffet.
+	ld a, WOBBUFFET
 	ld [wCurOpponent], a
 
 	predef InitOpponent

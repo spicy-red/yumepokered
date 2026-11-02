@@ -1750,14 +1750,14 @@ _DonphanDexEntry::
 	next "a tank shell."
 	dex
 
-_GligarDexEntry::
-	text "It glides silently"
-	next "through the"
-	next "air. It strikes"
+_WobbuffetDexEntry::
+	text "It quietly waits"
+	next "for an opponent"
+	next "to make the"
 
-	page "targets from"
-	next "behind with its"
-	next "barbed tail."
+	page "first move. It"
+	next "strikes back when"
+	next "its tail is hit."
 	dex
 
 _HoppipDexEntry::
@@ -1808,16 +1808,6 @@ _UrsaringDexEntry::
 	page "climbing trees"
 	next "to harvest honey"
 	next "and berries."
-	dex
-
-_GirafarigDexEntry::
-	text "Its tail has"
-	next "a small brain"
-	next "of its own. It"
-
-	page "can bite even"
-	next "when the main"
-	next "body is asleep."
 	dex
 
 _LarvitarDexEntry::

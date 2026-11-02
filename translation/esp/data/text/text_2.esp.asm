@@ -1037,6 +1037,11 @@ _CantEscapeText::
 	text "¡No puede huir!"
 	prompt
 
+_CantSwitchText::
+	text "¡No puede"
+	line "cambiar!"
+	prompt
+
 _NoRunningText::
 	text "¡No puedes huir"
 	line "de una pelea con"

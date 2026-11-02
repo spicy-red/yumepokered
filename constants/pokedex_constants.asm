@@ -180,18 +180,17 @@
 	const DEX_MAGCARGO       ; 173
 	const DEX_PHANPY         ; 174
 	const DEX_DONPHAN        ; 175
-	const DEX_GLIGAR         ; 176
+	const DEX_WOBBUFFET      ; 176
 	const DEX_HOPPIP         ; 177
 	const DEX_SKIPLOOM       ; 178
 	const DEX_JUMPLUFF       ; 179
 	const DEX_TEDDIURSA      ; 180
 	const DEX_URSARING       ; 181
-	const DEX_GIRAFARIG      ; 182
-	const DEX_LARVITAR       ; 183
-	const DEX_PUPITAR        ; 184
-	const DEX_TYRANITAR      ; 185
-	const DEX_HOUNDOUR       ; 186
-	const DEX_HOUNDOOM       ; 187
+	const DEX_LARVITAR       ; 182
+	const DEX_PUPITAR        ; 183
+	const DEX_TYRANITAR      ; 184
+	const DEX_HOUNDOUR       ; 185
+	const DEX_HOUNDOOM       ; 186
 
 DEF NUM_POKEMON EQU const_value - 1
-	const DEX_ODOS_PSYDUCK ; 188, used only to index hidden trainer-Psyduck data
+	const DEX_ODOS_PSYDUCK ; 187, used only to index hidden trainer-Psyduck data

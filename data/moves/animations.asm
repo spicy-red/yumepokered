@@ -180,6 +180,7 @@ AttackAnimationPointers:
 	dw SpikeCannonAnim  ; ICICLE_SPEAR
 	dw RestAnim         ; ROOST
 	dw PsychicAnim      ; HEADACHE
+	dw RetaliateAnim
 	dw StruggleAnim
 	assert_table_length NUM_ATTACKS
 	dw ShowPicAnim
@@ -598,6 +599,12 @@ LowKickAnim:
 
 CounterAnim:
 	battle_anim COUNTER, SE_SLIDE_MON_OFF
+	battle_anim NO_MOVE, SUBANIM_1_STAR_BIG_MOVING, 1, 6
+	battle_anim NO_MOVE, SE_SHOW_MON_PIC
+	db -1 ; end
+
+RetaliateAnim:
+	battle_anim RETALIATE, SE_SLIDE_MON_OFF
 	battle_anim NO_MOVE, SUBANIM_1_STAR_BIG_MOVING, 1, 6
 	battle_anim NO_MOVE, SE_SHOW_MON_PIC
 	db -1 ; end

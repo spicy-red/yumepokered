@@ -191,5 +191,6 @@ Moves:
 	move ICICLE_SPEAR, TWO_TO_FIVE_ATTACKS_EFFECT,  25, ICE,          100, 30 ; new move
 	move ROOST,        HEAL_EFFECT,                  0, FLYING,       100, 10 ; new move
 	move HEADACHE,     THRASH_PETAL_DANCE_EFFECT,  200, BIRD,         100,  5 ; hidden trainer-Psyduck move
+	move RETALIATE,    NO_ADDITIONAL_EFFECT,         1, BIRD,         100, 30 ; reflects 2x damage from physical or special attacks
 	move STRUGGLE,     RECOIL_EFFECT,               50, BIRD,         100, 10 ; marcelnote - changed from NORMAL
 	assert_table_length NUM_ATTACKS

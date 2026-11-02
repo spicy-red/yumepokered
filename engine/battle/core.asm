@@ -366,15 +366,26 @@ MainInBattleLoop:
 	jr z, .enemyMovesFirst ; if enemy used Quick Attack and player didn't
 	ld a, [wPlayerSelectedMove]
 	cp COUNTER
+	jr z, .playerUsedCounter
+	cp RETALIATE
 	jr nz, .playerDidNotUseCounter
+.playerUsedCounter
 	ld a, [wEnemySelectedMove]
 	cp COUNTER
-	jr z, .compareSpeed ; if both used Counter
-	jr .enemyMovesFirst ; if player used Counter and enemy didn't
+	jr z, .playerAndEnemyUsedCounter
+	cp RETALIATE
+	jr z, .playerAndEnemyUsedCounter
+	jr .enemyMovesFirst ; if player used a counter move and enemy didn't
+.playerAndEnemyUsedCounter
+	jr .compareSpeed
 .playerDidNotUseCounter
 	ld a, [wEnemySelectedMove]
 	cp COUNTER
-	jr z, .playerMovesFirst ; if enemy used Counter and player didn't
+	jr z, .enemyUsedCounter
+	cp RETALIATE
+	jr nz, .compareSpeed
+.enemyUsedCounter
+	jr .playerMovesFirst ; if enemy used a counter move and player didn't
 .compareSpeed
 	ld de, wBattleMonSpeed ; player speed value
 	ld hl, wEnemyMonSpeed ; enemy speed value
@@ -2508,6 +2519,17 @@ PartyMenuOrRockOrRun:
 .enemyMonPicReloaded ; enemy mon pic has been reloaded, so return to the party menu
 	jp .partyMenuWasSelected
 .switchMon
+	ld a, [wEnemyMonSpecies2]
+	cp WOBBUFFET
+	jr nz, .canSwitch
+	ld hl, wEnemyMonHP
+	ld a, [hli]
+	or [hl]
+	jr z, .canSwitch
+	ld hl, CantSwitchText
+	call PrintText
+	jp .partyMonDeselected
+.canSwitch
 	ld a, [wPlayerMonNumber]
 	ld d, a
 	ld a, [wWhichPokemon]
@@ -2556,6 +2578,10 @@ SwitchPlayerMon:
 
 AlreadyOutText:
 	text_far _AlreadyOutText
+	text_end
+
+CantSwitchText:
+	text_far _CantSwitchText
 	text_end
 
 BattleMenu_RunWasSelected:
@@ -4737,7 +4763,7 @@ CriticalHitTest:
 INCLUDE "data/battle/critical_hit_moves.asm"
 
 ; function to determine if Counter hits and if so, how much damage it does
-HandleCounterMove: ; marcelnote - adjusted to counter any physical type
+HandleCounterMove: ; handles Counter and Retaliate's reflected damage
 ; The variables checked by Counter are updated whenever the cursor points to a new move in the battle selection menu.
 ; This is irrelevant for the opponent's side outside of link battles, since the move selection is controlled by the AI.
 ; However, in the scenario where the player switches out and the opponent uses Counter,
@@ -4756,15 +4782,29 @@ HandleCounterMove: ; marcelnote - adjusted to counter any physical type
 	ld a, [wEnemySelectedMove]
 .next
 	cp COUNTER
-	ret nz ; return if not using Counter
+	jr z, .isCounter
+	cp RETALIATE
+	ret nz ; return if not using a counter move
+.isCounter
 	ld a, TRUE
 	ld [wMoveMissed], a ; can become False below
 	ld a, [hl]
 	cp COUNTER
-	ret z ; miss if the opponent's last selected move is Counter
+	jr z, .miss ; counter moves cannot reflect each other
+	cp RETALIATE
+	jr z, .miss
 	ld a, [de]
 	and a
-	ret z ; miss if the opponent's last selected move's Base Power is 0
+	jr z, .miss ; miss if the opponent's last selected move's Base Power is 0
+; Retaliate reflects damage from both physical and special attacks.
+	ldh a, [hWhoseTurn]
+	and a
+	ld a, [wPlayerMoveNum]
+	jr z, .checkDamageType
+	ld a, [wEnemyMoveNum]
+.checkDamageType
+	cp RETALIATE
+	jr z, .hasValidDamageType
 ; check if the move the target last selected was a Physical type ; marcelnote - adjusted
 	inc de
 	ld a, [de] ; move type
@@ -4774,34 +4814,75 @@ HandleCounterMove: ; marcelnote - adjusted to counter any physical type
 	add hl, bc
 	ld a, [hl]
 	and a ; TRUE if Special, FALSE if Physical
-	jr z, .physicalType
-; if the move wasn't Physical type, miss
+	jr z, .hasValidDamageType
+; Counter misses if the move wasn't Physical type.
 	xor a
 	ret
-.physicalType
+.hasValidDamageType
 	ld hl, wDamage
 	ld a, [hli]
 	or [hl]
-	ret z ; If we made it here, Counter still misses if the last move used in battle did no damage to its target.
-	      ; wDamage is shared by both players, so Counter may strike back damage dealt by the Counter user itself
-	      ; if the conditions meet, even though 99% of the times damage will come from the target.
-; if it did damage, double it
+	ret z ; Both moves miss if the last move used in battle did no damage to its target.
+	      ; wDamage is shared by both players, so a counter move may reflect damage
+	      ; dealt by its user itself if the conditions meet.
+; Counter always doubles the damage. Retaliate's multiplier is configurable.
+	ldh a, [hWhoseTurn]
+	and a
+	ld a, [wPlayerMoveNum]
+	jr z, .checkDamageMultiplier
+	ld a, [wEnemyMoveNum]
+.checkDamageMultiplier
+	cp RETALIATE
+	jr z, .retaliateDamage
+.doubleDamage
+	ld hl, wDamage
+	inc hl
 	ld a, [hl]
 	add a
 	ld [hld], a
 	ld a, [hl]
 	adc a
 	ld [hl], a
-	jr nc, .noCarry
+	jr nc, .damageReady
+	jr .maxDamage
+.retaliateDamage
+IF RETALIATE_DAMAGE_MULTIPLIER == 2
+	jr .doubleDamage
+ELIF RETALIATE_DAMAGE_MULTIPLIER == 3
+	ld hl, wDamage
+	ld a, [hli]
+	ld c, a
+	ld a, [hl]
+	ld b, a
+	ld a, [hl]
+	add a
+	ld [hld], a
+	ld a, [hl]
+	adc a
+	ld [hl], a
+	jr c, .maxDamage
+	inc hl
+	ld a, [hl]
+	add b
+	ld [hld], a
+	ld a, [hl]
+	adc c
+	ld [hl], a
+	jr nc, .damageReady
+ENDC
+.maxDamage
 ; damage is capped at 0xFFFF
 	ld a, $ff
 	ld [hli], a
 	ld [hl], a
-.noCarry
+.damageReady
 	xor a ; FALSE
 	ld [wMoveMissed], a
+	ld [wCriticalHitOrOHKO], a ; reflected damage cannot be a critical hit
 	call MoveHitTest ; do the normal move hit test in addition to Counter's special rules
 	xor a
+	ret
+.miss
 	ret
 
 ApplyAttackToEnemyPokemon:
@@ -6157,11 +6238,6 @@ GetCurrentMove:
 	ld a, [wEnemySelectedMove]
 	jr nz, .gotPointers ; jump on opponent's turn
 	ld de, wPlayerMoveNum
-	; Apply InitBattleVariables to TestBattle.
-	ld a, [wStatusFlags7]
-	bit BIT_TEST_BATTLE, a
-	ld a, [wTestBattlePlayerSelectedMove]
-	jr nz, .gotPointers
 	ld a, [wPlayerSelectedMove]
 .gotPointers
 	ld [wNamedObjectIndex], a ; save move ID for GetMoveName

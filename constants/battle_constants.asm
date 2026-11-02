@@ -3,6 +3,10 @@ DEF MAX_LEVEL EQU 100
 ; maximum moves known per mon
 DEF NUM_MOVES EQU 4
 
+; Retaliate reflects 2x or 3x the damage dealt by the opposing move.
+DEF RETALIATE_DAMAGE_MULTIPLIER EQU 2
+ASSERT RETALIATE_DAMAGE_MULTIPLIER == 2 || RETALIATE_DAMAGE_MULTIPLIER == 3
+
 ; significant stat values
 DEF BASE_STAT_LEVEL EQU 7
 DEF MAX_STAT_LEVEL EQU 13

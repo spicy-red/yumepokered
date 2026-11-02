@@ -175,13 +175,12 @@ MonPartyData:
 	nybble ICON_HELIX     ; MAGCARGO
 	nybble ICON_QUADRUPED ; PHANPY
 	nybble ICON_QUADRUPED ; DONPHAN
-	nybble ICON_BUG       ; GLIGAR
+	nybble ICON_MON       ; WOBBUFFET
 	nybble ICON_GRASS     ; HOPPIP
 	nybble ICON_GRASS     ; SKIPLOOM
 	nybble ICON_GRASS     ; JUMPLUFF
 	nybble ICON_QUADRUPED ; TEDDIURSA
 	nybble ICON_QUADRUPED ; URSARING
-	nybble ICON_QUADRUPED ; GIRAFARIG
 	nybble ICON_MON       ; LARVITAR
 	nybble ICON_MON       ; PUPITAR
 	nybble ICON_MON       ; TYRANITAR

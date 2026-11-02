@@ -143,7 +143,7 @@
 	const PHANPY               ; $86
 	const DONPHAN              ; $87
 	const MUK                ; $88
-	const GLIGAR               ; $89
+	const WOBBUFFET            ; $89
 	const KINGLER            ; $8A
 	const CLOYSTER           ; $8B
 	const HOPPIP               ; $8C
@@ -167,37 +167,36 @@
 	const SEAKING            ; $9E
 	const TEDDIURSA            ; $9F
 	const URSARING             ; $A0
-	const GIRAFARIG            ; $A1
-	const LARVITAR             ; $A2
-	const PONYTA             ; $A3
-	const RAPIDASH           ; $A4
-	const RATTATA            ; $A5
-	const RATICATE           ; $A6
-	const NIDORINO           ; $A7
-	const NIDORINA           ; $A8
-	const GEODUDE            ; $A9
-	const PORYGON            ; $AA
-	const AERODACTYL         ; $AB
-	const PUPITAR              ; $AC
-	const MAGNEMITE          ; $AD
-	const TYRANITAR            ; $AE
-	const HOUNDOUR             ; $AF
-	const CHARMANDER         ; $B0
-	const SQUIRTLE           ; $B1
-	const CHARMELEON         ; $B2
-	const WARTORTLE          ; $B3
-	const CHARIZARD          ; $B4
-	const HOUNDOOM             ; $B5
-	const FOSSIL_KABUTOPS    ; $B6
-	const FOSSIL_AERODACTYL  ; $B7
-	const MON_GHOST          ; $B8
-	const ODDISH             ; $B9
-	const GLOOM              ; $BA
-	const VILEPLUME          ; $BB
-	const BELLSPROUT         ; $BC
-	const WEEPINBELL         ; $BD
-	const VICTREEBEL         ; $BE
-	const ODOS_PSYDUCK    ; $BF
+	const LARVITAR             ; $A1
+	const PONYTA             ; $A2
+	const RAPIDASH           ; $A3
+	const RATTATA            ; $A4
+	const RATICATE           ; $A5
+	const NIDORINO            ; $A6
+	const NIDORINA            ; $A7
+	const GEODUDE            ; $A8
+	const PORYGON            ; $A9
+	const AERODACTYL         ; $AA
+	const PUPITAR              ; $AB
+	const MAGNEMITE          ; $AC
+	const TYRANITAR            ; $AD
+	const HOUNDOUR             ; $AE
+	const CHARMANDER         ; $AF
+	const SQUIRTLE           ; $B0
+	const CHARMELEON         ; $B1
+	const WARTORTLE          ; $B2
+	const CHARIZARD          ; $B3
+	const HOUNDOOM             ; $B4
+	const FOSSIL_KABUTOPS    ; $B5
+	const FOSSIL_AERODACTYL  ; $B6
+	const MON_GHOST          ; $B7
+	const ODDISH             ; $B8
+	const GLOOM              ; $B9
+	const VILEPLUME          ; $BA
+	const BELLSPROUT         ; $BB
+	const WEEPINBELL         ; $BC
+	const VICTREEBEL         ; $BD
+	const ODOS_PSYDUCK    ; $BE
 
 DEF NUM_POKEMON_INDEXES EQU const_value - 1
 

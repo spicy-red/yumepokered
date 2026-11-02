@@ -186,7 +186,8 @@
 	const ICICLE_SPEAR ; $B2 ; new move
 	const ROOST        ; $B3 ; new move
 	const HEADACHE     ; $B4 ; hidden trainer-Psyduck move
-	const STRUGGLE     ; $B5
+	const RETALIATE    ; $B5 ; reflects physical or special damage
+	const STRUGGLE     ; $B6
 DEF NUM_ATTACKS EQU const_value - 1
 
 DEF CANNOT_MOVE EQU $ff

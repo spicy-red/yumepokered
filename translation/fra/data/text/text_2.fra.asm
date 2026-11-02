@@ -1047,6 +1047,11 @@ _CantEscapeText::
 	text "Fuite impossible!"
 	prompt
 
+_CantSwitchText::
+	text "Impossible de"
+	line "changer!"
+	prompt
+
 _NoRunningText::
 	text "On ne peut s'en-"
 	line "fuir d'un combat"

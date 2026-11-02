@@ -136,7 +136,7 @@ PokedexEntryPointers:
 	dw PhanpyDexEntry ; PHANPY
 	dw DonphanDexEntry ; DONPHAN
 	dw MukDexEntry
-	dw GligarDexEntry ; GLIGAR
+	dw WobbuffetDexEntry ; WOBBUFFET
 	dw KinglerDexEntry
 	dw CloysterDexEntry
 	dw HoppipDexEntry ; HOPPIP
@@ -160,7 +160,6 @@ PokedexEntryPointers:
 	dw SeakingDexEntry
 	dw TeddiursaDexEntry ; TEDDIURSA
 	dw UrsaringDexEntry ; URSARING
-	dw GirafarigDexEntry ; GIRAFARIG
 	dw LarvitarDexEntry ; LARVITAR
 	dw PonytaDexEntry
 	dw RapidashDexEntry
@@ -1775,13 +1774,13 @@ DonphanDexEntry:
 	text_far _DonphanDexEntry
 	text_end
 
-GligarDexEntry:
-	db "FLY SCORP.@"
-	db 3, 7
-	dw 1429
-	db 11
-	dw 648
-	text_far _GligarDexEntry
+WobbuffetDexEntry:
+	db "PATIENT@"
+	db 4, 3
+	dw 628
+	db 13
+	dw 285
+	text_far _WobbuffetDexEntry
 	text_end
 
 HoppipDexEntry:
@@ -1827,15 +1826,6 @@ UrsaringDexEntry:
 	db 18
 	dw 1258
 	text_far _UrsaringDexEntry
-	text_end
-
-GirafarigDexEntry:
-	db "LONG NECK@"
-	db 4, 11
-	dw 915
-	db 15
-	dw 415
-	text_far _GirafarigDexEntry
 	text_end
 
 LarvitarDexEntry:
