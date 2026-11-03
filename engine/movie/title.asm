@@ -392,8 +392,11 @@ CopyrightTextString:
 
 INCLUDE "data/pokemon/title_mons.asm"
 
-; prints version text (red, blue, green)
+; prints version text for blue and green; omitted for red
 PrintGameVersionOnTitleScreen:
+IF DEF(_RED)
+	ret
+ELSE
 IF DEF(_FRA) ; French
 IF DEF(_RED)
 	hlcoord 6, 8
@@ -421,6 +424,7 @@ ENDC
 ENDC
 	ld de, VersionOnTitleScreenText
 	jp PlaceString
+ENDC
 
 ; these point to special tiles specifically loaded for that purpose and are not usual text
 VersionOnTitleScreenText:

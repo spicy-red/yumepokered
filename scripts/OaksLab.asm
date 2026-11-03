@@ -559,6 +559,15 @@ OaksLabOakGivesPokedexScript:
 	ld a, TEXT_OAKSLAB_OAK_GOT_POKEDEX
 	ldh [hTextID], a
 	call DisplayTextID
+	call OaksLabGiveExpAll
+	jr nc, .noRoomForExpAll
+	ld hl, OaksLabOakGotExpAllText
+	call PrintText
+	jr .continue
+.noRoomForExpAll
+	ld hl, OaksLabOakNoRoomForExpAllText
+	call PrintText
+.continue
 	call Delay3
 	ld a, TOGGLE_POKEDEX_1
 	ld [wToggleableObjectIndex], a
@@ -1013,8 +1022,29 @@ OaksLabLastMonText:
 	text_far _OaksLabLastMonText
 	text_end
 
+OaksLabGiveExpAll:
+	lb bc, EXP_ALL, 1
+	call GiveItem
+	ret nc
+	SetEvent EVENT_GOT_EXP_ALL
+	ld hl, wStatusFlags1
+	set BIT_EXP_ALL_ACTIVE, [hl]
+	scf
+	ret
+
 OaksLabOakText: ; marcelnote - this was changed to make Balls more accessible
 	text_asm
+	CheckEvent EVENT_GOT_POKEDEX
+	jr z, .checkNormalDialogue
+	CheckEvent EVENT_GOT_EXP_ALL
+	jr nz, .checkNormalDialogue
+	call OaksLabGiveExpAll
+	ld hl, OaksLabOakNoRoomForExpAllText
+	jr nc, .printExpAllText
+	ld hl, OaksLabOakGotExpAllText
+.printExpAllText
+	ret
+.checkNormalDialogue
 	CheckEvent EVENT_PALLET_AFTER_GETTING_POKEBALLS
 	ld hl, .HowIsYourPokedexComingText
 	ret nz ; got Poke Balls on a previous visit
@@ -1181,6 +1211,15 @@ OaksLabOakMyInventionPokedexText:
 OaksLabOakGotPokedexText:
 	text_far _OaksLabOakGotPokedexText
 	sound_get_key_item
+	text_end
+
+OaksLabOakGotExpAllText:
+	text_far _OaksLabOakGotExpAllText
+	sound_get_key_item
+	text_end
+
+OaksLabOakNoRoomForExpAllText:
+	text_far _OaksLabOakNoRoomForExpAllText
 	text_end
 
 OaksLabOakThatWasMyDreamText:

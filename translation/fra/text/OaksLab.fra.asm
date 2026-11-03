@@ -393,6 +393,18 @@ _OaksLabOakGotPokedexText::
 	line "le #DEX!@"
 	text_end
 
+_OaksLabOakGotExpAllText::
+	text "CHEN te donne le"
+	line "MULTI EXP!@"
+	text_end
+
+_OaksLabOakNoRoomForExpAllText::
+	text "CHEN: Fais de la"
+	line "place dans tes"
+	cont "OBJETS RARES,"
+	cont "puis reparle-moi."
+	done
+
 _OaksLabOakThatWasMyDreamText::
 	text "Faire un guide"
 	line "complet sur les"

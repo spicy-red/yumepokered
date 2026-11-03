@@ -9,7 +9,7 @@ Route7WildMons:
 	db 22, BELLSPROUT
 	db 20, VULPIX
 	db 20, GROWLITHE
-	db 20, MAREEP
+	db 10, CYNDAQUIL
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate

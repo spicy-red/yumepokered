@@ -337,6 +337,18 @@ _OaksLabOakGotPokedexText::
 	cont "del PROF.OAK!@"
 	text_end
 
+_OaksLabOakGotExpAllText::
+	text "¡OAK te da"
+	line "REPARTIR EXP.!@"
+	text_end
+
+_OaksLabOakNoRoomForExpAllText::
+	text "OAK: ¡Haz sitio"
+	line "en OBJETOS CLAVE"
+	cont "y vuelve a"
+	cont "hablar conmigo!"
+	done
+
 _OaksLabOakThatWasMyDreamText::
 	text "Quería hacer"
 	line "una guía de todos"

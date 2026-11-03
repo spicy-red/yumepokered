@@ -40,44 +40,82 @@ SpecialTrainerMoves:
 
 	db MISTY, 1
 	; Goldeen
-	db 2, 1, PECK
-	db 2, 2, WATER_GUN
+	db 3, 1, PECK
+	db 3, 2, WATER_GUN
+	; Psyduck
+	db 4, 1, PSYCHIC_M
+	db 4, 2, HYDRO_PUMP
+	db 4, 3, AMNESIA
+	db 4, 4, FURY_SWIPES
 	; Starmie
-	db 3, 1, SWIFT
-	db 3, 3, BUBBLEBEAM
+	db 6, 1, SWIFT
+	db 6, 2, THUNDERBOLT
+	db 6, 3, BUBBLEBEAM
+	db 6, 4, ICE_BEAM
 	db $ff
 
 	db MISTY, 2  ; rematch
-	; Seaking
-	db 1, 1, AGILITY
-	db 1, 4, NO_MOVE
+	; Kingler
+	db 1, 1, CRABHAMMER
+	db 1, 2, SWORDS_DANCE
+	db 1, 3, HYPER_BEAM
+	db 1, 4, VICEGRIP
 	; Golduck
 	db 2, 1, HYPER_BEAM
 	db 2, 2, PSYCHIC_M
-	; Dragonair
+	; Vaporeon
 	db 3, 1, SURF
+	db 3, 2, RECOVER
 	db 3, 3, BLIZZARD
-	; Seadra
-	db 4, 3, SMOKESCREEN
+	db 3, 4, TOXIC
+	; KINGDRA
+	db 4, 1, ICE_BEAM
+	db 4, 2, FLAMETHROWER
+	db 4, 3, HYDRO_PUMP
+	db 4, 4, OUTRAGE
 	; Dewgong
 	db 5, 1, REST
 	db 5, 2, DOUBLE_EDGE
+	db 5, 3, BLIZZARD
 	db 5, 4, SURF
 	; Starmie
 	db 6, 1, PSYCHIC_M
 	db 6, 2, RECOVER
+	db 6, 3, THUNDERBOLT
 	db 6, 4, SURF
 	db $ff
 
 	db LT_SURGE, 1
+	; Magnemite
+	db 1, 1, THUNDERBOLT
+	db 1, 2, SONICBOOM
+	db 1, 3, THUNDER_WAVE
+	db 1, 4, SWIFT
+	; Electabuzz
+	db 2, 1, THUNDERPUNCH
+	db 2, 2, HYPER_BEAM
+	db 2, 3, THUNDER_WAVE
+	db 2, 4, DISCHARGE
+	; Jolteon
+	db 3, 1, THUNDERBOLT
+	db 3, 2, DOUBLE_KICK
+	db 3, 3, PIN_MISSILE
+	db 3, 4, QUICK_ATTACK
 	; Voltorb
-	db 1, 4, THUNDERSHOCK
+	db 4, 1, EXPLOSION
+	db 4, 2, DISCHARGE
+	db 4, 3, NO_MOVE
+	db 4, 4, NO_MOVE
 	; Pikachu
-	db 2, 4, THUNDERSHOCK
+	db 5, 1, DOUBLE_TEAM
+	db 5, 2, THUNDER
+	db 5, 3, SURF
+	db 5, 4, SAND_ATTACK
 	; Raichu
-	db 3, 2, THUNDERBOLT
-	db 3, 3, BODY_SLAM ; if too strong, MEGA_PUNCH
-	db 3, 4, GROWL
+	db 6, 1, DOUBLE_TEAM
+	db 6, 2, THUNDERBOLT
+	db 6, 3, BODY_SLAM ; if too strong, MEGA_PUNCH
+	db 6, 4, SURF
 	db $ff
 
 	db LT_SURGE, 2  ; rematch
@@ -87,9 +125,11 @@ SpecialTrainerMoves:
 	; Electabuzz
 	db 2, 1, THUNDERBOLT
 	db 2, 2, PSYCHIC_M
-	; Porygon
+	; ZAPDOS
 	db 3, 1, THUNDERBOLT
-	db 3, 2, ICE_BEAM
+	db 3, 2, DRILL_PECK
+	db 3, 3, ROOST
+	db 3, 4, REFLECT
 	; Electrode
 	db 4, 2, THUNDER_WAVE
 	; Jolteon
@@ -102,13 +142,35 @@ SpecialTrainerMoves:
 
 	db ERIKA, 1
 	; Victreebel
+	db 1, 1, SLEEP_POWDER
 	db 1, 2, RAZOR_LEAF
-	; Tangela
+	db 1, 3, GROWTH
+	db 1, 4, BODY_SLAM
+	; PARASECT
 	db 2, 1, MEGA_DRAIN
-	db 2, 3, STUN_SPORE
+	db 2, 2, SPORE
+	db 2, 3, SLASH
+	db 2, 4, NO_MOVE
+	; IVYSAUR
+	db 3, 1, LEECH_SEED
+	db 3, 2, SLEEP_POWDER
+	db 3, 3, EARTH_POWER
+	db 3, 4, RAZOR_LEAF
+	; EXEGGCUTE
+	db 4, 1, EXPLOSION
+	db 4, 2, PSYCHIC_M
+	db 4, 3, NO_MOVE
+	db 4, 4, RAZOR_LEAF
+	;TANGELA
+	db 5, 1, SOLARBEAM
+	db 5, 2, LEECH_SEED
+	db 5, 3, MEGA_DRAIN
+	db 5, 4, RAZOR_LEAF
 	; Vileplume
-	db 3, 1, MEGA_DRAIN
-	db 3, 4, PETAL_DANCE
+	db 6, 1, MEGA_DRAIN
+	db 6, 2, PETAL_DANCE
+	db 6, 3, SLEEP_POWDER
+	db 6, 4, GUNK_SHOT
 	db $ff
 
 	db ERIKA, 2  ; rematch
@@ -116,16 +178,21 @@ SpecialTrainerMoves:
 	db 1, 3, TOXIC
 	; Parasect
 	db 2, 1, MEGA_DRAIN
+	db 2, 2, SPORE
+	db 2, 3, RAZOR_WIND
 	db 2, 4, CUT
 	; Exeggutor
 	db 3, 1, SUBSTITUTE
 	db 3, 2, PSYCHIC_M
 	db 3, 3, MEGA_DRAIN
+	db 4, 4, LEECH_SEED
 	; Tangela
 	db 4, 2, BIND
 	db 4, 3, MEGA_DRAIN
 	; Venusaur
-	db 5, 3, ACID
+	db 5, 1, RECOVER
+	db 5, 2, SOLARBEAM
+	db 5, 3, GUNK_SHOT
 	db 5, 4, LEECH_SEED
 	; Vileplume
 	db 6, 2, SLEEP_POWDER
@@ -133,89 +200,147 @@ SpecialTrainerMoves:
 
 	db KOGA, 1
 	; Weezing
+	db 1, 1, FIRE_BLAST
 	db 1, 2, TOXIC
 	db 1, 3, EXPLOSION
 	; Golbat
 	db 2, 3, HYPER_FANG
 	; Muk
-	db 3, 1, SLUDGE
+	db 3, 1, GUNK_SHOT
 	db 3, 2, TOXIC
+	; Arbok
+	db 4, 1, GLARE
+	db 4, 2, WRAP
+	; Tentacruel
+	db 5, 1, HYDRO_PUMP
+	db 5, 2, TOXIC
+	db 5, 3, BLIZZARD
 	; Venomoth
-	db 4, 1, RAZOR_WIND
-	db 4, 2, DOUBLE_TEAM
-	db 4, 4, TOXIC
+	db 6, 1, RAZOR_WIND
+	db 6, 2, DOUBLE_TEAM
+	db 6, 3, SLEEP_POWDER
+	db 6, 4, PSYCHIC_M
 	db $ff
 
 	db KOGA, 2  ; rematch
 	; Weezing - TOXIC, SLUDGE, FIRE_BLAST, EXPLOSION
 	db 1, 1, TOXIC
+	db 1, 2, SLUDGE
 	db 1, 3, FIRE_BLAST
+	db 1, 4, EXPLOSION
 	; Golbat - MEGA_DRAIN, HEX, TOXIC, HYPER_FANG
 	db 2, 1, MEGA_DRAIN
 	db 2, 2, HEX
 	db 2, 3, TOXIC
-	; Muk - MINIMIZE, TOXIC, SLUDGE, BIND
+	db 2, 4, HYPER_FANG
+	; Muk - MINIMIZE, TOXIC, GUNK_SHOT, BIND
+	db 1, 1, MINIMIZE
+	db 1, 2, TOXIC
+	db 3, 3, GUNK_SHOT
 	db 3, 4, BIND
 	; Scyther - WING_ATTACK, SWORDS_DANCE, CUT, TOXIC
+	db 4, 1, AIR_SLASH
+	db 4, 2, SWORDS_DANCE
 	db 4, 3, CUT
 	db 4, 4, TOXIC
 	; Tentacruel - WRAP, TOXIC, REFLECT, HYDRO_PUMP
+	db 5, 1, WRAP
 	db 5, 2, TOXIC
-	db 5, 3, REFLECT
+	db 5, 3, THUNDERBOLT
+	db 5, 4, HYDRO_PUMP
 	; Venomoth - RAZOR_WIND, DOUBLE_TEAM, SLEEP_POWDER, PSYCHIC_M
 	db 6, 1, RAZOR_WIND
 	db 6, 2, DOUBLE_TEAM
+	db 6, 3, SLEEP_POWDER
+	db 6, 4, PSYCHIC_M
 	db $ff
 
-	db SABRINA, 1
-	; Kadabra - DISABLE, PSYWAVE, RECOVER, PSYCHIC_M
-	db 1, 2, PSYWAVE
+	db SABRINA, 1  
+	; GENGAR
+	db 1, 1, THUNDERBOLT
+	db 1, 2, ICE_PUNCH
+	db 1, 3, FIRE_PUNCH
+	db 1, 4, SHADOW_BALL
+	; Mr. Mime
+	db 2, 1, LIGHT_SCREEN
+	db 2, 2, PSYCHIC_M
+	db 2, 3, REFLECT
+	db 2, 4, RECOVER
+	; Butterfree
+	db 3, 1, MEGA_DRAIN
+	db 3, 2, PSYCHIC_M
+	db 3, 4, SLEEP_POWDER
+	db 3, 4, RAZOR_WIND
+	; HYPNO
+	db 4, 1, HEADACHE
+	db 4, 2, PSYCHIC_M
+	db 4, 3, HYPNOSIS
+	db 4, 4, DREAM_EATER
+	; Jynx
+	db 5, 1, BLIZZARD
+	db 5, 2, PSYCHIC_M
+	db 5, 3, LOVELY_KISS
+	db 5, 4, ICE_BEAM
+	; Alakazam
+	db 6, 1, PSYCHIC_M
+	db 6, 2, KINESIS
+	db 6, 3, RECOVER
+	db 6, 4, THUNDER_WAVE
+	db $ff
+
+	db SABRINA, 2
+	; EXEGGUTOR - DISABLE, PSYWAVE, RECOVER, PSYCHIC_M
+	db 1, 1, PSYCHIC_M
+	db 1, 2, SOLARBEAM
+	db 1, 3, AMNESIA
+	db 1, 4, EGG_BOMB
 	; Mr. Mime -  SUBSTITUTE, LIGHT_SCREEN, PSYBEAM, MIMIC
 	db 2, 1, SUBSTITUTE
 	db 2, 2, LIGHT_SCREEN
-	; Butterfree - SLEEP_POWDER, PSYCHIC_M, RAZOR_WIND, PSYWAVE
-	db 3, 1, SLEEP_POWDER
+	db 2, 3, PSYCHIC_M
+	db 2, 4, RECOVER
+	; STARMIE  
+	db 3, 1, THUNDERBOLT
 	db 3, 2, PSYCHIC_M
-	db 3, 4, PSYWAVE
+	db 3, 3, BLIZZARD
+	db 3, 4, SURF
 	; Alakazam - REFLECT, PSYWAVE, RECOVER, PSYCHIC_M
-	db 4, 1, REFLECT
-	db 4, 2, PSYWAVE
-	db $ff
-
-	db SABRINA, 2  ; rematch
-	; Kadabra
-	db 1, 1, THUNDER_WAVE
-	; Wigglytuff
-	db 2, 1, PSYCHIC_M
-	db 2, 2, ICE_BEAM
-	; Mr. Mime
-	db 3, 1, LIGHT_SCREEN
-	db 3, 2, PSYCHIC_M
-	; Gengar
-	db 4, 1, CONFUSE_RAY
-	db 4, 2, PSYCHIC_M
-	db 4, 4, THUNDERBOLT
-	; Butterfree
-	db 5, 1, MEGA_DRAIN
-	db 5, 2, PSYCHIC_M
-	db 5, 4, SLEEP_POWDER
-	; Alakazam
-	db 6, 1, HYPER_BEAM
+	db 6, 1, REFLECT
+	db 6, 2, PSYWAVE
+	db 6, 4, PSYCHIC_M
+	; Hypno - HYPNOSIS, DREAM_EATER, PSYCHIC_M, HEADBUTT
+	db 4, 1, HYPNOSIS
+	db 4, 2, DREAM_EATER
+	db 4, 3, PSYCHIC_M
+	db 4, 4, HEADBUTT
+	; Jynx - LOVELY_KISS, ICE_PUNCH, PSYCHIC_M, BLIZZARD
+	db 5, 1, LOVELY_KISS
+	db 5, 2, ICE_PUNCH
+	db 5, 3, PSYCHIC_M
+	db 5, 4, BLIZZARD
 	db $ff
 
 	db BLAINE, 1
-	; Growlithe
-	; no change
+	; Gharizard
+	db 1, 1, FIRE_BLAST
+	db 1, 2, FIRE_SPIN
+	db 1, 3, ROCK_SLIDE
+	db 1, 4, SLASH
 	; Flareon
-	; no change
+	db 2, 1, FIRE_BLAST
 	; Rapidash
-	; no change
-	; Magmar
+	db 3, 1, FIRE_SPIN
+	; Ninetales
+	db 4, 1, WILL_O_WISP
 	db 4, 2, FIRE_BLAST
+	db 4, 3, CONFUSE_RAY
+	; Magmar
+	db 5, 2, FIRE_BLAST
+	db 5, 3, PSYCHIC_M
 	; Arcanine
-	db 5, 1, REFLECT
-	db 5, 2, DOUBLE_EDGE
-	db 5, 4, FIRE_BLAST
+	db 6, 1, SOLARBEAM
+	db 6, 2, DOUBLE_EDGE
+	db 6, 4, FIRE_BLAST
 	db $ff
 
 	db BLAINE, 2  ; rematch
@@ -228,10 +353,11 @@ SpecialTrainerMoves:
 	; Rapidash
 	db 3, 1, FIRE_BLAST
 	db 3, 2, DOUBLE_EDGE
-	; Gyarados
-	db 4, 1, FIRE_BLAST
-	db 4, 2, THUNDERBOLT
-	db 4, 3, SURF
+	; Moltres
+	db 4, 1, SKY_ATTACK
+	db 4, 2, ROOST
+	db 4, 3, FIRE_SPIN
+	db 4, 4, FIRE_BLAST
 	; Magmar
 	db 5, 1, SMOKESCREEN
 	db 5, 3, PSYCHIC_M
@@ -284,10 +410,13 @@ SpecialTrainerMoves:
 	db 3, 4, DOUBLE_TEAM
 	; Nidoking
 	db 4, 2, THUNDER
+	; Golem
+	db 5, 1, ROCK_SLIDE
+	db 5, 3, EXPLOSION
 	; Rhydon
-	db 5, 1, FIRE_BLAST
-	db 5, 2, SURF
-	db 5, 4, EARTHQUAKE
+	db 6, 1, FIRE_BLAST
+	db 6, 2, SURF
+	db 6, 4, EARTHQUAKE
 	db $ff
 
 	db LORELEI, 1  ; first battle
@@ -360,12 +489,15 @@ SpecialTrainerMoves:
 	db 3, 2, FOCUS_ENERGY
 	; Poliwrath - ICE_BEAM, BODY_SLAM, KARATE_CHOP, HYDRO_PUMP
 	db 4, 1, ICE_BEAM
-	; Golem - FOCUS_ENERGY, ROCK_SLIDE, EARTHQUAKE, EXPLOSION
-	; no change
+	; HERACROSS - 
+	db 5, 1, MEGAHORN
+	db 5, 2, SWORDS_DANCE
+	db 5, 3, ROCK_SLIDE
+	db 5, 4, DRAIN_PUNCH
 	; Machamp - KARATE_CHOP, ROCK_SLIDE, EARTHQUAKE, FOCUS_ENERGY
 	db 6, 2, ROCK_SLIDE
 	db 6, 3, EARTHQUAKE
-	db 6, 4, FOCUS_ENERGY
+	db 6, 4, RECOVER
 	db $ff
 
 	db AGATHA, 1  ; first battle
@@ -683,7 +815,7 @@ SpecialTrainerMoves:
 	; Muk
 	db 5, 1, GUNK_SHOT
 	db 5, 2, MINIMIZE
-	db 5, 3, EARTHQUAKE
+	db 5, 3, SWIFT
 	db 5, 4, TOXIC
 	; Odo's Psyduck ace
 	db 6, 1, HEADACHE

@@ -8,8 +8,8 @@ Route25WildMons:
 	db 12, ABRA
 	db 10, ABRA
 	db  9, PIDGEY
-	db  8, PIDGEY
 	db  8, CHARMANDER
+	db  8, TEDDIURSA
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate

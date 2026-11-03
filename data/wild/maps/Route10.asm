@@ -8,8 +8,8 @@ Route10WildMons:
 	db 15, EKANS
 	db 17, SANDSHREW
 	db 17, PIKACHU
-	db 15, MAREEP
-	db 17, ELECTABUZZ
+	db 15, ELECTABUZZ
+	db 17, MAREEP
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate

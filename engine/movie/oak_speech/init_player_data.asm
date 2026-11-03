@@ -40,6 +40,11 @@ DEF START_MONEY EQU $3000
 	ld [hli], a
 	ld [hl], a
 
+	ld hl, wEventFlags
+	ld bc, NUM_EVENTS / 8
+	xor a
+	call FillMemory ; clear all event flags for a new game
+
 	ld hl, wGameProgressFlags
 	ld bc, wGameProgressFlagsEnd - wGameProgressFlags
 	call FillMemory ; clear all game progress flags

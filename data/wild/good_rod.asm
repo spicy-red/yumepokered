@@ -75,12 +75,12 @@ GoodRodData:
 	db 15, KRABBY
 	db 17, KRABBY
 	db 15, HORSEA
-	db 17, HORSEA
+	db 10, TOTODILE
 
 .Group4: ; CELADON_CITY
 	db 8
 	db 15, SQUIRTLE
-	db 17, KABUTO
+	db 12, TOTODILE
 	db 15, PSYDUCK
 	db 17, PSYDUCK
 	db 15, SLOWPOKE
@@ -92,7 +92,7 @@ GoodRodData:
 	db 8
 	db 15, PSYDUCK
 	db 15, SQUIRTLE
-	db 17, OMANYTE
+	db 10, TOTODILE
 	db 13, GOLDEEN
 	db 15, GOLDEEN
 	db 17, GOLDEEN
@@ -101,9 +101,9 @@ GoodRodData:
 
 .Group6: ; CINNABAR_ISLAND, ROUTE_12
 	db 8
-	db 15, KABUTO
-	db 15, OMANYTE
-	db 17, KABUTO
+	db 15, SQUIRTLE
+	db 15, TOTODILE
+	db 12, TOTODILE
 	db 15, KRABBY
 	db 17, KRABBY
 	db 15, HORSEA

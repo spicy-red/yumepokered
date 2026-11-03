@@ -319,6 +319,18 @@ _OaksLabOakGotPokedexText::
 	line "#DEX from OAK!@"
 	text_end
 
+_OaksLabOakGotExpAllText::
+	text "OAK gave you"
+	line "EXP.ALL!@"
+	text_end
+
+_OaksLabOakNoRoomForExpAllText::
+	text "OAK: Make room in"
+	line "your KEY ITEMS"
+	cont "pocket, then"
+	cont "talk to me again."
+	done
+
 _OaksLabOakThatWasMyDreamText::
 	text "To make a complete"
 	line "guide on all the"

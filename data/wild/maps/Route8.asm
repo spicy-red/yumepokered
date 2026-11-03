@@ -9,7 +9,7 @@ Route8WildMons:
 	db 19, EKANS
 	db 17, PONYTA
 	db 16, VULPIX
-	db 18, TEDDIURSA
+	db 10, CYNDAQUIL
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate

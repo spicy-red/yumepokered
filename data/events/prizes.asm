@@ -15,12 +15,7 @@ ENDC
 PrizeMenuMon1Entries:
 	db ABRA
 	db CLEFAIRY
-IF DEF(_RED)
-	db NIDORINA
-ENDC
-IF DEF(_BLUE) || DEF(_GREEN) ; marcelnote - added _GREEN
-	db NIDORINO
-ENDC
+	db EEVEE
 	db "@"
 
 PrizeMenuMon1Cost: ; marcelnote - harmonized costs
@@ -74,7 +69,7 @@ PrizeMenuTMsEntries:
 	db "@"
 
 PrizeMenuTMsCost:
-	bcd2 3300
-	bcd2 5500
-	bcd2 7700
+	bcd2 1000
+	bcd2 2000
+	bcd2 3000
 	db "@"

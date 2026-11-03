@@ -2044,8 +2044,11 @@ ElectabuzzEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+    db  8, TACKLE
 	db 15, LEER
+	db 17, THUNDERSHOCK
 	db 21, SWIFT
+	db 26, THUNDERBOLT
 	db 27, THUNDER_WAVE
 	db 33, THUNDERPUNCH
 	db 39, SCREECH
@@ -2058,12 +2061,14 @@ MagmarEvosMoves:
 ; Evolutions
 	db 0
 ; Learnset
+    db 8, TACKLE
 	db 15, LEER
+	db 17, EMBER
 	db 21, SMOG
+	db 26, FLAMETHROWER
 	db 27, SMOKESCREEN
 	db 33, FIRE_PUNCH
 	db 39, CONFUSE_RAY
-	db 45, FLAMETHROWER
 	db 52, FIRE_BLAST
 	db 53, FLARE_BLITZ
 	db 0
@@ -2945,7 +2950,7 @@ WobbuffetEvosMoves:
 ; Evolutions (not provided by CSV)
 	db 0 ; no evolutions
 ; Learnset
-	db 0
+	db 1, RETALIATE
 
 HoppipEvosMoves:
 ; Evolutions

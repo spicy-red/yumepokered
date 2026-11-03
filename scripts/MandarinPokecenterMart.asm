@@ -44,4 +44,4 @@ MandarinMartCooltrainerFText:
 	text_end
 
 MandarinMartClerkText:
-	script_mart ULTRA_BALL, MAX_REPEL, ICE_HEAL, ETHER, ELIXIR, RARE_CANDY
+	script_mart ULTRA_BALL, MAX_REPEL, ICE_HEAL, ETHER, ELIXIR, RARE_CANDY, PP_UP, FULL_HEAL

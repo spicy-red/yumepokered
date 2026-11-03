@@ -2,8 +2,8 @@ ViridianForestWildMons:
 	def_grass_wildmons 8 ; encounter rate
 	db  4, CATERPIE
 	db  4, WEEDLE
-	db  4, CATERPIE
-	db  4, WEEDLE
+	db  4, SCYTHER
+	db  4, PINSIR
 	db  6, METAPOD
 	db  6, KAKUNA
 	db  6, PIKACHU

@@ -4,7 +4,7 @@ Route28WildMons:
 	db 46, RAPIDASH
 	db 46, DODRIO
 	db 48, PIDGEOT
-	db 47, ALAKAZAM
+	db 47, ARBOK
 	db 47, KANGASKHAN
 	db 47, SANDSLASH
 	db 48, VICTREEBEL

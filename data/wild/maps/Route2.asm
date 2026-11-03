@@ -5,11 +5,11 @@ Route2WildMons:
 	db  4, PARAS
 	db  5, PIDGEY
 	db  3, PARAS
-	db  3, WEEDLE
+	db  3, MANKEY
 	db  4, PARAS
-	db  5, RATTATA
-	db  4, CATERPIE
-	db  5, WEEDLE
+	db  5, CUBONE
+	db  4, MANKEY
+	db  5, EEVEE
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate

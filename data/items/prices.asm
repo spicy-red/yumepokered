@@ -15,8 +15,8 @@ ItemPrices::
 	bcd3 250   ; ICE_HEAL
 	bcd3 200   ; AWAKENING
 	bcd3 200   ; PARLYZ_HEAL
-	bcd3 3000  ; FULL_RESTORE
-	bcd3 2500  ; MAX_POTION
+	bcd3 9000  ; FULL_RESTORE
+	bcd3 9000  ; MAX_POTION
 	bcd3 1500  ; HYPER_POTION
 	bcd3 700   ; SUPER_POTION
 	bcd3 300   ; POTION
@@ -34,26 +34,26 @@ ItemPrices::
 	bcd3 2100  ; FIRE_STONE
 	bcd3 2100  ; THUNDER_STONE
 	bcd3 2100  ; WATER_STONE
-	bcd3 9800  ; HP_UP
-	bcd3 9800  ; PROTEIN
-	bcd3 9800  ; IRON
-	bcd3 9800  ; CARBOS
-	bcd3 9800  ; CALCIUM
+	bcd3 4800  ; HP_UP
+	bcd3 4800  ; PROTEIN
+	bcd3 4800  ; IRON
+	bcd3 4800  ; CARBOS
+	bcd3 4800  ; CALCIUM
 	bcd3 4800  ; RARE_CANDY
 	bcd3 0     ; DOME_FOSSIL
 	bcd3 0     ; HELIX_FOSSIL
 	bcd3 0     ; SECRET_KEY
 	bcd3 0     ; CITRUS_PASS ; marcelnote - new, was ITEM_2C
 	bcd3 0     ; BIKE_VOUCHER
-	bcd3 950   ; X_ACCURACY
+	bcd3 9500  ; X_ACCURACY
 	bcd3 2100  ; LEAF_STONE
 	bcd3 0     ; CARD_KEY
 	bcd3 10000 ; NUGGET
 	bcd3 0     ; ITEM_32
 	bcd3 1000  ; POKE_DOLL
-	bcd3 600   ; FULL_HEAL
-	bcd3 1500  ; REVIVE
-	bcd3 4000  ; MAX_REVIVE
+	bcd3 2000  ; FULL_HEAL
+	bcd3 9000  ; REVIVE
+	bcd3 9000  ; MAX_REVIVE
 	bcd3 700   ; GUARD_SPEC
 	bcd3 350   ; SUPER_REPEL   ; marcelnote - changed from 500, 200/350 = .57 step per ¥
 	bcd3 400   ; MAX_REPEL     ; marcelnote - changed from 700, 250/400 = .63 step per ¥
@@ -78,7 +78,7 @@ ItemPrices::
 	bcd3 0     ; OLD_ROD
 	bcd3 0     ; GOOD_ROD
 	bcd3 0     ; SUPER_ROD
-	bcd3 9800  ; PP_UP      ; marcelnote - changed from 0
+	bcd3 4500  ; PP_UP      ; marcelnote - changed from 0
 	bcd3 400   ; ETHER      ; marcelnote - changed from 0
 	bcd3 1200  ; MAX_ETHER  ; marcelnote - changed from 0
 	bcd3 1000  ; ELIXIR     ; marcelnote - changed from 0
