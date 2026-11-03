@@ -179,10 +179,10 @@ SuperRodData:
 	db 27, POLIWHIRL
 	db 25, MARILL
 	db 27, POLIWHIRL
-	db 25, GOLDEEN
+	db 25, MARILL
 	db 27, POLIWHIRL
-	db 25, GOLDEEN
-	db 25, GOLDEEN
+	db 25, MARILL
+	db 25, MARILL
 
 .Group15: ; ROUTE_20
 	db 8

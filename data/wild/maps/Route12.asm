@@ -1,8 +1,8 @@
 Route12WildMons:
 	def_grass_wildmons 20 ; encounter rate
 	db 26, BELLSPROUT
-	db 25, PIDGEOTTO
-	db 27, PIDGEOTTO
+	db 25, ODDISH
+	db 27, MACHOP
 	db 24, VENONAT
 	db 28, WEEPINBELL
 	db 26, ODDISH

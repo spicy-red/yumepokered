@@ -108,7 +108,7 @@ GoodRodData:
 	db 17, KRABBY
 	db 15, HORSEA
 	db 17, HORSEA
-	db 15, TENTACOOL
+	db 15, DRATINI
 
 .Group7: ; MANDARIN_ISLAND, MANDARIN_DOCK
 	db 3
