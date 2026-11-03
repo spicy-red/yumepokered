@@ -991,8 +991,9 @@ wCoordIndex::
 wSwappedMenuItem::
 ; 0 = no bite
 ; 1 = bite
-; 2 = bottle cap ; marcelnote - new for Bottle Caps
+; 2 = Bottle Cap
 ; 3 = no fish on map
+; 4 = Nugget
 wRodResponse::
 	db
 ENDU

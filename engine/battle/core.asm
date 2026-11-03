@@ -6266,11 +6266,11 @@ LoadEnemyMonData:
 	ld b, [hl]
 	jr nz, .storeDVs
 	ld a, [wIsInBattle]
-	cp TRAINER_BATTLE
+	dec a
 ; fixed DVs for trainer mon
 	ld a, ATKDEFDV_TRAINER
 	ld b, SPDSPCDV_TRAINER
-	jr z, .storeDVs
+	jr nz, .storeDVs
 ; random DVs for wild mon
 	call BattleRandom
 	ld b, a
@@ -6284,8 +6284,8 @@ LoadEnemyMonData:
 	ld [de], a
 	inc de
 	ld a, [wIsInBattle]
-	cp TRAINER_BATTLE
-	jr nz, .calculateWildMonStats
+	dec a
+	jr z, .calculateWildMonStats
 	ld a, [wWhichPokemon]
 	ld bc, PARTYMON_STRUCT_LENGTH
 	ld hl, wEnemyMons
@@ -6302,8 +6302,8 @@ LoadEnemyMonData:
 	call CalcStats
 	pop hl
 	ld a, [wIsInBattle]
-	cp TRAINER_BATTLE
-	jr z, .copyHPAndStatusFromPartyData
+	dec a
+	jr nz, .copyHPAndStatusFromPartyData
 	ld a, [wEnemyBattleStatus3]
 	bit TRANSFORMED, a ; is enemy mon transformed?
 	jr nz, .copyTypes ; if transformed, jump
@@ -6345,8 +6345,8 @@ LoadEnemyMonData:
 	ld [de], a
 	inc de
 	ld a, [wIsInBattle]
-	cp TRAINER_BATTLE
-	jr nz, .copyStandardMoves
+	dec a
+	jr z, .copyStandardMoves
 ; if it's a trainer battle, copy moves from enemy party data
 	ld hl, wEnemyMon1Moves
 	ld a, [wWhichPokemon]
@@ -6401,6 +6401,7 @@ LoadEnemyMonData:
 	ld de, wEnemyMonNick
 	ld bc, NAME_LENGTH
 	call CopyData
+	callfar ApplyOdoHoundoomNickname
 	ld a, [wEnemyMonSpecies2]
 	ld [wPokedexNum], a
 	predef IndexToPokedex

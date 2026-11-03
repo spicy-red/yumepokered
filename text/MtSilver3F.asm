@@ -14,23 +14,14 @@ _MtSilver3FYellowBattleText::
 	cont "and become"
 	cont "CHAMPION."
 
-	para "You've set the bar"
-	line "high, <PLAYER>."
-	cont "But how strong"
-	cont "are you, really?"
+	para "I'm the final"
+	line "boss, <PLAYER>."
 
 	para "I've brought my"
 	line "strongest team."
 	cont "No holding back."
-	cont "Show me what"
-	cont "real power looks"
-	cont "like!"
 
-	para "Come on, <PLAYER>!"
-	line "Let's see if your"
-	cont "reputation can"
-	cont "survive a real"
-	cont "challenge!"
+	para "GLHF, <PLAYER>!"
 	done
 
 _MtSilver3FYellowDefeatedText::

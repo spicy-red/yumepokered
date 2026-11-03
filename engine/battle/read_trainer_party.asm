@@ -205,6 +205,27 @@ ReadTrainer:
 	jr nz, .LastLoop ; repeat wCurEnemyLevel times
 	ret
 
+ApplyOdoHoundoomNickname::
+	ld a, [wIsInBattle]
+	cp TRAINER_BATTLE
+	ret nz
+	ld a, [wTrainerClass]
+	cp ODO
+	ret nz
+	ld a, [wWhichPokemon]
+	and a
+	ret nz
+	ld a, [wEnemyMonSpecies2]
+	cp HOUNDOOM
+	ret nz
+	ld hl, OdoHoundoomNickname
+	ld de, wEnemyMonNick
+	ld bc, 5
+	jp CopyData
+
+OdoHoundoomNickname:
+	db "BUMI@"
+
 MaxOutBossTrainerStatExp:
 	ld a, [wTrainerClass]
 	cp BROCK

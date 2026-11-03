@@ -17,12 +17,12 @@ DebugNewGameParty: ; unreferenced except in _DEBUG
 	; "Tsunekazu Ishihara: Exeggutor is my favorite. That's because I was
 	; always using this character while I was debugging the program."
 	; From https://web.archive.org/web/20000607152840/http://pocket.ign.com/news/14973.html
-	db EXEGGUTOR, 90
-	db MEW, 90 ; marcelnote - increased from 5
-	db JOLTEON, 80 ; marcelnote - increased from 56
-	db DUGTRIO, 66 ; marcelnote - increased from 56
-	db ARTICUNO, 67 ; marcelnote - increased from 57
-	db PIKACHU, 5
+	db EXEGGUTOR, 100
+	db MEW, 100 ; marcelnote - increased from 5
+	db JOLTEON, 100 ; marcelnote - increased from 56
+	db DUGTRIO, 100 ; marcelnote - increased from 56
+	db ARTICUNO, 100 ; marcelnote - increased from 57
+	db PIKACHU, 100
 	db -1 ; end
 
 SetDebugNewGameBoxes: ; marcelnote - added boxed mons to debug

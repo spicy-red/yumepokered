@@ -252,7 +252,21 @@ ChargeEffect: ; marcelnote - optimized and adjusted for removing FLY_EFFECT
 	ld a, DEFENSE_UP1_EFFECT
 	ld [wEnemyMoveEffect], a
 .raiseDefense
+	ldh a, [hWhoseTurn]
+	and a
+	ld hl, wPlayerMoveNum
+	jr z, .suppressChargeMoveAnimation
+	ld hl, wEnemyMoveNum
+.suppressChargeMoveAnimation
+	push hl
+	ld a, [hl]
+	push af
+	xor a
+	ld [hl], a
 	call StatModifierUpEffect
+	pop af
+	pop hl
+	ld [hl], a ; restore the charging move for its charge animation and text
 	ldh a, [hWhoseTurn]
 	and a
 	jr nz, .restoreEnemyEffect

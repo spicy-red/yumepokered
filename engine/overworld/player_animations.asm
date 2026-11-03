@@ -403,6 +403,8 @@ FishingAnim: ; marcelnote - adjusted for Bottle Caps
 	jr z, .bite
 	dec a
 	jr z, .bottleCap
+	cp 2
+	jr z, .nugget
 	ld hl, NothingHereText
 .done
 	call PrintText
@@ -426,14 +428,21 @@ FishingAnim: ; marcelnote - adjusted for Bottle Caps
 	jr .done
 
 .bottleCap ; marcelnote - new for Bottle Caps
+.nugget
 	ld b, QUESTION_BUBBLE
 	call .displayEmotionBubble
-	lb bc, BOTTLE_CAP, 1
+	ld a, [wRodResponse]
+	cp 2
+	ld b, BOTTLE_CAP
+	jr z, .giveFishingItem
+	ld b, NUGGET
+.giveFishingItem
+	ld c, 1
 	call GiveItem
-	ld hl, FoundBottleCapText
+	ld hl, FoundFishingItemText
 	jr c, .done
 	call GetItemName ; GiveItem only loads the name on success
-	ld hl, FoundBottleCapNoRoomText
+	ld hl, FoundFishingItemNoRoomText
 	call PrintText
 	ld hl, FishingNoRoomText
 	jr .done
@@ -478,12 +487,12 @@ ItsABiteText:
 	text_far _ItsABiteText
 	text_end
 
-FoundBottleCapText: ; marcelnote - new for Bottle Caps
+FoundFishingItemText:
 	text_far _FoundItemText
 	sound_get_item_1
 	text_end
 
-FoundBottleCapNoRoomText: ; marcelnote - new for Bottle Caps
+FoundFishingItemNoRoomText:
 	text_far _FoundHiddenItemText
 	text_promptbutton
 	text_end

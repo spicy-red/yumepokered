@@ -162,7 +162,7 @@ Moves:
 	move PSYWAVE,      SPECIAL_DAMAGE_EFFECT,        1, PSYCHIC_TYPE, 100, 15 ; marcelnote - changed from acc 80
 	move SPLASH,       SPLASH_EFFECT,                0, NORMAL,       100, 40
 	move ACID_ARMOR,   DEFENSE_UP2_EFFECT,           0, POISON,       100, 40
-	move CRABHAMMER,   NO_ADDITIONAL_EFFECT,       130, WATER,         85, 10
+	move CRABHAMMER,   NO_ADDITIONAL_EFFECT,       140, WATER,         85, 10
 	move EXPLOSION,    EXPLODE_EFFECT,             250, NORMAL,       100,  5
 	move FURY_SWIPES,  TWO_TO_FIVE_ATTACKS_EFFECT,  20, NORMAL,        90, 15 ; marcelnote - changed from acc 80
 	move BONEMERANG,   ATTACK_TWICE_EFFECT,         80, GROUND,        90, 10 ; marcelnote - changed from pwr 50
@@ -190,7 +190,7 @@ Moves:
 	move DISCHARGE,    PARALYZE_SIDE_EFFECT2,       60, ELECTRIC,     100, 15 ; new move
 	move ICICLE_SPEAR, TWO_TO_FIVE_ATTACKS_EFFECT,  20, ICE,          100, 30 ; new move
 	move ROOST,        HEAL_EFFECT,                  0, FLYING,       100, 10 ; new move
-	move HEADACHE,     THRASH_PETAL_DANCE_EFFECT,  200, BIRD,         100,  5 ; hidden trainer-Psyduck move
-	move RETALIATE,    NO_ADDITIONAL_EFFECT,         1, BIRD,         100, 30 ; reflects 2x damage from physical or special attacks
+	move HEADACHE,     THRASH_PETAL_DANCE_EFFECT,  250, BIRD,         100,  5 ; hidden trainer-Psyduck move
+	move RETALIATE,    NO_ADDITIONAL_EFFECT,         1, BIRD,         100, 30 ; reflects 3x damage from physical or special attacks
 	move STRUGGLE,     RECOIL_EFFECT,               50, BIRD,         100, 10 ; marcelnote - changed from NORMAL
 	assert_table_length NUM_ATTACKS

@@ -11,7 +11,7 @@
 	dw PsyduckPics
 	dw 0
 
-	db HEADACHE, NO_MOVE, NO_MOVE, NO_MOVE ; only level-up move
+	db HEADACHE, AMNESIA, REST, NO_MOVE ; only level-up move
 	db GROWTH_MEDIUM_FAST
 
 	tmhm SURF;

@@ -874,8 +874,8 @@ ProfOakData: ; marcelnote - adapted unused teams for postgame Oak battle
 	db $FF, 70, TAUROS, 70, ELECTRODE, 70, RAPIDASH, 70, VICTREEBEL, 73, BLASTOISE, 72, NIDOKING, 0
 	; ideas: MUK, PRIMEAPE, ELECTABUZZ, JOLTEON
 
-OdoData:  ; marcelnote - new postgame battle
-	db $FF, 90, HOUNDOOM, 95, WOBBUFFET, 90, HERACROSS, 90, TYRANITAR, 100, MUK, 100, ODOS_PSYDUCK, 0
+OdoData:  ; 
+	db $FF, 110, HOUNDOOM, 110, HERACROSS, 110, WOBBUFFET, 110, TYRANITAR, 110, MUK, 110, ODOS_PSYDUCK, 0
 
 WillData:  ; marcelnote - new postgame battle
 	db $FF, 54, SLOWBRO, 52, MR_MIME, 55, JYNX, 54, HYPNO, 56, EXEGGUTOR, 0

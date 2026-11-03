@@ -2837,16 +2837,20 @@ WaterTile:
 
 INCLUDE "data/tilesets/water_tilesets.asm"
 
- ; marcelnote - modified for specific Rod encounters and Bottle Caps
+ ; marcelnote - modified for specific Rod encounters and fishing items
+; return e = 4 if a Nugget
 ; return e = 3 if no fish on this map
-; return e = 2 if a bottle cap
+; return e = 2 if a Bottle Cap
 ; return e = 1 if a bite, bc = level,species
 ; return e = 0 if no bite
 ReadRodData:
-	; One roll: 0-4 bottle cap, 5-63 no bite, 64-255 Pokémon.
+	; One roll: 0-12 Bottle Cap, 13-25 Nugget, 26-63 no bite, 64-255 Pokémon.
 	call Random
-	ld e, 2 ; e = 2 if bottle cap, even on maps without fish
-	cp 5
+	ld e, 2 ; e = 2 if Bottle Cap, even on maps without fish
+	cp 13
+	ret c
+	ld e, 4 ; e = 4 if Nugget, even on maps without fish
+	cp 26
 	ret c
 	push af ; save a = random roll
 

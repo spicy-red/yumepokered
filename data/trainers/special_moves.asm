@@ -797,16 +797,16 @@ SpecialTrainerMoves:
 	db 1, 2, SHADOW_BALL
 	db 1, 3, SOLARBEAM
 	db 1, 4, WILL_O_WISP
-	; Wobbuffet has no level-up learnset in this game.
-	db 2, 1, RETALIATE
-	db 2, 2, NO_MOVE
-	db 2, 3, NO_MOVE
-	db 2, 4, NO_MOVE
 	; Heracross
-	db 3, 1, MEGAHORN
-	db 3, 2, DRAIN_PUNCH
-	db 3, 3, SWORDS_DANCE
-	db 3, 4, ROCK_SLIDE
+	db 2, 1, MEGAHORN
+	db 2, 2, DRAIN_PUNCH
+	db 2, 3, SWORDS_DANCE
+	db 2, 4, ROCK_SLIDE
+	; Wobbuffet has no level-up learnset in this game.
+	db 3, 1, RETALIATE
+	db 3, 2, NO_MOVE
+	db 3, 3, NO_MOVE
+	db 3, 4, NO_MOVE
 	; Tyranitar
 	db 4, 1, ROCK_SLIDE
 	db 4, 2, EARTHQUAKE
@@ -814,13 +814,13 @@ SpecialTrainerMoves:
 	db 4, 4, BLIZZARD
 	; Muk
 	db 5, 1, GUNK_SHOT
-	db 5, 2, MINIMIZE
-	db 5, 3, SWIFT
-	db 5, 4, TOXIC
+	db 5, 2, RECOVER
+	db 5, 3, HAZE
+	db 5, 4, SWIFT
 	; Odo's Psyduck ace
 	db 6, 1, HEADACHE
 	db 6, 2, AMNESIA
-	db 6, 3, NO_MOVE
+	db 6, 3, REST
 	db 6, 4, NO_MOVE
 	db $ff
 
