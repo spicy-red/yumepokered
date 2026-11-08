@@ -4,7 +4,7 @@
 	;   hp  atk  def  spd  spc
 
 	db PSYCHIC_TYPE, PSYCHIC_TYPE ; type
-	db 45 ; catch rate
+	db 5; catch rate
 	db 177 ; base exp
 
 	db SPRITE_DIM_LARGE
@@ -14,7 +14,7 @@
 	db RETALIATE, NO_MOVE, NO_MOVE, NO_MOVE ; level 1 moves
 	db GROWTH_SLOW ; growth rate
 
-	tmhm
+	tmhm COUNTER
 
 	db BANK(WobbuffetPicFront)
 	assert BANK(WobbuffetPicFront) == BANK(WobbuffetPicBack)

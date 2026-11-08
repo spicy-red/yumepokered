@@ -182,9 +182,9 @@ SafariZoneGateSafariZoneWorker1WouldYouLikeToJoinText:
 	ld a, 30
 	ld [wNumSafariBalls], a
 	ld hl, wSafariSteps ; marcelnote - optimized load into wSafariSteps
-	ld a, HIGH(5002)
+	ld a, HIGH(1002)
 	ld [hli], a
-	ld [hl], LOW(5002)
+	ld [hl], LOW(1002)
 	ld a, PAD_UP
 	ld c, 3
 	call SafariZoneGateAutoWalk

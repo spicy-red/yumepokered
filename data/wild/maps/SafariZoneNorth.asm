@@ -7,7 +7,7 @@ SafariZoneNorthWildMons:
 	db 30, NIDORINO
 	db 27, EXEGGUTOR
 	db 30, LICKITUNG
-	db 32, HERACROSS
+	db 32, TAUROS
 	db 26, CHANSEY
 	db 28, TAUROS
 	end_grass_wildmons
