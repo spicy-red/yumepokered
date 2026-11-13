@@ -117,7 +117,7 @@ _CeladonMansion4FExeggutorSurfPCText:: ; marcelnote - new
 	line "can FLY!?"
 	done
 
-_CeladonMansion4FYumeLabsSignText:: ; marcelnote - new
-	text "YUME LABS"
+_CeladonMansion4FBaofamLabsSignText:: ; marcelnote - new
+	text "BAOFAM LABS"
 	line "Home office"
 	done

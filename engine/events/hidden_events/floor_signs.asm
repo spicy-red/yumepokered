@@ -20,8 +20,8 @@ CeladonMansion3FDevRoomSignText::
 	text_far _CeladonMansion3FDevRoomSignText
 	text_end
 
-CeladonMansion4FYumeLabsSignText::
-	text_far _CeladonMansion4FYumeLabsSignText
+CeladonMansion4FBaofamLabsSignText::
+	text_far _CeladonMansion4FBaofamLabsSignText
 	text_end
 
 MandarinSilphCo2FSalesSignText::

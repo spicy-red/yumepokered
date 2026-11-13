@@ -2732,7 +2732,7 @@ PikachusBeach_NormalPals:
 	ret
 
 ; Surfing Pikachu in pokeyellow updates CGB palette data.
-; Yumepokered runs the minigame in a DMG/SGB-style path here, so there is no
+; Baofam runs the minigame in a DMG/SGB-style path here, so there is no
 ; additional per-frame palette work to do.
 ;SurfingMinigame_UpdatePalettes:
 ;	ret

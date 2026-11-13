@@ -323,7 +323,7 @@ CeladonMansionHiddenEvents:
 	hidden_text_predef  4, 63, CeladonMansion1FManagersSuiteSignText, PrintFloorSign
 	hidden_text_predef  4, 45, CeladonMansion2FMeetingRoomSignText,   PrintFloorSign
 	hidden_text_predef  4, 27, CeladonMansion3FDevRoomSignText,       PrintFloorSign
-	hidden_text_predef  4,  9, CeladonMansion4FYumeLabsSignText,      PrintFloorSign
+	hidden_text_predef  4,  9, CeladonMansion4FBaofamLabsSignText,    PrintFloorSign
 	db -1 ; end
 
 CeladonGymHiddenEvents:

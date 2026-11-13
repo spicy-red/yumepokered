@@ -1,19 +1,19 @@
 roms := \
-	yumepokered.gb \
-	yumepokeblue.gb \
-	yumepokegreen.gb \
-	yumepokeblue_debug.gb \
-	yumepokerouge.gb \
-	yumepokeverte.gb \
-	yumepokebleue.gb \
-	yumepokebleue_debug.gb \
-	yumepokerojo.gb \
-	yumepokeverde.gb \
-	yumepokeazul.gb \
-	yumepokeazul_debug.gb
+	pokebaofamred.gb \
+	pokebaofamblue.gb \
+	pokebaofamgreen.gb \
+	pokebaofamblue_debug.gb \
+	pokebaofamrouge.gb \
+	pokebaofamverte.gb \
+	pokebaofambleue.gb \
+	pokebaofambleue_debug.gb \
+	pokebaofamrojo.gb \
+	pokebaofamverde.gb \
+	pokebaofamazul.gb \
+	pokebaofamazul_debug.gb
 patches := \
-	yumepokered.patch \
-	yumepokeblue.patch
+	pokebaofamred.patch \
+	pokebaofamblue.patch
 
 rom_obj := \
 	audio.o \
@@ -27,20 +27,20 @@ rom_obj := \
 	gfx/tilesets.o
 #	gfx/pikachus_beach.o \
 
-yumepokered_obj         := $(rom_obj:.o=_red.o)
-yumepokeblue_obj        := $(rom_obj:.o=_blue.o)
-yumepokegreen_obj       := $(rom_obj:.o=_green.o)
-yumepokeblue_debug_obj  := $(rom_obj:.o=_blue_debug.o)
-yumepokered_vc_obj      := $(rom_obj:.o=_red_vc.o)
-yumepokeblue_vc_obj     := $(rom_obj:.o=_blue_vc.o)
-yumepokerouge_obj       := $(rom_obj:.o=_rouge.o)
-yumepokeverte_obj       := $(rom_obj:.o=_verte.o)
-yumepokebleue_obj       := $(rom_obj:.o=_bleue.o)
-yumepokebleue_debug_obj := $(rom_obj:.o=_bleue_debug.o)
-yumepokerojo_obj        := $(rom_obj:.o=_rojo.o)
-yumepokeverde_obj       := $(rom_obj:.o=_verde.o)
-yumepokeazul_obj        := $(rom_obj:.o=_azul.o)
-yumepokeazul_debug_obj  := $(rom_obj:.o=_azul_debug.o)
+pokebaofamred_obj         := $(rom_obj:.o=_red.o)
+pokebaofamblue_obj        := $(rom_obj:.o=_blue.o)
+pokebaofamgreen_obj       := $(rom_obj:.o=_green.o)
+pokebaofamblue_debug_obj  := $(rom_obj:.o=_blue_debug.o)
+pokebaofamred_vc_obj      := $(rom_obj:.o=_red_vc.o)
+pokebaofamblue_vc_obj     := $(rom_obj:.o=_blue_vc.o)
+pokebaofamrouge_obj       := $(rom_obj:.o=_rouge.o)
+pokebaofamverte_obj       := $(rom_obj:.o=_verte.o)
+pokebaofambleue_obj       := $(rom_obj:.o=_bleue.o)
+pokebaofambleue_debug_obj := $(rom_obj:.o=_bleue_debug.o)
+pokebaofamrojo_obj        := $(rom_obj:.o=_rojo.o)
+pokebaofamverde_obj       := $(rom_obj:.o=_verde.o)
+pokebaofamazul_obj        := $(rom_obj:.o=_azul.o)
+pokebaofamazul_debug_obj  := $(rom_obj:.o=_azul_debug.o)
 
 
 ### Build tools
@@ -97,20 +97,20 @@ RGBASMFLAGS += -D GAME_VERSION=\"$(VERSION)\"
 	tools
 
 all: $(roms)
-red:         yumepokered.gb
-blue:        yumepokeblue.gb
-green:       yumepokegreen.gb
-blue_debug:  yumepokeblue_debug.gb
-red_vc:      yumepokered.patch
-blue_vc:     yumepokeblue.patch
-rouge:       yumepokerouge.gb
-verte:       yumepokeverte.gb
-bleue:       yumepokebleue.gb
-bleue_debug: yumepokebleue_debug.gb
-rojo:        yumepokerojo.gb
-verde:       yumepokeverde.gb
-azul:        yumepokeazul.gb
-azul_debug:  yumepokeazul_debug.gb
+red:         pokebaofamred.gb
+blue:        pokebaofamblue.gb
+green:       pokebaofamgreen.gb
+blue_debug:  pokebaofamblue_debug.gb
+red_vc:      pokebaofamred.patch
+blue_vc:     pokebaofamblue.patch
+rouge:       pokebaofamrouge.gb
+verte:       pokebaofamverte.gb
+bleue:       pokebaofambleue.gb
+bleue_debug: pokebaofambleue_debug.gb
+rojo:        pokebaofamrojo.gb
+verde:       pokebaofamverde.gb
+azul:        pokebaofamazul.gb
+azul_debug:  pokebaofamazul_debug.gb
 
 clean: tidy
 	find gfx \
@@ -129,20 +129,20 @@ tidy:
 	      $(patches:.patch=_vc.sym) \
 	      $(patches:.patch=_vc.map) \
 	      $(patches:%.patch=vc/%.constants.sym) \
-	      $(yumepokered_obj) \
-	      $(yumepokeblue_obj) \
-	      $(yumepokegreen_obj) \
-	      $(yumepokered_vc_obj) \
-	      $(yumepokeblue_vc_obj) \
-	      $(yumepokeblue_debug_obj) \
-	      $(yumepokerouge_obj) \
-		      $(yumepokeverte_obj) \
-		      $(yumepokebleue_obj) \
-		      $(yumepokebleue_debug_obj) \
-		      $(yumepokerojo_obj) \
-		      $(yumepokeverde_obj) \
-		      $(yumepokeazul_obj) \
-		      $(yumepokeazul_debug_obj) \
+	      $(pokebaofamred_obj) \
+	      $(pokebaofamblue_obj) \
+	      $(pokebaofamgreen_obj) \
+	      $(pokebaofamred_vc_obj) \
+	      $(pokebaofamblue_vc_obj) \
+	      $(pokebaofamblue_debug_obj) \
+	      $(pokebaofamrouge_obj) \
+		      $(pokebaofamverte_obj) \
+		      $(pokebaofambleue_obj) \
+		      $(pokebaofambleue_debug_obj) \
+		      $(pokebaofamrojo_obj) \
+		      $(pokebaofamverde_obj) \
+		      $(pokebaofamazul_obj) \
+		      $(pokebaofamazul_debug_obj) \
 		      rgbdscheck.o
 	$(MAKE) clean -C tools/
 
@@ -168,20 +168,20 @@ ifeq ($(DEBUG),1)
 RGBASMFLAGS += -E
 endif
 
-$(yumepokered_obj):         RGBASMFLAGS += -D _RED
-$(yumepokegreen_obj):       RGBASMFLAGS += -D _GREEN
-$(yumepokeblue_obj):        RGBASMFLAGS += -D _BLUE
-$(yumepokeblue_debug_obj):  RGBASMFLAGS += -D _BLUE -D _DEBUG
-$(yumepokered_vc_obj):      RGBASMFLAGS += -D _RED -D _RED_VC
-$(yumepokeblue_vc_obj):     RGBASMFLAGS += -D _BLUE -D _BLUE_VC
-$(yumepokerouge_obj):       RGBASMFLAGS += -D _RED -D _FRA
-$(yumepokeverte_obj):       RGBASMFLAGS += -D _GREEN -D _FRA
-$(yumepokebleue_obj):       RGBASMFLAGS += -D _BLUE -D _FRA
-$(yumepokebleue_debug_obj): RGBASMFLAGS += -D _BLUE -D _FRA -D _DEBUG
-$(yumepokerojo_obj):        RGBASMFLAGS += -D _RED -D _ESP
-$(yumepokeverde_obj):       RGBASMFLAGS += -D _GREEN -D _ESP
-$(yumepokeazul_obj):        RGBASMFLAGS += -D _BLUE -D _ESP
-$(yumepokeazul_debug_obj):  RGBASMFLAGS += -D _BLUE -D _ESP -D _DEBUG
+$(pokebaofamred_obj):         RGBASMFLAGS += -D _RED
+$(pokebaofamgreen_obj):       RGBASMFLAGS += -D _GREEN
+$(pokebaofamblue_obj):        RGBASMFLAGS += -D _BLUE
+$(pokebaofamblue_debug_obj):  RGBASMFLAGS += -D _BLUE -D _DEBUG
+$(pokebaofamred_vc_obj):      RGBASMFLAGS += -D _RED -D _RED_VC
+$(pokebaofamblue_vc_obj):     RGBASMFLAGS += -D _BLUE -D _BLUE_VC
+$(pokebaofamrouge_obj):       RGBASMFLAGS += -D _RED -D _FRA
+$(pokebaofamverte_obj):       RGBASMFLAGS += -D _GREEN -D _FRA
+$(pokebaofambleue_obj):       RGBASMFLAGS += -D _BLUE -D _FRA
+$(pokebaofambleue_debug_obj): RGBASMFLAGS += -D _BLUE -D _FRA -D _DEBUG
+$(pokebaofamrojo_obj):        RGBASMFLAGS += -D _RED -D _ESP
+$(pokebaofamverde_obj):       RGBASMFLAGS += -D _GREEN -D _ESP
+$(pokebaofamazul_obj):        RGBASMFLAGS += -D _BLUE -D _ESP
+$(pokebaofamazul_debug_obj):  RGBASMFLAGS += -D _BLUE -D _ESP -D _DEBUG
 
 %.patch: %_vc.gb %.gb vc/%.patch.template
 	tools/make_patch $*_vc.sym $^ $@
@@ -215,55 +215,55 @@ main_azul.o main_azul_debug.o: FORCE_VERSION
 FORCE_VERSION:
 
 # Dependencies for objects (drop _red and _blue from asm file basenames)
-$(foreach obj, $(yumepokered_obj), $(eval $(call DEP,$(obj),$(obj:_red.o=.asm))))
-$(foreach obj, $(yumepokeblue_obj), $(eval $(call DEP,$(obj),$(obj:_blue.o=.asm))))
-$(foreach obj, $(yumepokegreen_obj), $(eval $(call DEP,$(obj),$(obj:_green.o=.asm))))
-$(foreach obj, $(yumepokeblue_debug_obj), $(eval $(call DEP,$(obj),$(obj:_blue_debug.o=.asm))))
-$(foreach obj, $(yumepokered_vc_obj), $(eval $(call DEP,$(obj),$(obj:_red_vc.o=.asm))))
-$(foreach obj, $(yumepokeblue_vc_obj), $(eval $(call DEP,$(obj),$(obj:_blue_vc.o=.asm))))
-$(foreach obj, $(yumepokerouge_obj), $(eval $(call DEP,$(obj),$(obj:_rouge.o=.asm))))
-$(foreach obj, $(yumepokeverte_obj), $(eval $(call DEP,$(obj),$(obj:_verte.o=.asm))))
-$(foreach obj, $(yumepokebleue_obj), $(eval $(call DEP,$(obj),$(obj:_bleue.o=.asm))))
-$(foreach obj, $(yumepokebleue_debug_obj), $(eval $(call DEP,$(obj),$(obj:_bleue_debug.o=.asm))))
-$(foreach obj, $(yumepokerojo_obj), $(eval $(call DEP,$(obj),$(obj:_rojo.o=.asm))))
-$(foreach obj, $(yumepokeverde_obj), $(eval $(call DEP,$(obj),$(obj:_verde.o=.asm))))
-$(foreach obj, $(yumepokeazul_obj), $(eval $(call DEP,$(obj),$(obj:_azul.o=.asm))))
-$(foreach obj, $(yumepokeazul_debug_obj), $(eval $(call DEP,$(obj),$(obj:_azul_debug.o=.asm))))
+$(foreach obj, $(pokebaofamred_obj), $(eval $(call DEP,$(obj),$(obj:_red.o=.asm))))
+$(foreach obj, $(pokebaofamblue_obj), $(eval $(call DEP,$(obj),$(obj:_blue.o=.asm))))
+$(foreach obj, $(pokebaofamgreen_obj), $(eval $(call DEP,$(obj),$(obj:_green.o=.asm))))
+$(foreach obj, $(pokebaofamblue_debug_obj), $(eval $(call DEP,$(obj),$(obj:_blue_debug.o=.asm))))
+$(foreach obj, $(pokebaofamred_vc_obj), $(eval $(call DEP,$(obj),$(obj:_red_vc.o=.asm))))
+$(foreach obj, $(pokebaofamblue_vc_obj), $(eval $(call DEP,$(obj),$(obj:_blue_vc.o=.asm))))
+$(foreach obj, $(pokebaofamrouge_obj), $(eval $(call DEP,$(obj),$(obj:_rouge.o=.asm))))
+$(foreach obj, $(pokebaofamverte_obj), $(eval $(call DEP,$(obj),$(obj:_verte.o=.asm))))
+$(foreach obj, $(pokebaofambleue_obj), $(eval $(call DEP,$(obj),$(obj:_bleue.o=.asm))))
+$(foreach obj, $(pokebaofambleue_debug_obj), $(eval $(call DEP,$(obj),$(obj:_bleue_debug.o=.asm))))
+$(foreach obj, $(pokebaofamrojo_obj), $(eval $(call DEP,$(obj),$(obj:_rojo.o=.asm))))
+$(foreach obj, $(pokebaofamverde_obj), $(eval $(call DEP,$(obj),$(obj:_verde.o=.asm))))
+$(foreach obj, $(pokebaofamazul_obj), $(eval $(call DEP,$(obj),$(obj:_azul.o=.asm))))
+$(foreach obj, $(pokebaofamazul_debug_obj), $(eval $(call DEP,$(obj),$(obj:_azul_debug.o=.asm))))
 
 endif
 
 
 RGBLINKFLAGS += -d
-yumepokered.gb:         RGBLINKFLAGS += -p 0x00
-yumepokegreen.gb:       RGBLINKFLAGS += -p 0x00
-yumepokeblue.gb:        RGBLINKFLAGS += -p 0x00
-yumepokeblue_debug.gb:  RGBLINKFLAGS += -p 0xff
-yumepokered_vc.gb:      RGBLINKFLAGS += -p 0x00
-yumepokeblue_vc.gb:     RGBLINKFLAGS += -p 0x00
-yumepokerouge.gb:       RGBLINKFLAGS += -p 0x00
-yumepokeverte.gb:       RGBLINKFLAGS += -p 0x00
-yumepokebleue.gb:       RGBLINKFLAGS += -p 0x00
-yumepokebleue_debug.gb: RGBLINKFLAGS += -p 0xff
-yumepokerojo.gb:        RGBLINKFLAGS += -p 0x00
-yumepokeverde.gb:       RGBLINKFLAGS += -p 0x00
-yumepokeazul.gb:        RGBLINKFLAGS += -p 0x00
-yumepokeazul_debug.gb:  RGBLINKFLAGS += -p 0xff
+pokebaofamred.gb:         RGBLINKFLAGS += -p 0x00
+pokebaofamgreen.gb:       RGBLINKFLAGS += -p 0x00
+pokebaofamblue.gb:        RGBLINKFLAGS += -p 0x00
+pokebaofamblue_debug.gb:  RGBLINKFLAGS += -p 0xff
+pokebaofamred_vc.gb:      RGBLINKFLAGS += -p 0x00
+pokebaofamblue_vc.gb:     RGBLINKFLAGS += -p 0x00
+pokebaofamrouge.gb:       RGBLINKFLAGS += -p 0x00
+pokebaofamverte.gb:       RGBLINKFLAGS += -p 0x00
+pokebaofambleue.gb:       RGBLINKFLAGS += -p 0x00
+pokebaofambleue_debug.gb: RGBLINKFLAGS += -p 0xff
+pokebaofamrojo.gb:        RGBLINKFLAGS += -p 0x00
+pokebaofamverde.gb:       RGBLINKFLAGS += -p 0x00
+pokebaofamazul.gb:        RGBLINKFLAGS += -p 0x00
+pokebaofamazul_debug.gb:  RGBLINKFLAGS += -p 0xff
 
 RGBFIXFLAGS += -jsv -n 0 -k 01 -l 0x33 -m MBC3+RAM+BATTERY -r 03
-yumepokered.gb:         RGBFIXFLAGS += -p 0x00 -t "$(VERSION)"
-yumepokegreen.gb:       RGBFIXFLAGS += -p 0x00 -t "$(VERSION)"
-yumepokeblue.gb:        RGBFIXFLAGS += -p 0x00 -t "$(VERSION)"
-yumepokeblue_debug.gb:  RGBFIXFLAGS += -p 0xff -t "$(VERSION)"
-yumepokered_vc.gb:      RGBFIXFLAGS += -p 0x00 -t "$(VERSION)"
-yumepokeblue_vc.gb:     RGBFIXFLAGS += -p 0x00 -t "$(VERSION)"
-yumepokerouge.gb:       RGBFIXFLAGS += -p 0x00 -t "$(VERSION)"
-yumepokeverte.gb:       RGBFIXFLAGS += -p 0x00 -t "$(VERSION)"
-yumepokebleue.gb:       RGBFIXFLAGS += -p 0x00 -t "$(VERSION)"
-yumepokebleue_debug.gb: RGBFIXFLAGS += -p 0xff -t "$(VERSION)"
-yumepokerojo.gb:        RGBFIXFLAGS += -p 0x00 -t "$(VERSION)"
-yumepokeverde.gb:       RGBFIXFLAGS += -p 0x00 -t "$(VERSION)"
-yumepokeazul.gb:        RGBFIXFLAGS += -p 0x00 -t "$(VERSION)"
-yumepokeazul_debug.gb:  RGBFIXFLAGS += -p 0xff -t "$(VERSION)"
+pokebaofamred.gb:         RGBFIXFLAGS += -p 0x00 -t "$(VERSION)"
+pokebaofamgreen.gb:       RGBFIXFLAGS += -p 0x00 -t "$(VERSION)"
+pokebaofamblue.gb:        RGBFIXFLAGS += -p 0x00 -t "$(VERSION)"
+pokebaofamblue_debug.gb:  RGBFIXFLAGS += -p 0xff -t "$(VERSION)"
+pokebaofamred_vc.gb:      RGBFIXFLAGS += -p 0x00 -t "$(VERSION)"
+pokebaofamblue_vc.gb:     RGBFIXFLAGS += -p 0x00 -t "$(VERSION)"
+pokebaofamrouge.gb:       RGBFIXFLAGS += -p 0x00 -t "$(VERSION)"
+pokebaofamverte.gb:       RGBFIXFLAGS += -p 0x00 -t "$(VERSION)"
+pokebaofambleue.gb:       RGBFIXFLAGS += -p 0x00 -t "$(VERSION)"
+pokebaofambleue_debug.gb: RGBFIXFLAGS += -p 0xff -t "$(VERSION)"
+pokebaofamrojo.gb:        RGBFIXFLAGS += -p 0x00 -t "$(VERSION)"
+pokebaofamverde.gb:       RGBFIXFLAGS += -p 0x00 -t "$(VERSION)"
+pokebaofamazul.gb:        RGBFIXFLAGS += -p 0x00 -t "$(VERSION)"
+pokebaofamazul_debug.gb:  RGBFIXFLAGS += -p 0xff -t "$(VERSION)"
 
 %.gb: $$(%_obj) layout.link
 	$(RGBLINK) $(RGBLINKFLAGS) -l layout.link -m $*.map -n $*.sym -o $@ $(filter %.o,$^)

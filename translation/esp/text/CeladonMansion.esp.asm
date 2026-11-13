@@ -120,7 +120,7 @@ _CeladonMansion4FExeggutorSurfPCText:: ; marcelnote - new
 	done
 
 ; TODO - Spanish translation
-_CeladonMansion4FYumeLabsSignText:: ; marcelnote - new
-	text "YUME LABS"
+_CeladonMansion4FBaofamLabsSignText:: ; marcelnote - new
+	text "BAOFAM LABS"
 	line "Home office"
 	done

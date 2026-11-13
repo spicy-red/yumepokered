@@ -47,7 +47,7 @@ CeladonMansion_Object:
 ;	bg_event  4, 27, TEXT_CELADONMANSION3F_DEV_ROOM_SIGN
 	; 4F
 	bg_event  1,  3, TEXT_CELADONMANSION4F_EXEGGUTOR_SURF_PC
-;	bg_event  4,  9, TEXT_CELADONMANSION4F_YUME_LABS_SIGN
+;	bg_event  4,  9, TEXT_CELADONMANSION4F_BAOFAM_LABS_SIGN
 
 	def_object_events
 	; 1F

@@ -1,9 +1,9 @@
 # Build guidance
 
-For routine validation, build `yumepokered.gb` and `yumepokeblue_debug.gb`:
+For routine validation, build `pokebaofamred.gb` and `pokebaofamblue_debug.gb`:
 
 ```sh
-make -j2 yumepokered.gb yumepokeblue_debug.gb
+make -j2 pokebaofamred.gb pokebaofamblue_debug.gb
 ```
 
 Build other ROM variants only when a change specifically affects them or they
