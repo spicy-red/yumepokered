@@ -17,28 +17,27 @@ CableClub_DoBattleOrTrade:
 	hlcoord 4, 10
 	ld de, PleaseWaitString
 	call PlaceString
-	ld hl, wPlayerNumHits
+	ld hl, wLinkByteTimeout
+	ASSERT LOW(SERIAL_LINK_BYTE_TIMEOUT) == 0
 	xor a
 	ld [hli], a
-	ld [hl], $50
+	ld [hl], HIGH(SERIAL_LINK_BYTE_TIMEOUT)
 	; fallthrough
 
 ; This is called after completing a trade.
 CableClub_DoBattleOrTradeAgain:
 	ld hl, wSerialPlayerDataBlock
 	ld a, SERIAL_PREAMBLE_BYTE
-	ld b, 6
+	lb bc, 6, 7
 .writePlayerDataBlockPreambleLoop
 	ld [hli], a
 	dec b
 	jr nz, .writePlayerDataBlockPreambleLoop
 
 	ld hl, wSerialRandomNumberListBlock
-	; a = SERIAL_PREAMBLE_BYTE
-	ld b, 7
 .writeRandomNumberListPreambleLoop
-	ld [hli], a
-	dec b
+	ld [hli], a ; SERIAL_PREAMBLE_BYTE
+	dec c
 	jr nz, .writeRandomNumberListPreambleLoop
 
 	lb bc, 10, SERIAL_PREAMBLE_BYTE
@@ -51,20 +50,22 @@ CableClub_DoBattleOrTradeAgain:
 	jr nz, .generateRandomNumberListLoop
 
 	ld hl, wSerialPartyMonsPatchList
-	ld a, SERIAL_PREAMBLE_BYTE
+	ld a, c ; SERIAL_PREAMBLE_BYTE
 	ld [hli], a
 	ld [hli], a
 	ld [hli], a
 
 	xor a
-	ld b, $c8
+	ld b, 200 - 3 ; marcelnote - clear the remaining bytes after the 3-byte preamble
 .zeroPlayerDataPatchListLoop
 	ld [hli], a
 	dec b
 	jr nz, .zeroPlayerDataPatchListLoop
+
 	ld hl, wLinkEnemyTrainerName
 	ld bc, wTrainerHeaderPtr - wLinkEnemyTrainerName
 	call FillMemory ; zero enemy party
+
 	ld hl, wPartyMons ; marcelnote - small loop optimization
 	ld de, wSerialPartyMonsPatchList + 10
 	; bc = 0 after FillMemory
@@ -73,12 +74,10 @@ CableClub_DoBattleOrTradeAgain:
 	ld a, c
 	cp SERIAL_PREAMBLE_BYTE
 	jr z, .startPatchListPart2
+	cp (wPartyMonOT - (wPartyMons - 1)) - (SERIAL_PREAMBLE_BYTE - 1)
+	jr nz, .checkPlayerDataByte
 	ld a, b
 	dec a ; are we in part 2 of the patch list?
-	jr nz, .checkPlayerDataByte ; jump if in part 1
-; if we're in part 2
-	ld a, c
-	cp (wPartyMonOT - (wPartyMons - 1)) - (SERIAL_PREAMBLE_BYTE - 1)
 	jr z, .finishedPatchingPlayerData
 .checkPlayerDataByte
 	ld a, [hli]
@@ -99,8 +98,9 @@ CableClub_DoBattleOrTradeAgain:
 	inc de
 	lb bc, 1, 0
 	jr .patchPartyMonsLoop
-.finishedPatchingPlayerData
-	ld a, SERIAL_PATCH_LIST_PART_TERMINATOR
+.finishedPatchingPlayerData ; a = 0
+	ASSERT SERIAL_PATCH_LIST_PART_TERMINATOR == $ff
+	dec a ; SERIAL_PATCH_LIST_PART_TERMINATOR
 	ld [de], a ; end of part 2
 
 	call Serial_SyncAndExchangeNybble
@@ -124,24 +124,22 @@ CableClub_DoBattleOrTradeAgain:
 	ld a, IE_SERIAL
 	ldh [rIE], a
 
-	ld hl, wSerialRandomNumberListBlock
-	ld de, wSerialOtherGameboyRandomNumberListBlock
+	ld de, wSerialRandomNumberListBlock
+	ld hl, wSerialOtherGameboyRandomNumberListBlock
 	ld bc, SERIAL_RN_PREAMBLE_LENGTH + SERIAL_RNS_LENGTH
 	vc_hook Wireless_ExchangeBytes_RNG_state_unknown_Type5
 	call Serial_ExchangeBytes
-	ld a, SERIAL_NO_DATA_BYTE
-	ld [de], a
+	ld [hl], SERIAL_NO_DATA_BYTE
 
-	ld hl, wSerialPlayerDataBlock
-	ld de, wSerialEnemyDataBlock
+	ld de, wSerialPlayerDataBlock
+	ld hl, wSerialEnemyDataBlock
 	ld bc, SERIAL_PREAMBLE_LENGTH + NAME_LENGTH + 1 + PARTY_LENGTH + 1 + (PARTYMON_STRUCT_LENGTH + NAME_LENGTH * 2) * PARTY_LENGTH + 3
 	vc_hook Wireless_ExchangeBytes_party_structs
 	call Serial_ExchangeBytes
-	ld a, SERIAL_NO_DATA_BYTE
-	ld [de], a
+	ld [hl], SERIAL_NO_DATA_BYTE
 
-	ld hl, wSerialPartyMonsPatchList
-	ld de, wSerialEnemyMonsPatchList
+	ld de, wSerialPartyMonsPatchList
+	ld hl, wSerialEnemyMonsPatchList
 	ld bc, 200
 	vc_hook Wireless_ExchangeBytes_patch_lists
 	call Serial_ExchangeBytes

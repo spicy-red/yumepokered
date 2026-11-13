@@ -1,78 +1,42 @@
-Serial::
+Serial:: ; marcelnote - optimized
 	push af
 	ldh a, [hSerialConnectionStatus]
 	inc a
-	jr z, .connectionNotYetEstablished
 	ldh a, [rSB]
 	ldh [hSerialReceiveData], a
+	jr z, .connectionNotYetEstablished
 	ldh a, [hSerialSendData]
+.writeSB
 	ldh [rSB], a
 	ldh a, [hSerialConnectionStatus]
 	cp USING_INTERNAL_CLOCK
 	jr z, .done
-; using external clock
 	ld a, SC_START | SC_EXTERNAL
 	ldh [rSC], a
-	jr .done
-.connectionNotYetEstablished
-	ldh a, [rSB]
-	ldh [hSerialReceiveData], a
-	ldh [hSerialConnectionStatus], a
-	cp USING_INTERNAL_CLOCK
-	jr z, .usingInternalClock
-; using external clock
-	xor a
-	ldh [rSB], a
-	ld a, $3
-	ldh [rDIV], a
-.waitLoop
-	ldh a, [rDIV]
-	bit 7, a ; wait until rDIV has incremented from $3 to $80 or more
-	jr nz, .waitLoop
-	ld a, SC_START | SC_EXTERNAL
-	ldh [rSC], a
-	jr .done
-.usingInternalClock
-	xor a
-	ldh [rSB], a
 .done
-	ld a, $1
+	ld a, 1
 	ldh [hSerialReceivedNewData], a
-	ld a, SERIAL_NO_DATA_BYTE
+	ASSERT SERIAL_NO_DATA_BYTE == $ff ^ 1
+	cpl ; a = SERIAL_NO_DATA_BYTE
 	ldh [hSerialSendData], a
 	pop af
 	reti
 
-; hl = send data
-; de = receive data
-; bc = length of data
-Serial_ExchangeBytes::
-	ld a, 1
-	ldh [hSerialIgnoringInitialData], a
-.loop
-	ld a, [hl]
-	ldh [hSerialSendData], a
-	call Serial_ExchangeByte
-	push bc
-	ld b, a
-	inc hl
-	ld a, 48
-.waitLoop
-	dec a
-	jr nz, .waitLoop
-	ldh a, [hSerialIgnoringInitialData]
-	and a
-	ld a, b
-	pop bc
-	jr z, .storeReceivedByte
-	dec hl
-	cp SERIAL_PREAMBLE_BYTE
-	jr nz, .loop
+.connectionNotYetEstablished
+	ldh [hSerialConnectionStatus], a
 	xor a
-	ldh [hSerialIgnoringInitialData], a
-	jr .loop
-.storeReceivedByte
-	ld [de], a
+	jr .writeSB
+
+; de = send data
+; hl = receive data
+; bc = length of data
+Serial_ExchangeBytes:: ; marcelnote - optimized
+	call .exchange
+	cp SERIAL_PREAMBLE_BYTE
+	jr nz, Serial_ExchangeBytes
+.loop
+	call .exchange
+	ld [hli], a
 	inc de
 	dec bc
 	ld a, b
@@ -80,141 +44,136 @@ Serial_ExchangeBytes::
 	jr nz, .loop
 	ret
 
-Serial_ExchangeByte::
+.exchange
+	ld a, [de]
+	ldh [hSerialSendData], a
+	call Serial_ExchangeByte
+	push af
+	ld a, 48
+.waitLoop
+	dec a
+	jr nz, .waitLoop
+	pop af
+	ret
+
+; de = send data
+Serial_ExchangeByte:: ; marcelnote - optimized
 	xor a
 	ldh [hSerialReceivedNewData], a
-	ldh a, [hSerialConnectionStatus]
-	cp USING_INTERNAL_CLOCK
-	jr nz, .loop
-	ld a, SC_START | SC_INTERNAL
-	ldh [rSC], a
+	call Serial_StartTransfer
+	push hl
 .loop
 	ldh a, [hSerialReceivedNewData]
-	and a
-	jr nz, .ok
+	dec a ; did the serial interrupt signal a completed byte transfer?
+	jr z, .ok
 	ldh a, [hSerialConnectionStatus]
-	cp USING_EXTERNAL_CLOCK
-	jr nz, .doNotIncrementUnknownCounter
-	call IsUnknownCounterZero
-	jr z, .doNotIncrementUnknownCounter
-	call WaitLoop_15Iterations
-	push hl
-	ld hl, wUnknownSerialCounter + 1
+	dec a ; USING_EXTERNAL_CLOCK?
+	jr nz, .notPlayer1OrTimedOut
+	call CheckLinkTimeoutFramesNonzero
+	jr z, .notPlayer1OrTimedOut
+	ld a, 25 ; compensate for the faster counter update below
+.wait25
+	dec a
+	jr nz, .wait25
+	ld hl, wLinkTimeoutFrames + 1
 	inc [hl]
+	ld a, [hld]
 	jr nz, .noCarry
-	dec hl
 	inc [hl]
 .noCarry
-	pop hl
-	call IsUnknownCounterZero
+	or [hl]
 	jr nz, .loop
-	jr SetUnknownCounterToFFFF
-.doNotIncrementUnknownCounter
+	pop hl
+	jr SerialDisconnected
+.notPlayer1OrTimedOut
 	ldh a, [rIE]
 	and IE_SERIAL | IE_TIMER | IE_STAT | IE_VBLANK
 	cp IE_SERIAL
 	jr nz, .loop
-	ld a, [wUnknownSerialCounter2]
-	dec a
-	ld [wUnknownSerialCounter2], a
+	ld hl, wLinkByteTimeout
+	dec [hl]
 	jr nz, .loop
-	ld a, [wUnknownSerialCounter2 + 1]
-	dec a
-	ld [wUnknownSerialCounter2 + 1], a
+	inc hl
+	dec [hl]
 	jr nz, .loop
 	ldh a, [hSerialConnectionStatus]
-	cp USING_EXTERNAL_CLOCK
+	dec a ; USING_EXTERNAL_CLOCK?
 	jr z, .ok
 	ld a, 255
-.waitLoop
+.wait255
 	dec a
-	jr nz, .waitLoop
+	jr nz, .wait255
 .ok
-	xor a
-	ldh [hSerialReceivedNewData], a
+	ldh [hSerialReceivedNewData], a ; a = 0
 	ldh a, [rIE]
 	and IE_SERIAL | IE_TIMER | IE_STAT | IE_VBLANK
 	sub IE_SERIAL
-	jr nz, .skipReloadingUnknownCounter2
-	ld [wUnknownSerialCounter2], a
-	ld a, $50
-	ld [wUnknownSerialCounter2 + 1], a
-.skipReloadingUnknownCounter2
+	jr nz, .nonSerialInterruptsEnabled
+	ASSERT LOW(SERIAL_LINK_BYTE_TIMEOUT) == 0
+	ld hl, wLinkByteTimeout
+	ld [hli], a ; LOW(SERIAL_LINK_BYTE_TIMEOUT)
+	ld [hl], HIGH(SERIAL_LINK_BYTE_TIMEOUT)
+.nonSerialInterruptsEnabled
+	pop hl
 	ldh a, [hSerialReceiveData]
 	cp SERIAL_NO_DATA_BYTE
 	ret nz
-	call IsUnknownCounterZero
+	call CheckLinkTimeoutFramesNonzero
 	jr z, .done
 	push hl
-	ld hl, wUnknownSerialCounter + 1
+	ld hl, wLinkTimeoutFrames + 1
 	ld a, [hl]
-	dec a
+	sub 1
 	ld [hld], a
-	inc a
-	jr nz, .noBorrow
+	jr nc, .noBorrow
 	dec [hl]
 .noBorrow
+	or [hl]
 	pop hl
-	call IsUnknownCounterZero
-	jr z, SetUnknownCounterToFFFF
+	jr z, SerialDisconnected
 .done
 	ldh a, [rIE]
 	and IE_SERIAL | IE_TIMER | IE_STAT | IE_VBLANK
 	cp IE_SERIAL
 	ld a, SERIAL_NO_DATA_BYTE
 	ret z
-	ld a, [hl]
+	ld a, [de]
 	ldh [hSerialSendData], a
 	call DelayFrame
-	jp Serial_ExchangeByte
+	jr Serial_ExchangeByte
 
-WaitLoop_15Iterations::
-	ld a, 15
-.waitLoop
-	dec a
-	jr nz, .waitLoop
-	ret
-
-IsUnknownCounterZero::
+CheckLinkTimeoutFramesNonzero::
 	push hl
-	ld hl, wUnknownSerialCounter
+	ld hl, wLinkTimeoutFrames
 	ld a, [hli]
 	or [hl]
 	pop hl
 	ret
 
-; a is always 0 when this is called
-SetUnknownCounterToFFFF::
+; This sets wLinkTimeoutFrames to $ffff, since
+; a is always 0 when it is called.
+SerialDisconnected::
 	dec a
-	ld [wUnknownSerialCounter], a
-	ld [wUnknownSerialCounter + 1], a
+	ld [wLinkTimeoutFrames], a
+	ld [wLinkTimeoutFrames + 1], a
 	ret
 
 ; This is used to exchange the button press and selected menu item on the link menu.
 ; The data is sent thrice and read twice to increase reliability.
-Serial_ExchangeLinkMenuSelection::
-	ld hl, wLinkMenuSelectionSendBuffer
-	ld de, wLinkMenuSelectionReceiveBuffer
-	ld c, 2 ; number of bytes to save
-	ld a, 1
-	ldh [hSerialIgnoringInitialData], a
+Serial_ExchangeLinkMenuSelection:: ; marcelnote - optimized
+	ld de, wLinkMenuSelectionSendBuffer
+	ld hl, wLinkMenuSelectionReceiveBuffer
+	ld c, %110 ; discard first byte, store next two
 .loop
 	call DelayFrame
-	ld a, [hl]
+	ld a, [de]
 	ldh [hSerialSendData], a
 	call Serial_ExchangeByte
-	ld b, a
-	inc hl
-	ldh a, [hSerialIgnoringInitialData]
-	and a
-	ld a, 0 ; preserve Z flag
-	ldh [hSerialIgnoringInitialData], a
-	jr nz, .loop
-	ld a, b
-	ld [de], a
 	inc de
-	dec c
-	jr nz, .loop
+	srl c
+	jr nc, .loop ; store byte only if carry set
+	ld [hli], a
+	jr nz, .loop ; finish when c = 0
 	ret
 
 Serial_PrintWaitingTextAndSyncAndExchangeNybble::
@@ -230,21 +189,20 @@ Serial_SyncAndExchangeNybble::
 .loop1
 	call Serial_ExchangeNybble
 	call DelayFrame
-	call IsUnknownCounterZero
-	jr z, .next1
+	call CheckLinkTimeoutFramesNonzero
+	jr z, .next
 	push hl
-	ld hl, wUnknownSerialCounter + 1
+	ld hl, wLinkTimeoutFrames + 1
+	ld a, [hl]
+	sub 1
+	ld [hld], a
+	jr nc, .noBorrow
 	dec [hl]
-	jr nz, .next2
-	dec hl
-	dec [hl]
-	jr nz, .next2
+.noBorrow
+	or [hl]
 	pop hl
-	xor a
-	jr SetUnknownCounterToFFFF
-.next2
-	pop hl
-.next1
+	jr z, SerialDisconnected
+.next
 	ld a, [wSerialExchangeNybbleReceiveData]
 	inc a
 	jr z, .loop1
@@ -277,32 +235,26 @@ ENDC
 	vc_hook Wireless_WaitLinkTransfer_ret
 	ret
 
-Serial_ExchangeNybble::
+Serial_ExchangeNybble:: ; marcelnote - optimized
 	call .doExchange
 	ld a, [wSerialExchangeNybbleSendData]
 	add $60
-	ldh [hSerialSendData], a
-	ldh a, [hSerialConnectionStatus]
-	cp USING_INTERNAL_CLOCK
-	jr nz, .doExchange
-	ld a, SC_START | SC_INTERNAL
-	ldh [rSC], a
+	call Serial_SendByte
 .doExchange
 	ldh a, [hSerialReceiveData]
-	ld [wSerialExchangeNybbleTempReceiveData], a
-	and $f0
-	cp $60
-	ret nz
+	sub $60
+	cp $10
+	ret nc ; original byte wasn't $60–$6f
+	ld [wSerialExchangeNybbleReceiveData], a
 	xor a
 	ldh [hSerialReceiveData], a
-	ld a, [wSerialExchangeNybbleTempReceiveData]
-	and $f
-	ld [wSerialExchangeNybbleReceiveData], a
 	ret
 
 Serial_SendZeroByte::
 	xor a
+Serial_SendByte::
 	ldh [hSerialSendData], a
+Serial_StartTransfer::
 	ldh a, [hSerialConnectionStatus]
 	cp USING_INTERNAL_CLOCK
 	ret nz

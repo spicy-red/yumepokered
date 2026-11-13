@@ -401,30 +401,28 @@ wTextDest:: dw
 ; if non-zero, skip waiting for a button press after displaying text in DisplayTextID
 wDoNotWaitForButtonPressAfterDisplayingText:: db
 
-; This union spans 12 bytes.
+; This union spans 7 bytes. ; marcelnote - reduced from 12 bytes
 UNION
 ; the received menu selection is stored twice
 wLinkMenuSelectionReceiveBuffer:: dw
-	ds 3
 ; the menu selection byte is stored twice before sending
 wLinkMenuSelectionSendBuffer:: dw
-	ds 3
+	ds 1 ; the loop reads 3 bytes, but only the first 2 contain the menu selection
 wEnteringCableClub::
 wLinkTimeoutCounter:: db
 
 NEXTU
-; temporary nybble used by Serial_ExchangeNybble
-wSerialExchangeNybbleTempReceiveData::
 ; the final received nybble is stored here by Serial_SyncAndExchangeNybble
 wSerialSyncAndExchangeNybbleReceiveData:: db
 ; the final received nybble is stored here by Serial_ExchangeNybble
 wSerialExchangeNybbleReceiveData:: db
-	ds 3
 ; this nybble is sent when using Serial_SyncAndExchangeNybble or Serial_ExchangeNybble
 wSerialExchangeNybbleSendData:: db
-	ds 4
-wUnknownSerialCounter:: dw
+	ds 2
+wLinkTimeoutFrames:: dw
 ENDU
+
+	ds 5 ; marcelnote - freed from union above
 
 ; $00 = player mons
 ; $01 = enemy mons
@@ -493,7 +491,7 @@ NEXTU
 wTrainerCardBlkPacket:: ds $40
 
 NEXTU
-wHallOfFame:: ds HOF_TEAM
+wHallOfFame:: ds HOF_TEAM + 1
 
 NEXTU
 wNPCMovementDirections:: ds 180
@@ -1474,7 +1472,7 @@ NEXTU
 ; number of hits by player in attacks like Double Slap, etc.
 wPlayerNumHits:: db
 NEXTU
-wUnknownSerialCounter2:: dw
+wLinkByteTimeout:: dw
 ENDU
 
 	ds 2
