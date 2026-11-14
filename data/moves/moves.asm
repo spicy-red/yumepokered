@@ -180,7 +180,7 @@ Moves:
 	move HEX,          HEX_EFFECT,                  70, GHOST,        100, 15 ; marcelnote - new move
 	move MEGAHORN,     NO_ADDITIONAL_EFFECT,       120, BUG,           85, 10 ; new move
 	move SHADOW_BALL,  SPECIAL_DOWN_SIDE_EFFECT,    80, GHOST,        100, 15 ; new move
-	move GUNK_SHOT,    POISON_SIDE_EFFECT1,        120, POISON,        80, 25 ; new move, 20% poison chance
+	move GUNK_SHOT,    POISON_SIDE_EFFECT1,        120, POISON,       100, 25 ; new move, 20% poison chance
 	move OUTRAGE,      THRASH_PETAL_DANCE_EFFECT,   90, DRAGON,       100, 15 ; new move
 	move DRAIN_PUNCH,  DRAIN_HP_EFFECT,             75, FIGHTING,     100, 10 ; new move
 	move EARTH_POWER,  SPECIAL_DOWN_SIDE_EFFECT,    90, GROUND,       100, 10 ; new move

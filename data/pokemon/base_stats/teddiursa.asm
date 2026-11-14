@@ -4,7 +4,7 @@
 	;   hp  atk  def  spd  spc
 
 	db NORMAL, NORMAL ; type
-	db 120 ; catch rate
+	db 10 ; catch rate
 	db 65 ; provisional base exp
 
 	db SPRITE_DIM_LARGE

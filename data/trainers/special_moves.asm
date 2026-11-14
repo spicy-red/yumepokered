@@ -17,8 +17,10 @@ SpecialTrainerMoves:
 	; Geodude
 	db 1, 3, ROCK_THROW
 	; Onix
-	db 2, 3, BIND
-	db 2, 4, BIDE
+	db 6, 1, ROCK_THROW
+	db 6, 2, SCREECH
+	db 6, 3, BIND
+	db 6, 4, BIDE
 	db $ff
 
 	db BROCK, 2  ; rematch
@@ -203,7 +205,7 @@ SpecialTrainerMoves:
 	db 1, 1, FIRE_BLAST
 	db 1, 2, TOXIC
 	db 1, 3, EXPLOSION
-	; Golbat
+	; Crobat 
 	db 2, 3, HYPER_FANG
 	; Muk
 	db 3, 1, GUNK_SHOT
@@ -218,7 +220,7 @@ SpecialTrainerMoves:
 	; Venomoth
 	db 6, 1, RAZOR_WIND
 	db 6, 2, DOUBLE_TEAM
-	db 6, 3, SLEEP_POWDER
+	db 6, 3, SPORE 
 	db 6, 4, PSYCHIC_M
 	db $ff
 
@@ -228,7 +230,7 @@ SpecialTrainerMoves:
 	db 1, 2, SLUDGE
 	db 1, 3, FIRE_BLAST
 	db 1, 4, EXPLOSION
-	; Golbat - MEGA_DRAIN, HEX, TOXIC, HYPER_FANG
+	; Crobat - MEGA_DRAIN, HEX, TOXIC, HYPER_FANG
 	db 2, 1, MEGA_DRAIN
 	db 2, 2, HEX
 	db 2, 3, TOXIC
@@ -251,7 +253,7 @@ SpecialTrainerMoves:
 	; Venomoth - RAZOR_WIND, DOUBLE_TEAM, SLEEP_POWDER, PSYCHIC_M
 	db 6, 1, RAZOR_WIND
 	db 6, 2, DOUBLE_TEAM
-	db 6, 3, SLEEP_POWDER
+	db 6, 3, SPORE 
 	db 6, 4, PSYCHIC_M
 	db $ff
 
@@ -815,8 +817,8 @@ SpecialTrainerMoves:
 	; Muk
 	db 5, 1, GUNK_SHOT
 	db 5, 2, RECOVER
-	db 5, 3, HAZE
-	db 5, 4, SWIFT
+	db 5, 3, NO_MOVE 
+	db 5, 4, NO_MOVE 
 	; Odo's Psyduck ace
 	db 6, 1, HEADACHE
 	db 6, 2, AMNESIA

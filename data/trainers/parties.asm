@@ -757,7 +757,7 @@ ErikaData:  ; marcelnote - adjusted
 
 KogaData:  ; marcelnote - adjusted
 	;db $FF, 37, KOFFING, 39, MUK, 37, KOFFING, 43, WEEZING, 0 ; original
-	db $FF, 42, WEEZING, 40, GOLBAT, 41, MUK, 39, ARBOK, 43, TENTACRUEL, 45, VENOMOTH, 0 ; new
+	db $FF, 42, WEEZING, 40, CROBAT, 41, MUK, 39, ARBOK, 43, TENTACRUEL, 45, VENOMOTH, 0 ; new
 	db $FF, 70, WEEZING, 70, CROBAT, 70, MUK, 85, SCYTHER, 70, TENTACRUEL, 85, VENOMOTH, 0 ; new rematch team
 
 SabrinaData:  ; marcelnote - adjusted
@@ -781,7 +781,7 @@ GiovanniData:  ; marcelnote - adjusted
 LoreleiData:
 	db $FF, 58, DEWGONG, 58, CLOYSTER, 58, SLOWBRO, 58, JYNX, 62, LAPRAS, 0
 	; - new rematch team
-	db $FF, 64, DEWGONG, 64, JYNX, 64, VAPOREON, 64, CLOYSTER, 64, PILOSWINE, 66, LAPRAS, 0
+	db $FF, 64, DEWGONG, 64, JYNX, 64, VAPOREON, 64, CLOYSTER, 66, PILOSWINE, 66, LAPRAS, 0
 
 BrunoData:
 	db $FF, 60, ONIX, 62, HITMONCHAN, 62, HITMONLEE, 62, ONIX, 64, MACHAMP, 0
@@ -875,7 +875,7 @@ ProfOakData: ; marcelnote - adapted unused teams for postgame Oak battle
 	; ideas: MUK, PRIMEAPE, ELECTABUZZ, JOLTEON
 
 OdoData:  ; 
-	db $FF, 150, HOUNDOOM, 110, HERACROSS, 125, WOBBUFFET, 130, TYRANITAR, 130, MUK, 200, ODOS_PSYDUCK, 0
+	db $FF, 120, HOUNDOOM, 110, HERACROSS, 125, WOBBUFFET, 110, TYRANITAR, 120, MUK, 120, ODOS_PSYDUCK, 0
 
 WillData:  ; marcelnote - new postgame battle
 	db $FF, 54, SLOWBRO, 52, MR_MIME, 55, JYNX, 54, HYPNO, 56, EXEGGUTOR, 0
