@@ -17,12 +17,12 @@ DebugNewGameParty: ; unreferenced except in _DEBUG
 	; "Tsunekazu Ishihara: Exeggutor is my favorite. That's because I was
 	; always using this character while I was debugging the program."
 	; From https://web.archive.org/web/20000607152840/http://pocket.ign.com/news/14973.html
-	db EXEGGUTOR, 100
-	db MEW, 100 ; marcelnote - increased from 5
-	db JOLTEON, 100 ; marcelnote - increased from 56
-	db DUGTRIO, 100 ; marcelnote - increased from 56
-	db ARTICUNO, 100 ; marcelnote - increased from 57
-	db PIKACHU, 100
+	db EXEGGUTOR, 200
+	db MEW, 200 ; marcelnote - increased from 5
+	db JOLTEON, 200 ; marcelnote - increased from 56
+	db ODOS_PSYDUCK, 200 ; marcelnote - increased from 56
+	db WOBBUFFET, 200 ; marcelnote - increased from 57
+	db PIKACHU, 200
 	db -1 ; end
 
 SetDebugNewGameBoxes: ; marcelnote - added boxed mons to debug
@@ -169,19 +169,19 @@ IF DEF(_DEBUG)
 	ld a, 15
 	ld [hl], a
 
-	; Articuno gets Ice Beam. ; marcelnote - added
+	;  5th slot gets Ice Beam. ; marcelnote - added
     ld hl, wPartyMon5Moves
-    ld a, ICE_BEAM
+    ld a, BLIZZARD 
     ld [hl], a
     ld hl, wPartyMon5PP
-    ld a, 10
+    ld a, 30
     ld [hl], a
-	; Articuno gets Fly.
+	; 5th gets Fly.
 	ld hl, wPartyMon5Moves + 3
-	ld a, FLY
+	ld a, GUILLOTINE 
 	ld [hl], a
 	ld hl, wPartyMon5PP + 3
-	ld a, 15
+	ld a, 25
 	ld [hl], a
 
 	; Pikachu gets Surf and Flash.
@@ -198,9 +198,9 @@ IF DEF(_DEBUG)
 	ld a, 20
 	ld [hl], a
 
-	; Dugtrio gets Dig. ; marcelnote - added
+	; 3rd pokemon . ; marcelnote - added
 	ld hl, wPartyMon4Moves + 3
-	ld a, DIG
+	ld a, PSYCHIC 
 	ld [hl], a
 	ld hl, wPartyMon4PP + 3
 	ld a, 15

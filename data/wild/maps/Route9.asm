@@ -9,7 +9,7 @@ Route9WildMons:
 	db 17, MACHOP
 	db 15, BUTTERFREE
 	db 14, BEEDRILL
-	db 14, HOPPIP
+	db 14, BULBASAUR 
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate

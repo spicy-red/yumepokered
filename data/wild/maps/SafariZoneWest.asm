@@ -9,7 +9,7 @@ SafariZoneWestWildMons:
 	db 25, TAUROS
 	db 31, KANGASKHAN
 	db 26, LARVITAR
-	db 28, WOBBUFFET
+	db 28, WOBBUFFET 
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate
