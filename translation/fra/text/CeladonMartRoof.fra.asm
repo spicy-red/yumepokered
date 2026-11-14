@@ -71,10 +71,7 @@ _CeladonMartRoofLittleGirlTM49ExplanationText::
 	para "CT49..." ; marcelnote - oubli de traduction "TM49"
 	line "TRIPLATTAQUE!"
 
-	para "Cette attaque" ; marcelnote - new explanation for new TRI_ATTACK_EFFECT
-	line "peut paralyser,"
-	cont "geler ou brûler"
-	cont "l'ennemi!@"
+	para "Cette attaque" ; 
 	text_end
 
 _CeladonMartRoofLittleGirlReceivedTMText::

@@ -1438,6 +1438,7 @@ EnemySendOutFirstMon:
 	ld [wCurPartySpecies], a
 	ld [wCurSpecies], a
 	call GetMonHeader
+	call CheckCustomTrainerSprite	
 	ld de, vFrontPic
 	call LoadMonFrontPic
 	ld a, -$31

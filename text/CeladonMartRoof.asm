@@ -71,9 +71,7 @@ _CeladonMartRoofLittleGirlTM49ExplanationText::
 	para "TM49 contains"
 	line "TRI ATTACK!"
 
-	para "It can paralyze," ; marcelnote - new explanation for new TRI_ATTACK_EFFECT
-	line "freeze or burn"
-	cont "the target!@"
+	para "It is strong," ; 
 	text_end
 
 _CeladonMartRoofLittleGirlReceivedTMText:: ; marcelnote - now common to all 3 TMs

@@ -187,5 +187,5 @@ MonsterPalettes:
 	db PAL_GREENMON   ; TYRANITAR
 	db PAL_REDMON     ; HOUNDOUR
 	db PAL_REDMON     ; HOUNDOOM
-	db PAL_YELLOWMON  ; hidden Odo's Psyduck
+	db PAL_YELLOWMON  ; hidden Odo's "Psyduck"
 	assert_table_length NUM_POKEMON + 2

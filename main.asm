@@ -186,11 +186,13 @@ SECTION "Battle Core", ROMX
 
 INCLUDE "engine/battle/core.asm"
 INCLUDE "engine/battle/effects.asm"
-; marcelnote - moved some functions for clarity
 INCLUDE "engine/battle/move_effects/status_effects.asm"
 INCLUDE "engine/battle/move_effects/stat_mod_effects.asm"
 INCLUDE "engine/battle/calculate_stats.asm"
 INCLUDE "engine/battle/move_effects/confusion.asm"
+; if this bank it too full - move to another and use callfar for its invocation
+; this may occur if we need to upload custom sprites
+INCLUDE "engine/battle/custom_trainer_sprites.asm"
 
 
 SECTION "bank10", ROMX

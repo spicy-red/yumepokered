@@ -1552,6 +1552,22 @@ MisdreavusPicFrontCrystal::   INCBIN "gfx/pokemon/gen2/front/misdreavus.2bpp"
 MisdreavusPicFrontGreen::     INCBIN "gfx/pokemon/gen2/front/misdreavus.2bpp"
 MisdreavusPicBack::           INCBIN "gfx/pokemon/gen2/back/misdreavus.2bpp"
 
+SECTION "ODOS_PSYDUCK Sprites", ROMX
+ODOS_PSYDUCKPics::
+ODOS_PSYDUCKPicBack::           INCBIN "gfx/pokemon/back/psyduckb.2bpp"
+ODOS_PSYDUCKPicBackCrystal::    INCBIN "gfx/pokemon/back_gsc/psyduckb.2bpp"
+ODOS_PSYDUCKPicBackGreen::      INCBIN "gfx/pokemon/back_rg/psyduckb.2bpp"
+ODOS_PSYDUCKPicFront::          INCBIN "gfx/pokemon/custom/ododuck.2bpp"
+ODOS_PSYDUCKPicFrontCrystal::   INCBIN "gfx/pokemon/custom/ododuck.2bpp"
+ODOS_PSYDUCKPicFrontGreen::     INCBIN "gfx/pokemon/custom/ododuck.2bpp"
+; Back: reuse Psyduck's art (included in THIS bank so front/back share bank)
+
+SECTION "Bumi Sprites", ROMX
+BumiPics::
+BumiPicFront::          INCBIN "gfx/pokemon/custom/bumi.2bpp"
+BumiPicFrontCrystal::   INCBIN "gfx/pokemon/custom/bumi.2bpp"
+BumiPicFrontGreen::     INCBIN "gfx/pokemon/custom/bumi.2bpp"
+
 SECTION "Phanpy Sprites", ROMX
 PhanpyPics::
 PhanpyPicFront::          INCBIN "gfx/pokemon/gen2/front/phanpy.2bpp"
@@ -1635,6 +1651,8 @@ UrsaringPicFront::          INCBIN "gfx/pokemon/gen2/front/ursaring.2bpp"
 UrsaringPicFrontCrystal::   INCBIN "gfx/pokemon/gen2/front/ursaring.2bpp"
 UrsaringPicFrontGreen::     INCBIN "gfx/pokemon/gen2/front/ursaring.2bpp"
 UrsaringPicBack::           INCBIN "gfx/pokemon/gen2/back/ursaring.2bpp"
+
+; end pokemon sprites. Ensure only poke placed in that order.
 
 SECTION "Trainer Pics 1", ROMX
 

@@ -798,7 +798,7 @@ SpecialTrainerMoves:
 	db 1, 1, FLAMETHROWER
 	db 1, 2, SHADOW_BALL
 	db 1, 3, SOLARBEAM
-	db 1, 4, HI_JUMP_KICK
+	db 1, 4, WILL_O_WISP 
 	; Heracross
 	db 2, 1, MEGAHORN
 	db 2, 2, DRAIN_PUNCH

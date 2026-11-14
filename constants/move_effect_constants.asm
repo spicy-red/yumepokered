@@ -78,7 +78,7 @@
 	const PARALYZE_EFFECT            ; $43
 	const BURN_EFFECT                ; $48 ; marcelnote - new for WILL-O-WISP, was const_skip
 	const HEX_EFFECT                 ; $49 ; marcelnote - new for HEX, was const_skip
-	const TRI_ATTACK_EFFECT          ; $4A ; marcelnote - new for TRI_ATTACK, was const_skip
+	const_skip                       ; $4A  
 ;	const_skip                       ; $4B
 	const CONFUSION_SIDE_EFFECT      ; $4C
 	const TWINEEDLE_EFFECT           ; $4D
